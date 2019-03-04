@@ -34,7 +34,6 @@ public class PlayerControlla : MonoBehaviour {
             if (getReadyToFire())
             {
                 hasFired = true;
-                Debug.Log("We fired!");
             }
         }
 
@@ -50,7 +49,7 @@ public class PlayerControlla : MonoBehaviour {
 
     private bool getReadyToFire()
     {
-        if ((Input.GetKey(KeyCode.Space)))
+        if ((Input.GetMouseButton(0)))
         {         
             power += Time.deltaTime;
             if (power > 2.5f)
@@ -60,9 +59,11 @@ public class PlayerControlla : MonoBehaviour {
         }
         else if (power != 1)
         {
+            FixedJoint2D join = GetComponent<FixedJoint2D>();
+            Destroy(join);
             rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             scroll.hasFired(power * power * power * power * power * power);
-
+            Debug.Log("power is " + power);
             power = 1;
             return true;
         }
