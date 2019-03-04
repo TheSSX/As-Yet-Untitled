@@ -49,6 +49,10 @@ public class PlayerControlla : MonoBehaviour {
 
     private bool getReadyToFire()
     {
+        GameObject barrel = GameObject.Find("Barrel");
+        Vector2 pos = barrel.transform.position;
+        transform.position = new Vector2(barrel.transform.position.x + 2, barrel.transform.position.y + 2);
+
         if ((Input.GetMouseButton(0)))
         {         
             power += Time.deltaTime;
