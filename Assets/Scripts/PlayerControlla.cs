@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerControlla : MonoBehaviour {
 
-    private float speed = 5;
     private Rigidbody2D rigidbody;
     public Transform groundcheckpoint;
     public float groundcheckradius;
@@ -15,6 +14,7 @@ public class PlayerControlla : MonoBehaviour {
     private float power = 1;
     private GameObject background;
     public scroll scroll;
+    public float currentVelocity;
 
     // Use this for initialization
     void Start () {
@@ -22,12 +22,19 @@ public class PlayerControlla : MonoBehaviour {
         //playerAnimation = GetComponent<Animator>();
         hasFired = false;
         scroll = GameObject.FindObjectOfType<scroll>();
+        groundcheckradius = 2f;
+        isTouchingGround = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        isTouchingGround = Physics2D.OverlapCircle(groundcheckpoint.position, groundcheckradius, groundlayer);
+        isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
+        if (isTouchingGround)
+        {
+            transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
+            currentVelocity = rigidbody.velocity.y;
+        }
 
         if (!hasFired)
         {
@@ -35,7 +42,7 @@ public class PlayerControlla : MonoBehaviour {
             {
                 hasFired = true;
             }
-        }
+        }    
 
         //if (Input.GetButtonDown("Jump") && isTouchingGround)
         // {
@@ -62,12 +69,15 @@ public class PlayerControlla : MonoBehaviour {
             }
         }
         else if (power != 1)
-        {
+        {         
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
+            Destroy(barrel);
+            GameObject launcher = GameObject.Find("Launcher");
+            Destroy(launcher);
             rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
+            currentVelocity = rigidbody.velocity.y;
             scroll.hasFired(power * power * power * power * power * power);
-            Debug.Log("power is " + power);
             power = 1;
             return true;
         }
@@ -77,14 +87,15 @@ public class PlayerControlla : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.tag == "FallDetector")
+        /*if (other.tag == "Ground")
         {
-            gamelevelmanager.respawn();  
-        }
-
-        if (other.tag == "Checkpoint")
-        {
-            respawnpoint = other.transform.position;
+            isTouchingGround = true;
+            Debug.Log("touching ground");
         }*/
+    }
+
+    public float getCurrentVelocity()
+    {
+        return currentVelocity;
     }
 }
