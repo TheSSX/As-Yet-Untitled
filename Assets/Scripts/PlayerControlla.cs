@@ -15,6 +15,7 @@ public class PlayerControlla : MonoBehaviour {
     private GameObject background;
     public scroll scroll;
     public float currentVelocity;
+    private bool initialFire;
 
     // Use this for initialization
     void Start () {
@@ -24,17 +25,12 @@ public class PlayerControlla : MonoBehaviour {
         scroll = GameObject.FindObjectOfType<scroll>();
         groundcheckradius = 2f;
         isTouchingGround = false;
+        initialFire = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
-        if (isTouchingGround)
-        {
-            transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
-            currentVelocity = rigidbody.velocity.y;
-        }
 
         if (!hasFired)
         {
@@ -42,7 +38,37 @@ public class PlayerControlla : MonoBehaviour {
             {
                 hasFired = true;
             }
-        }    
+        }
+        else
+        {
+            if (initialFire)
+            {
+                transform.Rotate(0, 0, -currentVelocity/50);
+            }
+            else if (transform.position.y > -2 && currentVelocity >= 0.5f)
+            {
+                transform.Rotate(0, 0, -currentVelocity);
+                if ((transform.eulerAngles.z < 360 && transform.eulerAngles.z >= 340) || (transform.eulerAngles.z >= 0 && transform.eulerAngles.z < 20))
+                {
+                    transform.Rotate(0, 0, -3f);
+                }
+            }
+
+            isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
+            if (isTouchingGround)
+            {
+                if ((rigidbody.velocity.y < currentVelocity*0.75f) && currentVelocity >= 1.5f)
+                {
+                    currentVelocity = currentVelocity*0.75f;
+                }
+                else
+                {
+                    currentVelocity = rigidbody.velocity.y;
+                }
+                
+
+            }
+        }
 
         //if (Input.GetButtonDown("Jump") && isTouchingGround)
         // {
