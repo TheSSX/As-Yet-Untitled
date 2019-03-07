@@ -296,8 +296,9 @@ GameObject:
   - component: {fileID: 855789953}
   - component: {fileID: 855789956}
   - component: {fileID: 855789955}
-  - component: {fileID: 855789957}
   - component: {fileID: 855789958}
+  - component: {fileID: 855789959}
+  - component: {fileID: 855789957}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -339,7 +340,7 @@ SpriteRenderer:
   m_SortingLayerID: -1557191933
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  m_Sprite: {fileID: 21300016, guid: 5c353094156b32e409be8ab4f57dd396, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -379,7 +380,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.92, y: 3.16}
+    oldSize: {x: 0.94, y: 3.16}
     newSize: {x: 0.92, y: 3.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -456,13 +457,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ae7c03fc58c3c4485c8318759e366e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundcheckpoint: {fileID: 1763955443}
-  groundcheckradius: 0.1
+  groundcheckpoint: {fileID: 0}
+  groundcheckradius: 0
   groundlayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   scroll: {fileID: 0}
   currentVelocity: 0
+  myTextures:
+  - {fileID: 21300016, guid: 5c353094156b32e409be8ab4f57dd396, type: 3}
+  - {fileID: 21300018, guid: 5c353094156b32e409be8ab4f57dd396, type: 3}
+  - {fileID: 21300000, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300002, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300004, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300006, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300008, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300010, guid: bc67898f140035341bd2f642b7079813, type: 3}
+  - {fileID: 21300012, guid: bc67898f140035341bd2f642b7079813, type: 3}
 --- !u!255 &855789958
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -480,6 +491,23 @@ FixedJoint2D:
   m_ConnectedAnchor: {x: 1.1915748, y: -0.01862327}
   m_DampingRatio: 0
   m_Frequency: 0
+--- !u!95 &855789959
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855789952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aaba2844683cb6f46b8a33e71ea05794, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &893721062
 GameObject:
   m_ObjectHideFlags: 0

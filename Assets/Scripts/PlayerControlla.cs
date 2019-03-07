@@ -10,12 +10,14 @@ public class PlayerControlla : MonoBehaviour {
     public LayerMask groundlayer;
     private bool isTouchingGround;
     private bool hasFired = false;
-    private Animator playerAnimation;
     private float power = 1;
     private GameObject background;
     public scroll scroll;
     public float currentVelocity;
     private bool initialFire;
+    private SpriteRenderer renderer;
+    //public Texture2D[] myTextures;
+    public Sprite[] myTextures;
 
     // Use this for initialization
     void Start () {
@@ -23,9 +25,10 @@ public class PlayerControlla : MonoBehaviour {
         //playerAnimation = GetComponent<Animator>();
         hasFired = false;
         scroll = GameObject.FindObjectOfType<scroll>();
-        groundcheckradius = 2f;
+        groundcheckradius = 5f;
         isTouchingGround = false;
         initialFire = true;
+        renderer = GetComponent<SpriteRenderer>();     
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class PlayerControlla : MonoBehaviour {
             if (getReadyToFire())
             {
                 hasFired = true;
+                renderer.sprite = myTextures[1];
             }
         }
         else
@@ -55,8 +59,10 @@ public class PlayerControlla : MonoBehaviour {
             }
 
             isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
-            if (isTouchingGround)
+            if (transform.position.y <= -2)
             {
+                renderer.sprite = myTextures[Random.Range(0, 4)];
+
                 if ((rigidbody.velocity.y < currentVelocity*0.75f) && currentVelocity >= 1.5f)
                 {
                     currentVelocity = currentVelocity*0.75f;
