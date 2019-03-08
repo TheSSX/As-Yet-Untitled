@@ -74,6 +74,7 @@ public class PlayerControlla : MonoBehaviour {
 		animation.SetBool ("hasFired", hasFired);
 		animation.SetFloat ("currentVelocity", currentVelocity);
 		animation.SetFloat ("rigidbodyVelocityY", rigidbody.velocity.y);
+		animation.SetInteger("randomInt", Random.Range(0,3));
 
 		if (currentVelocity < 0.5f && hasFired) 
 		{
