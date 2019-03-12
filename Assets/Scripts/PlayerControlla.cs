@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerControlla : MonoBehaviour {
 
     private Rigidbody2D rigidbody;
-    public Transform groundcheckpoint;
     public float groundcheckradius;
     public LayerMask groundlayer;
     private bool isTouchingGround;
@@ -31,6 +30,7 @@ public class PlayerControlla : MonoBehaviour {
         initialFire = true;
         renderer = GetComponent<SpriteRenderer>();
 		animation = GetComponent<Animator>();
+        animation.SetBool("hasFired", false);
     }
 
     // Update is called once per frame
@@ -42,6 +42,7 @@ public class PlayerControlla : MonoBehaviour {
             {
                 hasFired = true;
                 renderer.sprite = myTextures[1];
+                animation.SetBool("hasFired", true);
             }
         }
         else
@@ -59,22 +60,21 @@ public class PlayerControlla : MonoBehaviour {
                 }
             }
 
-            isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
+            /*isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
 			if (transform.position.y <= -2 && currentVelocity >= 0.5f) {
 				renderer.sprite = myTextures [Random.Range (0, 4)];
+                animation.SetInteger("randomInt", Random.Range(0, 3));
 
-				if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 1.5f) {
+                if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 1.5f) {
 					currentVelocity = currentVelocity * 0.75f;
 				} else {
 					currentVelocity = rigidbody.velocity.y;
 				}
-			}
+			}*/
         }
-
-		animation.SetBool ("hasFired", hasFired);
+		
 		animation.SetFloat ("currentVelocity", currentVelocity);
-		animation.SetFloat ("rigidbodyVelocityY", rigidbody.velocity.y);
-		animation.SetInteger("randomInt", Random.Range(0,3));
+		animation.SetFloat ("rigidbodyVelocityY", rigidbody.velocity.y);	
 
 		if (currentVelocity < 0.5f && hasFired) 
 		{
@@ -115,11 +115,27 @@ public class PlayerControlla : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.tag == "Ground")
+        if (other.tag == "Ground" && currentVelocity >= 0.5f && !isTouchingGround)
         {
-            isTouchingGround = true;
-            Debug.Log("touching ground");
-        }*/
+            renderer.sprite = myTextures[Random.Range(0, 4)];
+            animation.SetInteger("randomInt", Random.Range(0, 3));
+
+            if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
+            {
+                currentVelocity = currentVelocity * 0.75f;
+            }
+            else
+            {
+                currentVelocity = rigidbody.velocity.y;
+            }
+
+            isTouchingGround = true;       
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isTouchingGround = false;
     }
 
     public float getCurrentVelocity()
