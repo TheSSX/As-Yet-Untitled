@@ -1,6 +1,7 @@
 
-Temp/UnityLockfile
+Temp/
 *.lock
 *.ide
 *.ide-shm
 *.ide-wal
+.vs/As-Yet-Untitled/v15/.suo
