@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerControlla : MonoBehaviour {
 
     private Rigidbody2D rigidbody;
-    public Transform groundcheckpoint;
     public float groundcheckradius;
     public LayerMask groundlayer;
     private bool isTouchingGround;
@@ -18,6 +17,7 @@ public class PlayerControlla : MonoBehaviour {
     private SpriteRenderer renderer;
     //public Texture2D[] myTextures;
     public Sprite[] myTextures;
+	private Animator animation;
 
     // Use this for initialization
     void Start () {
@@ -28,19 +28,21 @@ public class PlayerControlla : MonoBehaviour {
         groundcheckradius = 5f;
         isTouchingGround = false;
         initialFire = true;
-        renderer = GetComponent<SpriteRenderer>();     
+        renderer = GetComponent<SpriteRenderer>();
+		animation = GetComponent<Animator>();
+        animation.SetBool("hasFired", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (!hasFired)
         {
             if (getReadyToFire())
             {
                 hasFired = true;
                 renderer.sprite = myTextures[1];
+                animation.SetBool("hasFired", true);
             }
         }
         else
@@ -58,32 +60,26 @@ public class PlayerControlla : MonoBehaviour {
                 }
             }
 
-            isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
-            if (transform.position.y <= -2)
-            {
-                renderer.sprite = myTextures[Random.Range(0, 4)];
+            /*isTouchingGround = Physics2D.OverlapCircle(transform.position, groundcheckradius, groundlayer);
+			if (transform.position.y <= -2 && currentVelocity >= 0.5f) {
+				renderer.sprite = myTextures [Random.Range (0, 4)];
+                animation.SetInteger("randomInt", Random.Range(0, 3));
 
-                if ((rigidbody.velocity.y < currentVelocity*0.75f) && currentVelocity >= 1.5f)
-                {
-                    currentVelocity = currentVelocity*0.75f;
-                }
-                else
-                {
-                    currentVelocity = rigidbody.velocity.y;
-                }
-                
-
-            }
+                if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 1.5f) {
+					currentVelocity = currentVelocity * 0.75f;
+				} else {
+					currentVelocity = rigidbody.velocity.y;
+				}
+			}*/
         }
+		
+		animation.SetFloat ("currentVelocity", currentVelocity);
+		animation.SetFloat ("rigidbodyVelocityY", rigidbody.velocity.y);	
 
-        //if (Input.GetButtonDown("Jump") && isTouchingGround)
-        // {
-        //    rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpspeed);
-        //}
-
-        //Animation code, changes the parameters in the Animator object
-        //playerAnimation.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.x));
-        //playerAnimation.SetBool("OnGround", isTouchingGround);
+		if (currentVelocity < 0.5f && hasFired) 
+		{
+			standUp ();
+		}
     }
 
     private bool getReadyToFire()
@@ -119,15 +115,39 @@ public class PlayerControlla : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.tag == "Ground")
+        if (other.tag == "Ground" && currentVelocity >= 0.5f && !isTouchingGround)
         {
-            isTouchingGround = true;
-            Debug.Log("touching ground");
-        }*/
+            renderer.sprite = myTextures[Random.Range(0, 4)];
+            animation.SetInteger("randomInt", Random.Range(0, 3));
+
+            if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
+            {
+                currentVelocity = currentVelocity * 0.75f;
+            }
+            else
+            {
+                currentVelocity = rigidbody.velocity.y;
+            }
+
+            isTouchingGround = true;       
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isTouchingGround = false;
     }
 
     public float getCurrentVelocity()
     {
         return currentVelocity;
     }
+
+	private void standUp()
+	{
+		currentVelocity = 0f;
+		rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+		transform.eulerAngles = new Vector3 (0, 0, 0);
+		transform.position = new Vector3 (transform.position.x, -1.63f, transform.position.z);
+	}
 }
