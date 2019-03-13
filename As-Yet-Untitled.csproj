@@ -244,13 +244,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Basic Cannon Fire.cs" />
-    <Compile Include="Assets\Scripts\bounce.cs" />
-    <Compile Include="Assets\Scripts\CameraControlla.cs" />
+    <Compile Include="Assets\Scripts\Background\scroll.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraControlla.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerControlla.cs" />
-    <Compile Include="Assets\Scripts\Rotation.cs" />
-    <Compile Include="Assets\Scripts\scroll.cs" />
+    <Compile Include="Assets\Scripts\Launcher\CannonControlla.cs" />
+    <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
