@@ -11,7 +11,6 @@ public class MoveAway : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         hasFired = false;
-        speed = 0f;
         playerScript = GameObject.Find("Player").GetComponent<PlayerControlla>();
     }
 	
@@ -19,7 +18,6 @@ public class MoveAway : MonoBehaviour {
 	void Update ()
     {
         speed = playerScript.getCurrentVelocity();
-
         transform.Translate(Time.deltaTime * -speed, 0, 0);
     }
 }
