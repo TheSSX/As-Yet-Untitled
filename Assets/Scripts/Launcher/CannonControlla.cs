@@ -6,14 +6,13 @@ public class CannonControlla : MonoBehaviour {
 
     public float angle;
     private Animator animation;
-    private bool notClicked;
+    public PlayerControlla playerScript;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animation = GetComponent<Animator>();
         animation.SetBool("fired", false);
         animation.SetBool("finishedFiring", false);
-        notClicked = true;
     }
 
     // Update is called once per frame
@@ -46,13 +45,7 @@ public class CannonControlla : MonoBehaviour {
 
         if (Input.GetMouseButtonUp(0))
         {
-            animation.SetBool("fired", true);
-            prepareToDestroy();
+            animation.SetBool("fired", true);           
         }
-    }
-
-    private void prepareToDestroy()
-    {
-
     }
 }

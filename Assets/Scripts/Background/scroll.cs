@@ -21,10 +21,7 @@ public class scroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        if (playerScript.getCurrentVelocity() != speed)
-        {
-            speed = playerScript.getCurrentVelocity();
-        }
+        speed = playerScript.getCurrentVelocity();
 
         if (speed >= 0.5f)
         {
