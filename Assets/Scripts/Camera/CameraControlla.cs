@@ -30,5 +30,10 @@ public class CameraControlla : MonoBehaviour {
         }
 
         transform.position = playerposition;
+
+        if (transform.position.y < 2.09f)
+        {
+            transform.position = new Vector3(transform.position.x, 2.09f, transform.position.z);
+        }
     }
 }

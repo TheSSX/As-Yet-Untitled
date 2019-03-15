@@ -12,7 +12,6 @@ public class CannonControlla : MonoBehaviour {
     void Start () {
         animation = GetComponent<Animator>();
         animation.SetBool("fired", false);
-        animation.SetBool("finishedFiring", false);
     }
 
     // Update is called once per frame

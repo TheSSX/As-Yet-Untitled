@@ -25,14 +25,14 @@ public class scroll : MonoBehaviour
 
         if (speed >= 0.5f)
         {
-            offset += (Time.deltaTime * speed) / 10;
+            offset += (Time.deltaTime * speed) / 50;
 
             renderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
         else
         {
             speed = 0;
-            offset += (Time.deltaTime * speed) / 10;
+            offset += (Time.deltaTime * speed) / 50;
             renderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
     }
