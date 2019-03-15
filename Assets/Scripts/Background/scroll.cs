@@ -36,10 +36,4 @@ public class scroll : MonoBehaviour
             renderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
     }
-
-    public void hasFired(float x)
-    {
-        Rigidbody2D player = GameObject.Find("Player").GetComponent<Rigidbody2D>();
-        speed = player.velocity.y;
-    }
 }

@@ -18,10 +18,12 @@ public class PlayerControlla : MonoBehaviour
     [SerializeField]
     private PolygonCollider2D[] colliders;
     private int currentColliderIndex = 0;
+    private int counter;
 
     // Use this for initialization
     void Start()
     {
+        counter = 0;
         rigidbody = GetComponent<Rigidbody2D>();
         hasFired = false;
         scroll = GameObject.FindObjectOfType<scroll>();
@@ -34,6 +36,16 @@ public class PlayerControlla : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isTouchingGround)
+        {
+            counter++;
+
+            if (counter == 30)
+            {
+                standUp();
+            }
+        }
+
         if (!hasFired)
         {
             if (getReadyToFire())
@@ -89,7 +101,7 @@ public class PlayerControlla : MonoBehaviour
             Destroy(join);
             rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             currentVelocity = rigidbody.velocity.y;
-            scroll.hasFired(power * power * power * power * power * power);
+            //scroll.hasFired(power * power * power * power * power * power);
             power = 1;
             return true;
         }
@@ -99,6 +111,8 @@ public class PlayerControlla : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        lastVelocity = currentVelocity;
+
         if (other.tag == "Ground" && currentVelocity >= 0.5f && !isTouchingGround)
         {
             initialFire = false;
@@ -106,32 +120,29 @@ public class PlayerControlla : MonoBehaviour
 
             if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
             {
-                lastVelocity = currentVelocity;
                 currentVelocity *= 0.75f;
             }
             else
             {
-                lastVelocity = currentVelocity;
                 currentVelocity = rigidbody.velocity.y;               
             }
 
             isTouchingGround = true;
-
-            if (currentVelocity == lastVelocity)
-            {
-                lastVelocity = 0f;
-                currentVelocity = 0f;
-            }
         }
         else if (other.tag == "Ground")
-        {
+        {          
             currentVelocity *= 0.75f;
 
-            if (currentVelocity < 0.5f || rigidbody.velocity.y < 0.001)
+            /*if (currentVelocity < 0.5f || rigidbody.velocity.y < 0.001)
             {
                 lastVelocity = 0f;
                 currentVelocity = 0f;
-            }
+            }*/
+        }
+
+        if (currentVelocity == lastVelocity)
+        {
+            standUp();
         }
     }
 
@@ -147,6 +158,7 @@ public class PlayerControlla : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isTouchingGround = false;
+        counter = 0;
     }
 
     public float getCurrentVelocity()

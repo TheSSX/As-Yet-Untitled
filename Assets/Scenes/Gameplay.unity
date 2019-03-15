@@ -121,7 +121,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 26609166}
-  - component: {fileID: 26609165}
   - component: {fileID: 26609164}
   m_Layer: 8
   m_Name: Ground (2)
@@ -174,23 +173,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!68 &26609165
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 26609163}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6f6eb782ff6ef7a4f837209acc61d444, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 119.239456, y: -1.0176469}
-  - {x: -17.392565, y: -1.0504462}
 --- !u!4 &26609166
 Transform:
   m_ObjectHideFlags: 0
@@ -1118,6 +1100,7 @@ GameObject:
   - component: {fileID: 907441101}
   - component: {fileID: 907441102}
   - component: {fileID: 907441103}
+  - component: {fileID: 907441104}
   m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
@@ -1202,6 +1185,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &907441104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907441100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c891d64092e4b42af2c8c27518ead9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105880627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1204,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1105880630}
-  - component: {fileID: 1105880629}
   - component: {fileID: 1105880628}
   m_Layer: 8
   m_Name: Ground (3)
@@ -1263,23 +1256,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!68 &1105880629
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105880627}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6f6eb782ff6ef7a4f837209acc61d444, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 119.239456, y: -1.0176469}
-  - {x: -17.392565, y: -1.0504462}
 --- !u!4 &1105880630
 Transform:
   m_ObjectHideFlags: 0
@@ -1359,7 +1335,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1136349824}
-  - component: {fileID: 1136349823}
   - component: {fileID: 1136349822}
   m_Layer: 8
   m_Name: Ground (1)
@@ -1412,23 +1387,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!68 &1136349823
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1136349821}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6f6eb782ff6ef7a4f837209acc61d444, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 119.239456, y: -1.0176469}
-  - {x: -17.392565, y: -1.0504462}
 --- !u!4 &1136349824
 Transform:
   m_ObjectHideFlags: 0
@@ -1619,7 +1577,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2049423643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.09, z: -10}
+  m_LocalPosition: {x: 0, y: 1.6, z: -10}
   m_LocalScale: {x: 3.0835202, y: 1.527214, z: 1.1635916}
   m_Children: []
   m_Father: {fileID: 0}

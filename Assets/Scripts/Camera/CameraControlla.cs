@@ -35,5 +35,9 @@ public class CameraControlla : MonoBehaviour {
         {
             transform.position = new Vector3(transform.position.x, 2.09f, transform.position.z);
         }
+        else if (transform.position.y > 104.2f)
+        {
+            transform.position = new Vector3(transform.position.x, 104.2f, transform.position.z);
+        }
     }
 }
