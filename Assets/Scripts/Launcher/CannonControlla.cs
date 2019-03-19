@@ -41,6 +41,10 @@ public class CannonControlla : MonoBehaviour {
 
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
+        else
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
 
         if (Input.GetMouseButtonUp(0))
         {

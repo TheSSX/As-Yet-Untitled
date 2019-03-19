@@ -1,19 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControlla : MonoBehaviour
 {
-
     private Rigidbody2D rigidbody;
     private bool isTouchingGround;
-    private bool hasFired = false;
+    public bool hasFired = false;
     private float power = 1;
     public scroll scroll;
     public float currentVelocity;
     private bool initialFire;
     private Animator animation;
     public float lastVelocity;
+    public Text distanceText;
+    public float distance;
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
@@ -36,6 +38,7 @@ public class PlayerControlla : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Stops player from getting stuck in the ground
         if (isTouchingGround)
         {
             counter++;
@@ -56,13 +59,14 @@ public class PlayerControlla : MonoBehaviour
         }
         else
         {
+            updateDistance();
             transform.Rotate(0, 0, -currentVelocity / 50);
 
             if (initialFire)
             {               
                 colliders[currentColliderIndex].enabled = true;
             }
-            else if (transform.position.y > -2 && currentVelocity >= 0.5f)
+            else if (currentVelocity >= 0.5f)
             {
                 transform.Rotate(0, 0, -currentVelocity);
                 if ((transform.eulerAngles.z < 360 && transform.eulerAngles.z >= 340) || (transform.eulerAngles.z >= 0 && transform.eulerAngles.z < 20))
@@ -99,9 +103,10 @@ public class PlayerControlla : MonoBehaviour
         {
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
+            CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
+            float angle = cannon.angle;
             rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             currentVelocity = rigidbody.velocity.y;
-            //scroll.hasFired(power * power * power * power * power * power);
             power = 1;
             return true;
         }
@@ -132,12 +137,6 @@ public class PlayerControlla : MonoBehaviour
         else if (other.tag == "Ground")
         {          
             currentVelocity *= 0.75f;
-
-            /*if (currentVelocity < 0.5f || rigidbody.velocity.y < 0.001)
-            {
-                lastVelocity = 0f;
-                currentVelocity = 0f;
-            }*/
         }
 
         if (currentVelocity == lastVelocity)
@@ -173,5 +172,11 @@ public class PlayerControlla : MonoBehaviour
         rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.eulerAngles = new Vector3(0, 0, 0);
         transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
+    }
+
+    private void updateDistance()
+    {
+        distance += currentVelocity / 30;
+        distanceText.text = "Distance: " + distance.ToString("0.##") + "m";
     }
 }
