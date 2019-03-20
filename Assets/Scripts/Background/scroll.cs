@@ -23,6 +23,7 @@ public class scroll : MonoBehaviour
     {       
         speed = playerScript.getCurrentVelocity();
 
+        //Background scrolling offset code courtesy of Charger Games of YouTube, link: https://www.youtube.com/watch?v=HrDxnMI7pCc
         if (speed >= 0.5f)
         {
             offset += (Time.deltaTime * speed) / 50;

@@ -8,14 +8,14 @@ public class PlayerControlla : MonoBehaviour
     private Rigidbody2D rigidbody;
     private bool isTouchingGround;
     public bool hasFired = false;
-    private float power = 1;
-    public scroll scroll;
+    private float power = 0;
     public float currentVelocity;
     private bool initialFire;
     private Animator animation;
+    GameObject barrel;
     public float lastVelocity;
-    public Text distanceText;
-    public float distance;
+    public CanvasControlla canvas;
+    bool increasing = true;
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
@@ -25,10 +25,11 @@ public class PlayerControlla : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        canvas = GameObject.Find("Canvas").GetComponent < CanvasControlla>();
+        barrel = GameObject.Find("Barrel");
         counter = 0;
         rigidbody = GetComponent<Rigidbody2D>();
         hasFired = false;
-        scroll = GameObject.FindObjectOfType<scroll>();
         isTouchingGround = false;
         initialFire = true;
         animation = GetComponent<Animator>();
@@ -59,7 +60,6 @@ public class PlayerControlla : MonoBehaviour
         }
         else
         {
-            updateDistance();
             transform.Rotate(0, 0, -currentVelocity / 50);
 
             if (initialFire)
@@ -87,27 +87,68 @@ public class PlayerControlla : MonoBehaviour
 
     private bool getReadyToFire()
     {
-        GameObject barrel = GameObject.Find("Barrel");
         Vector2 pos = barrel.transform.position;
         transform.position = new Vector2(pos.x + 2, pos.y + 2);
 
         if ((Input.GetMouseButton(0)))
         {
-            power += Time.deltaTime;
-            if (power > 2.5f)
+            if (power >= 100)
             {
-                power = 2.5f;
+                power = 100f;
+                increasing = false;
             }
+            else if (power <= 0)
+            {
+                power = 0f;
+                increasing = true;
+            }
+
+            if (power < 20 && increasing)
+            {
+                power += Time.deltaTime * 50;
+            }
+            else if (power >= 20 && power < 60 && increasing)
+            {
+                power += Time.deltaTime * 60;
+            }
+            else if (power >= 60 && power < 80 && increasing)
+            {
+                power += Time.deltaTime * 80;
+            }
+            else if (power >= 80 && power < 100 && increasing)
+            {
+                power += Time.deltaTime * 100;
+            }
+            else if (power >= 80 && power < 100 && !increasing)
+            {
+                power -= Time.deltaTime * 100;
+            }
+            else if (power >= 60 && power < 80 && !increasing)
+            {
+                power -= Time.deltaTime * 80;
+            }
+            else if (power >= 20 && power < 60 && !increasing)
+            {
+                power -= Time.deltaTime * 60;
+            }
+            else 
+            {
+                power -= Time.deltaTime *50;
+            }
+
+            canvas.displayPower(power);
         }
-        else if (power != 1)
+        else if (power != 0)
         {
+            canvas.displayPower(-1f);
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
             CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
             float angle = cannon.angle;
+            power /= 40f;
             rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             currentVelocity = rigidbody.velocity.y;
-            power = 1;
+            power = 0;
             return true;
         }
 
@@ -172,11 +213,5 @@ public class PlayerControlla : MonoBehaviour
         rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.eulerAngles = new Vector3(0, 0, 0);
         transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
-    }
-
-    private void updateDistance()
-    {
-        distance += currentVelocity / 30;
-        distanceText.text = "Distance: " + distance.ToString("0.##") + "m";
     }
 }
