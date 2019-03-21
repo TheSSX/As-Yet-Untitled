@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class MoveAway : MonoBehaviour {
 
-    public bool hasFired;
     public float speed;
     public PlayerControlla playerScript;
 
 	// Use this for initialization
 	void Start () {
-        hasFired = false;
         playerScript = GameObject.Find("Player").GetComponent<PlayerControlla>();
     }
 	

@@ -8,6 +8,7 @@ TagManager:
   - Layer
   - Ground
   - Launcher
+  - Spikes
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,6 @@ public class CannonControlla : MonoBehaviour {
 
     public float angle;
     private Animator animation;
-    public PlayerControlla playerScript;
 
     // Use this for initialization
     void Start () {
