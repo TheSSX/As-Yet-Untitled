@@ -16,6 +16,7 @@ public class ObjectDestroyer : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("deleting " + other.tag);
         Destroy(other.gameObject);
     }
 }

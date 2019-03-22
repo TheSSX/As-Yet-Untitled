@@ -206,7 +206,7 @@ public class PlayerControlla : MonoBehaviour
         return currentVelocity;
     }
 
-    private void standUp()
+    public void standUp()
     {
         lastVelocity = 0f;
         currentVelocity = 0f;

@@ -246,11 +246,14 @@
   <ItemGroup>
     <Compile Include="Assets\PlayerCollisionDetector.cs" />
     <Compile Include="Assets\Scripts\Background\scroll.cs" />
+    <Compile Include="Assets\Scripts\BelowGroundChecker\BelowGroundChecker.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraControlla.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
+    <Compile Include="Assets\Scripts\Hazards\Hazard.cs" />
     <Compile Include="Assets\Scripts\Launcher\CannonControlla.cs" />
     <Compile Include="Assets\Scripts\Launcher\MoveAway.cs" />
     <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
+    <Compile Include="Assets\Scripts\Object Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
     <Compile Include="Assets\Scripts\UI\CanvasControlla.cs" />
   </ItemGroup>
