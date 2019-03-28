@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114915504965756298}
   m_Layer: 0
   m_Name: GroundSpike
-  m_TagString: Spikes
+  m_TagString: GroundSpikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,8 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca650451082f774aa9a86b02f7d4bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audiosource: {fileID: 82728358452609828}
-  animation: {fileID: 95393238723558600}
 --- !u!114 &114915504965756298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,7 +397,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1669333299
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e9d635949a09f5b40866470d0ebf5742, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

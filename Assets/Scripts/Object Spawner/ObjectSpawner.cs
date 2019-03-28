@@ -6,9 +6,8 @@ public class ObjectSpawner : MonoBehaviour {
 
     private PlayerControlla playerScript;
 
-    [SerializeField]
-    private GameObject floatingspike, groundspike;
-    int counter = 0;
+    public GameObject floatingspike, groundspike, chomper;
+    private int counter = 0;
 
 
 	// Use this for initialization
@@ -19,13 +18,21 @@ public class ObjectSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (playerScript.hasFired)
+        if (playerScript.hasBeenFired())
         {
             counter++;
 
             if (counter == 60)
             {
-                Instantiate(floatingspike, new Vector3(25, Random.Range(-2, 106), 1), Quaternion.identity);
+                Instantiate(floatingspike, new Vector3(25, Random.Range(8, 106), 1), Quaternion.identity);
+            }
+            else if (counter == 120)
+            {
+                Instantiate(groundspike, new Vector3(25, -2.3f), Quaternion.identity);
+            }
+            else if (counter == 180)
+            {
+                Instantiate(chomper, new Vector3(25, -1.18f), Quaternion.identity);
                 counter = 0;
             }
         }

@@ -7,14 +7,14 @@ public class scroll : MonoBehaviour
 
     public float speed;
     float offset;
-    Renderer renderer;
+    Renderer backgroundRenderer;
     public PlayerControlla playerScript;
 
     // Use this for initialization
     void Start()
     {
         speed = 0f;
-        renderer = GetComponent<Renderer>();
+        backgroundRenderer = GetComponent<Renderer>();
         playerScript = GameObject.Find("Player").GetComponent<PlayerControlla>();
     }
 
@@ -28,13 +28,13 @@ public class scroll : MonoBehaviour
         {
             offset += (Time.deltaTime * speed) / 50;
 
-            renderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+            backgroundRenderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
         else
         {
             speed = 0;
             offset += (Time.deltaTime * speed) / 50;
-            renderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+            backgroundRenderer.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
     }
 }

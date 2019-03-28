@@ -5,12 +5,12 @@ using UnityEngine;
 public class CannonControlla : MonoBehaviour {
 
     public float angle;
-    private Animator animation;
+    private Animator cannonAnimation;
 
     // Use this for initialization
     void Start () {
-        animation = GetComponent<Animator>();
-        animation.SetBool("fired", false);
+        cannonAnimation = GetComponent<Animator>();
+        cannonAnimation.SetBool("fired", false);
     }
 
     // Update is called once per frame
@@ -47,7 +47,12 @@ public class CannonControlla : MonoBehaviour {
 
         if (Input.GetMouseButtonUp(0))
         {
-            animation.SetBool("fired", true);           
+            cannonAnimation.SetBool("fired", true);           
         }
+    }
+
+    public float getAngle()
+    {
+        return angle;
     }
 }

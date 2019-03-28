@@ -5,35 +5,35 @@ using UnityEngine.UI;
 
 public class PlayerControlla : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
-    private bool isTouchingGround;
-    public bool hasFired = false;
-    private float power = 0;
-    public float currentVelocity;
-    private bool initialFire;
-    private Animator animation;
-    GameObject barrel;
-    public float lastVelocity;
+    private Rigidbody2D playerRigidbody;
+    private Animator playerAnimation;
+    private GameObject barrel;
     public CanvasControlla canvas;
-    bool increasing = true;
+
+    private bool isTouchingGround, hasFired, hitBySpikes, increasing, initialFire;
+    private float currentVelocity, lastVelocity, power;   
+    private int currentColliderIndex, counter;
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
-    private int currentColliderIndex = 0;
-    private int counter;
+    
 
     // Use this for initialization
     void Start()
     {
-        canvas = GameObject.Find("Canvas").GetComponent < CanvasControlla>();
+        canvas = GameObject.Find("Canvas").GetComponent<CanvasControlla>();
         barrel = GameObject.Find("Barrel");
-        counter = 0;
-        rigidbody = GetComponent<Rigidbody2D>();
+        playerAnimation = GetComponent<Animator>();
+        playerRigidbody = GetComponent<Rigidbody2D>();
+   
         hasFired = false;
+        hitBySpikes = false;
         isTouchingGround = false;
         initialFire = true;
-        animation = GetComponent<Animator>();
-        animation.SetBool("hasFired", false);
+        increasing = true;
+        
+        playerAnimation.SetBool("hasFired", false);
+        playerAnimation.SetBool("hitBySpikes", false);
     }
 
     // Update is called once per frame
@@ -55,7 +55,7 @@ public class PlayerControlla : MonoBehaviour
             if (getReadyToFire())
             {
                 hasFired = true;
-                animation.SetBool("hasFired", true);
+                playerAnimation.SetBool("hasFired", true);
             }
         }
         else
@@ -76,13 +76,8 @@ public class PlayerControlla : MonoBehaviour
             }
         }
 
-        animation.SetFloat("currentVelocity", currentVelocity);
-        animation.SetFloat("rigidbodyVelocityY", rigidbody.velocity.y);
-
-        if (currentVelocity < 0.5f && hasFired)
-        {
-            standUp();
-        }
+        playerAnimation.SetFloat("currentVelocity", currentVelocity);
+        playerAnimation.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
     }
 
     private bool getReadyToFire()
@@ -144,10 +139,10 @@ public class PlayerControlla : MonoBehaviour
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
             CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
-            float angle = cannon.angle;
+            float angle = cannon.getAngle();
             power /= 40f;
-            rigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
-            currentVelocity = rigidbody.velocity.y;
+            playerRigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
+            currentVelocity = playerRigidbody.velocity.y;
             power = 0;
             return true;
         }
@@ -164,13 +159,13 @@ public class PlayerControlla : MonoBehaviour
             initialFire = false;
             setAnimation();
 
-            if ((rigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
+            if ((playerRigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
             {
                 currentVelocity *= 0.75f;
             }
             else
             {
-                currentVelocity = rigidbody.velocity.y;               
+                currentVelocity = playerRigidbody.velocity.y;               
             }
 
             isTouchingGround = true;
@@ -179,17 +174,48 @@ public class PlayerControlla : MonoBehaviour
         {          
             currentVelocity *= 0.75f;
         }
+        else if (other.tag == "FloatingSpikes")
+        {
+            lastVelocity = 0f;
+            currentVelocity = 0f;
+            playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            transform.eulerAngles = new Vector3(0, 0, 180);
+            transform.position = new Vector3(other.transform.position.x - 0.8f, other.transform.position.y - 1.5f, other.transform.position.z);
+            hitBySpikes = true;
+            playerAnimation.SetBool("hitBySpikes", true);
+        }
+        else if (other.tag == "GroundSpikes")
+        {
+            lastVelocity = 0f;
+            currentVelocity = 0f;
+            playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            transform.eulerAngles = new Vector3(0, 0, 270);
+            transform.position = new Vector3(other.transform.position.x, other.transform.position.y + 0.5f, other.transform.position.z);
+            hitBySpikes = true;
+            playerAnimation.SetBool("hitBySpikes", true);
+        }
+        else if (other.tag == "Chomper")
+        {
+            GetComponent<Renderer>().enabled = false;
+            lastVelocity = 0f;
+            currentVelocity = 0f;
+            playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
 
-        if (currentVelocity == lastVelocity)
+        if (currentVelocity == lastVelocity && isTouchingGround)
         {
             standUp();
+        }
+        else if (hitBySpikes)
+        {
+
         }
     }
 
     private void setAnimation()
     {
         int random = Random.Range(0, 3);
-        animation.SetInteger("randomInt", random);
+        playerAnimation.SetInteger("randomInt", random);
         colliders[currentColliderIndex].enabled = false;
         currentColliderIndex = random + 1;
         colliders[currentColliderIndex].enabled = true;
@@ -210,8 +236,22 @@ public class PlayerControlla : MonoBehaviour
     {
         lastVelocity = 0f;
         currentVelocity = 0f;
-        rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.eulerAngles = new Vector3(0, 0, 0);
         transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
+    }
+
+    public void hitFloatingSpikes()
+    {
+        lastVelocity = 0f;
+        currentVelocity = 0f;
+        playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        transform.eulerAngles = new Vector3(0, 0, 180);
+        transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
+    }
+
+    public bool hasBeenFired()
+    {
+        return hasFired;
     }
 }
