@@ -8,7 +8,9 @@ public class PlayerControlla : MonoBehaviour
     private Rigidbody2D playerRigidbody;
     private Animator playerAnimation;
     private GameObject barrel;
-    public CanvasControlla canvas;
+    public GameplayCanvasControlla canvas;
+    public LevelManager levelmanager;
+    private Renderer playerRenderer;
 
     private bool isTouchingGround, hasFired, hitBySpikes, increasing, initialFire;
     private float currentVelocity, lastVelocity, power;   
@@ -21,11 +23,13 @@ public class PlayerControlla : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        canvas = GameObject.Find("Canvas").GetComponent<CanvasControlla>();
+        canvas = FindObjectOfType<GameplayCanvasControlla>();
         barrel = GameObject.Find("Barrel");
+        levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         playerAnimation = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody2D>();
-   
+        playerRenderer = GetComponent<Renderer>();
+
         hasFired = false;
         hitBySpikes = false;
         isTouchingGround = false;
@@ -52,6 +56,7 @@ public class PlayerControlla : MonoBehaviour
 
         if (!hasFired)
         {
+            playerRenderer.enabled = false;
             if (getReadyToFire())
             {
                 hasFired = true;
@@ -60,8 +65,13 @@ public class PlayerControlla : MonoBehaviour
         }
         else
         {
-            transform.Rotate(0, 0, -currentVelocity / 50);
+            playerRenderer.enabled = true;
 
+            if (!levelmanager.isPaused())
+            {
+                transform.Rotate(0, 0, -currentVelocity / 50);
+            }
+            
             if (initialFire)
             {               
                 colliders[currentColliderIndex].enabled = true;
@@ -82,6 +92,9 @@ public class PlayerControlla : MonoBehaviour
 
     private bool getReadyToFire()
     {
+        CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
+        float angle = cannon.getAngle();
+
         Vector2 pos = barrel.transform.position;
         transform.position = new Vector2(pos.x + 2, pos.y + 2);
 
@@ -135,11 +148,15 @@ public class PlayerControlla : MonoBehaviour
         }
         else if (power != 0)
         {
+            if (power < 10)
+            {
+                power = 10;
+            }
+
             canvas.displayPower(-1f);
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
-            CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
-            float angle = cannon.getAngle();
+            
             power /= 40f;
             playerRigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             currentVelocity = playerRigidbody.velocity.y;
@@ -183,6 +200,7 @@ public class PlayerControlla : MonoBehaviour
             transform.position = new Vector3(other.transform.position.x - 0.8f, other.transform.position.y - 1.5f, other.transform.position.z);
             hitBySpikes = true;
             playerAnimation.SetBool("hitBySpikes", true);
+            levelmanager.showResults();
         }
         else if (other.tag == "GroundSpikes")
         {
@@ -193,6 +211,7 @@ public class PlayerControlla : MonoBehaviour
             transform.position = new Vector3(other.transform.position.x, other.transform.position.y + 0.5f, other.transform.position.z);
             hitBySpikes = true;
             playerAnimation.SetBool("hitBySpikes", true);
+            levelmanager.showResults();
         }
         else if (other.tag == "Chomper")
         {
@@ -200,15 +219,12 @@ public class PlayerControlla : MonoBehaviour
             lastVelocity = 0f;
             currentVelocity = 0f;
             playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            levelmanager.showResults();
         }
 
         if (currentVelocity == lastVelocity && isTouchingGround)
         {
             standUp();
-        }
-        else if (hitBySpikes)
-        {
-
         }
     }
 
@@ -239,15 +255,7 @@ public class PlayerControlla : MonoBehaviour
         playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.eulerAngles = new Vector3(0, 0, 0);
         transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
-    }
-
-    public void hitFloatingSpikes()
-    {
-        lastVelocity = 0f;
-        currentVelocity = 0f;
-        playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-        transform.eulerAngles = new Vector3(0, 0, 180);
-        transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
+        levelmanager.showResults();
     }
 
     public bool hasBeenFired()

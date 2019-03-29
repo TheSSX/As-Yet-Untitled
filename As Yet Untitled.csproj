@@ -244,7 +244,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerCollisionDetector.cs" />
     <Compile Include="Assets\Scripts\Background\scroll.cs" />
     <Compile Include="Assets\Scripts\BelowGroundChecker\BelowGroundChecker.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraControlla.cs" />
@@ -252,10 +251,13 @@
     <Compile Include="Assets\Scripts\Hazards\Hazard.cs" />
     <Compile Include="Assets\Scripts\Launcher\CannonControlla.cs" />
     <Compile Include="Assets\Scripts\Launcher\MoveAway.cs" />
+    <Compile Include="Assets\Scripts\LevelManager\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
     <Compile Include="Assets\Scripts\Object Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
-    <Compile Include="Assets\Scripts\UI\CanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\GameplayCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\ResultsCanvasControlla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />

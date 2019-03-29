@@ -6,18 +6,20 @@ public class CannonControlla : MonoBehaviour {
 
     public float angle;
     private Animator cannonAnimation;
+    private LevelManager levelmanager;
 
     // Use this for initialization
     void Start () {
         cannonAnimation = GetComponent<Animator>();
         cannonAnimation.SetBool("fired", false);
+        levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
     // Update is called once per frame
     //Rotation functionality provided by user tknz on Unity forums. Link: https://answers.unity.com/questions/10615/rotate-objectweapon-towards-mouse-cursor-2d.html
     void Update()
     {
-        if (!(Input.GetMouseButton(0)))
+        if (!(Input.GetMouseButton(0)) && !levelmanager.isPaused())
         {
             //rotation
             Vector3 mousePos = Input.mousePosition;
