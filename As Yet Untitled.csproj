@@ -225,13 +225,13 @@
       <HintPath>C:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/samglendenning.COMPUTING/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/samglendenning/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/samglendenning.COMPUTING/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/samglendenning/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/samglendenning.COMPUTING/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/samglendenning/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -244,11 +244,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\bounce.cs" />
-    <Compile Include="Assets\Scripts\CameraControlla.cs" />
+    <Compile Include="Assets\Scripts\Background\scroll.cs" />
+    <Compile Include="Assets\Scripts\BelowGroundChecker\BelowGroundChecker.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraControlla.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerControlla.cs" />
-    <Compile Include="Assets\Scripts\scroll.cs" />
+    <Compile Include="Assets\Scripts\Hazards\Hazard.cs" />
+    <Compile Include="Assets\Scripts\Launcher\CannonControlla.cs" />
+    <Compile Include="Assets\Scripts\Launcher\MoveAway.cs" />
+    <Compile Include="Assets\Scripts\LevelManager\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
+    <Compile Include="Assets\Scripts\Object Spawner\ObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\GameplayCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\UI\ResultsCanvasControlla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
