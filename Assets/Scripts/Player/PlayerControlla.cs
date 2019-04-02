@@ -64,9 +64,7 @@ public class PlayerControlla : MonoBehaviour
             }
         }
         else
-        {
-            playerRenderer.enabled = true;
-
+        {        
             if (!levelmanager.isPaused())
             {
                 transform.Rotate(0, 0, -currentVelocity / 50);
@@ -161,6 +159,7 @@ public class PlayerControlla : MonoBehaviour
             playerRigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
             currentVelocity = playerRigidbody.velocity.y;
             power = 0;
+            playerRenderer.enabled = true;
             return true;
         }
 
@@ -215,7 +214,7 @@ public class PlayerControlla : MonoBehaviour
         }
         else if (other.tag == "Chomper")
         {
-            GetComponent<Renderer>().enabled = false;
+            playerRenderer.enabled = false;
             lastVelocity = 0f;
             currentVelocity = 0f;
             playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -230,7 +229,7 @@ public class PlayerControlla : MonoBehaviour
 
     private void setAnimation()
     {
-        int random = Random.Range(0, 3);
+        int random = Random.Range(0, 5);
         playerAnimation.SetInteger("randomInt", random);
         colliders[currentColliderIndex].enabled = false;
         currentColliderIndex = random + 1;

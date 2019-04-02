@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour {
 
     private bool paused;
     public GameObject gameplaycanvas, pausecanvas, resultscanvas;
+    public Animator playerAnimator;
+    public AnimatorOverrideController bearskin, athlete;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +16,13 @@ public class LevelManager : MonoBehaviour {
         gameplaycanvas = GameObject.Find("GameplayCanvas");
         pausecanvas = GameObject.Find("PauseCanvas");
         resultscanvas = GameObject.Find("ResultsCanvas");
+        playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
+
         gameplaycanvas.SetActive(true);
         pausecanvas.SetActive(false);
         resultscanvas.SetActive(false);
         Time.timeScale = 1;
+        selectPlayerAnimation();
     }
 
     public bool isPaused()
@@ -53,5 +58,19 @@ public class LevelManager : MonoBehaviour {
         gameplaycanvas.SetActive(false);
         pausecanvas.SetActive(false);
         resultscanvas.SetActive(true);
+    }
+
+    //Have a number passed in here to be selected instead. This number comes from the player choice on the menu to choose skin
+    public void selectPlayerAnimation()
+    {
+        int x = Random.Range(0, 2);
+        if (x == 0)
+        {
+            playerAnimator.runtimeAnimatorController = bearskin;
+        }
+        else
+        {
+            playerAnimator.runtimeAnimatorController = athlete;
+        }
     }
 }

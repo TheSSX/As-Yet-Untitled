@@ -249,6 +249,7 @@
     <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
     <Compile Include="Assets\Scripts\Object Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
+    <Compile Include="Assets\Scripts\Player\SkinSelector.cs" />
     <Compile Include="Assets\Scripts\UI\GameplayCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\UI\ResultsCanvasControlla.cs" />
