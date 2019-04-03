@@ -11,6 +11,7 @@ public class PlayerControlla : MonoBehaviour
     public GameplayCanvasControlla canvas;
     public LevelManager levelmanager;
     private Renderer playerRenderer;
+    private CannonControlla cannoncontroller;
 
     private bool isTouchingGround, hasFired, hitBySpikes, increasing, initialFire;
     private float currentVelocity, lastVelocity, power;   
@@ -29,6 +30,7 @@ public class PlayerControlla : MonoBehaviour
         playerAnimation = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponent<Renderer>();
+        cannoncontroller = GameObject.Find("Barrel").GetComponent<CannonControlla>();
 
         hasFired = false;
         hitBySpikes = false;
@@ -64,7 +66,9 @@ public class PlayerControlla : MonoBehaviour
             }
         }
         else
-        {        
+        {
+            currentVelocity *= 0.999f;
+
             if (!levelmanager.isPaused())
             {
                 transform.Rotate(0, 0, -currentVelocity / 50);
@@ -82,17 +86,14 @@ public class PlayerControlla : MonoBehaviour
                     transform.Rotate(0, 0, -3f);
                 }
             }
-        }
 
-        playerAnimation.SetFloat("currentVelocity", currentVelocity);
-        playerAnimation.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
+            playerAnimation.SetFloat("currentVelocity", currentVelocity);
+            playerAnimation.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
+        }     
     }
 
     private bool getReadyToFire()
     {
-        CannonControlla cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
-        float angle = cannon.getAngle();
-
         Vector2 pos = barrel.transform.position;
         transform.position = new Vector2(pos.x + 2, pos.y + 2);
 
@@ -151,13 +152,23 @@ public class PlayerControlla : MonoBehaviour
                 power = 10;
             }
 
+            float angle = cannoncontroller.getAngle();
+
             canvas.displayPower(-1f);
             FixedJoint2D join = GetComponent<FixedJoint2D>();
             Destroy(join);
             
             power /= 40f;
-            playerRigidbody.AddForce(new Vector2(3, 1) * 10f * (power * power), ForceMode2D.Impulse);
-            currentVelocity = playerRigidbody.velocity.y;
+
+            playerRigidbody.AddForce(new Vector2(angle, angle / 60) * 10f * (power * power), ForceMode2D.Impulse);
+            if (angle > 35)
+            {
+                angle = 35 - (angle - 35);
+            }
+          
+            //When cannon upgrades, the first number will be the only change
+            currentVelocity = (25 + angle / 20) * power;
+
             power = 0;
             playerRenderer.enabled = true;
             return true;
@@ -232,7 +243,7 @@ public class PlayerControlla : MonoBehaviour
         int random = Random.Range(0, 5);
         playerAnimation.SetInteger("randomInt", random);
         colliders[currentColliderIndex].enabled = false;
-        currentColliderIndex = random + 1;
+        currentColliderIndex = random;
         colliders[currentColliderIndex].enabled = true;
     }
 
