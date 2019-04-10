@@ -13,9 +13,14 @@ public class PlayerControlla : MonoBehaviour
     private Renderer playerRenderer;
     private CannonControlla cannon;
 
-    private bool isTouchingGround, hasFired, hitBySpikes, increasing, initialFire;
+    private bool isTouchingGround, hasFired, increasing, initialFire;
     private float currentVelocity, lastVelocity, power;   
     private int currentColliderIndex, counter;
+
+	private const int basicCannonmod = 6;
+	private const int goldCannonmod = 20;
+
+	private int powermod;
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
@@ -32,8 +37,8 @@ public class PlayerControlla : MonoBehaviour
         playerRenderer = GetComponent<Renderer>();
         cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
 
+		powermod = basicCannonmod;
         hasFired = false;
-        hitBySpikes = false;
         isTouchingGround = false;
         initialFire = true;
         increasing = true;
@@ -101,6 +106,18 @@ public class PlayerControlla : MonoBehaviour
             }
         }
     }
+
+	public void modPower(string x)
+	{
+		if (x == "basic")  
+		{
+			powermod = basicCannonmod;
+		} 
+		else if (x == "gold") 
+		{
+			powermod = goldCannonmod;
+		}
+	}
 
     private bool getReadyToFire()
     {
@@ -170,14 +187,14 @@ public class PlayerControlla : MonoBehaviour
             
             power /= 40;
 
-            playerRigidbody.AddForce(new Vector2(angle, angle / 60) * 10 * (power * power), ForceMode2D.Impulse);   //I wouldn't touch this if I were you
+            playerRigidbody.AddForce(new Vector2(angle, angle / 60) * powermod * (power * power), ForceMode2D.Impulse);   //I wouldn't touch this if I were you
             if (angle > 35)
             {
                 angle = 35 - (angle - 35);
             }
           
             //When cannon upgrades, the first number will be the only change
-            currentVelocity = (25 + angle / 20) * power;
+			currentVelocity = (25 + angle / 20) * power * (powermod/6);
 
             power = 0;
             playerRenderer.enabled = true;

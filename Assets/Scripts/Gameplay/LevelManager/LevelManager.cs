@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour {
     private bool paused, showingResults;
     public GameObject gameplaycanvas, pausecanvas, resultscanvas;
     public SkinSelector playerskin;
+    public BarrelSkinSelector launcherskin;
+	public PlayerControlla player;
     public SaveLoad saveload;
     public GameData data;
     public bool hasSaveFile;
@@ -17,12 +19,14 @@ public class LevelManager : MonoBehaviour {
         public int cash;
         public string currentSkin;
         public int skinUnlocked;
+        public string barrelskin;
 
-        public GameData(int newcash, string newskin, int newSkinUnlocked)
+        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin)
         {
             cash = newcash;
             currentSkin = newskin;
             skinUnlocked = newSkinUnlocked;
+            barrelskin = newbarrelskin;
         }
     }
 
@@ -31,20 +35,17 @@ public class LevelManager : MonoBehaviour {
 
         saveload = GameObject.Find("SaveLoadSystem").GetComponent<SaveLoad>();
         playerskin = GameObject.Find("Player").GetComponent<SkinSelector>();
+        launcherskin = GameObject.Find("Barrel").GetComponent<BarrelSkinSelector>();
+		player = GameObject.Find ("Player").GetComponent<PlayerControlla>();
+
         data = saveload.load();
-        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked);
+        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked + " and " + data.barrelskin);
+
         //saveload.deleteSave();
 
-        // if (!saveChecker())
-        //{
-        // hasSaveFile = false;          
-        // playerskin.setSkin("bearskin");
-        //}
-        //else
-        //{
-        //hasSaveFile = true;
         playerskin.setSkin(data.currentSkin);
-        //}
+        launcherskin.setSkin(data.barrelskin);
+		player.modPower (data.barrelskin);
 
         paused = false;
         showingResults = false;
@@ -62,10 +63,10 @@ public class LevelManager : MonoBehaviour {
     public bool saveChecker()
     {
         data = saveload.load();
-        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked);
+        
         if (data.cash == -1)
         {
-            data = new GameData(0, "bearskin", 1);
+            data = new GameData(0, "bearskin", 1, "basic");
             return false;
         }
 
@@ -126,6 +127,6 @@ public class LevelManager : MonoBehaviour {
     {
         int newcash = data.cash;
         newcash += Mathf.RoundToInt(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance() * 10);
-        data = new GameData(newcash, data.currentSkin, data.skinUnlocked);
+        data = new GameData(newcash, data.currentSkin, data.skinUnlocked, data.barrelskin);
     }
 }

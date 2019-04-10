@@ -6,7 +6,8 @@ public class SkinSelector : MonoBehaviour {
 
     public Transform playersize;
     public Animator playerAnimator;
-    public AnimatorOverrideController bearskin, athlete;
+    public AnimatorOverrideController athlete;
+    public RuntimeAnimatorController bearskin;
 
     // Use this for initialization
     void Start () {
@@ -19,7 +20,7 @@ public class SkinSelector : MonoBehaviour {
     {
         if (x == "bearskin")
         {
-            //playerAnimator.runtimeAnimatorController = bearskin;
+            playerAnimator.runtimeAnimatorController = bearskin;
         }
         else if (x == "athlete")
         {

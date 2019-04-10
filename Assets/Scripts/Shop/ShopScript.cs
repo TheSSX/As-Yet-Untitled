@@ -7,7 +7,7 @@ public class ShopScript : MonoBehaviour {
 
     public DataHolder dataholder;
     public Text cash;
-    public GameObject shopmenu, skinsmenu;
+    public GameObject shopmenu, skinsmenu, launchersmenu;
 
 	// Use this for initialization
 	void Start () {
@@ -15,12 +15,14 @@ public class ShopScript : MonoBehaviour {
         dataholder = GameObject.Find("DataHolder").GetComponent<DataHolder>();
         shopmenu = GameObject.Find("ShopMenu");
         skinsmenu = GameObject.Find("SkinsMenu");
+		launchersmenu = GameObject.Find("LaunchersMenu");
 
         skinsmenu.SetActive(false);
         shopmenu.SetActive(true);
 
-        skinsmenu.transform.SetSiblingIndex(0);
-        shopmenu.transform.SetSiblingIndex(1);
+		launchersmenu.transform.SetSiblingIndex(0);
+        skinsmenu.transform.SetSiblingIndex(1);
+        shopmenu.transform.SetSiblingIndex(2);
         cash.transform.SetAsLastSibling();
     }
 
@@ -28,5 +30,6 @@ public class ShopScript : MonoBehaviour {
     { 
         cash.text = "Cash: £" + data.cash.ToString();
         skinsmenu.GetComponent<SkinsMenu>().setValues(data);
+		launchersmenu.GetComponent<LaunchersMenu>().setValues(data);
     }
 }

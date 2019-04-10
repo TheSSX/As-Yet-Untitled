@@ -1071,6 +1071,7 @@ GameObject:
   - component: {fileID: 560687209}
   - component: {fileID: 560687208}
   - component: {fileID: 560687211}
+  - component: {fileID: 560687213}
   - component: {fileID: 560687212}
   m_Layer: 0
   m_Name: Barrel
@@ -1085,13 +1086,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 560687206}
-  m_LocalRotation: {x: 0, y: 0, z: 0.30070576, w: 0.953717}
-  m_LocalPosition: {x: 0.042, y: 0.513, z: 0}
-  m_LocalScale: {x: 1.217286, y: 1.217286, z: 1.0446141}
+  m_LocalRotation: {x: -0, y: -0, z: 0.2679591, w: 0.96343035}
+  m_LocalPosition: {x: 0.05, y: 0.51, z: 0}
+  m_LocalScale: {x: 1.3836917, y: 1.3836917, z: 1.1874152}
   m_Children: []
   m_Father: {fileID: 893721064}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 31.086002}
 --- !u!95 &560687208
 Animator:
   serializedVersion: 3
@@ -1168,7 +1169,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.01, y: 1.27}
+  m_Size: {x: 7.71, y: 2.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1202,7 +1203,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.89, y: 1.18}
-    newSize: {x: 2.01, y: 1.27}
+    newSize: {x: 7.71, y: 2.91}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1238,6 +1239,22 @@ PolygonCollider2D:
       - {x: 0.265, y: -0.615}
       - {x: 0.36499998, y: -0.59499997}
       - {x: 0.48499998, y: -0.565}
+--- !u!114 &560687213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560687206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbb0476013548249b18cbca6c88bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrelsize: {fileID: 0}
+  barrelAnimator: {fileID: 0}
+  gold: {fileID: 22100000, guid: 49755a81f371d874a8c9cb90cda384f3, type: 2}
+  basic: {fileID: 9100000, guid: 7f290ea326b43d14c897aad3acf932c8, type: 2}
+  standchanger: {fileID: 0}
 --- !u!1 &771642363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1646,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.4629712, y: -0.7825311}
+  m_ConnectedAnchor: {x: 2.2048774, y: -0.53406215}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!95 &855789959
@@ -1983,8 +2000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playersize: {fileID: 0}
   playerAnimator: {fileID: 0}
-  bearskin: {fileID: 0}
   athlete: {fileID: 22100000, guid: f7d2bb1561b5f8b4cb5a2384c4a8a5f1, type: 2}
+  bearskin: {fileID: 9100000, guid: 7b859a967d8125d439beefac9b25db57, type: 2}
 --- !u!1 &890890002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893721064}
   - component: {fileID: 893721063}
+  - component: {fileID: 893721069}
   - component: {fileID: 893721066}
   - component: {fileID: 893721067}
   - component: {fileID: 893721065}
@@ -2151,7 +2169,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.269985, y: -0.32542464}
+  m_ConnectedAnchor: {x: -0.22125076, y: -0.29699248}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &893721066
@@ -2222,6 +2240,21 @@ PolygonCollider2D:
       - {x: 1.435, y: -0.76}
       - {x: 1.435, y: -0.72999996}
       - {x: 1.405, y: -0.68}
+--- !u!114 &893721069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893721062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d40501b6451c9459daa53c012b16a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchersize: {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 20df7a05b58565441b0864a385d9d6de, type: 3}
+  - {fileID: 21300008, guid: b3953bffcfe0a1d4a853156eeadfa32e, type: 3}
 --- !u!1 &907441100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2382,8 @@ MonoBehaviour:
   pausecanvas: {fileID: 0}
   resultscanvas: {fileID: 0}
   playerskin: {fileID: 0}
+  launcherskin: {fileID: 0}
+  player: {fileID: 0}
   saveload: {fileID: 0}
   hasSaveFile: 0
 --- !u!4 &997227031

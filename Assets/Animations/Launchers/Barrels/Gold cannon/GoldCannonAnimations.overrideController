@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GoldCannonAnimations
+  m_Controller: {fileID: 9100000, guid: 7f290ea326b43d14c897aad3acf932c8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3d39a81d66846f34a8b1e18f7d8145a9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c1785d90bae6cde409d8d2ec96a556e0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fd6c238da6704d04a99784a621671142, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 83eb53f486e3a1746984160e71e92e01, type: 2}

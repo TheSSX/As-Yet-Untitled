@@ -52,7 +52,7 @@ public class SkinsMenu : MonoBehaviour {
             x = 1;
         }
 
-        data = new LevelManager.GameData(data.cash, "bearskin", x);
+        data = new LevelManager.GameData(data.cash, "bearskin", x, data.barrelskin);
         dataholder.setData(data);
     }
 
@@ -73,7 +73,7 @@ public class SkinsMenu : MonoBehaviour {
                 x = 2;
             }
 
-            data = new LevelManager.GameData(cash, "athlete", x);
+            data = new LevelManager.GameData(cash, "athlete", x, data.barrelskin);
             dataholder.setData(data);
         }
     }

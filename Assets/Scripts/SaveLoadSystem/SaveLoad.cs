@@ -16,9 +16,10 @@ public class SaveLoad : MonoBehaviour {
         ZPlayerPrefs.SetInt("Cash", data.cash);
         ZPlayerPrefs.SetString("CurrentSkin", data.currentSkin);
         ZPlayerPrefs.SetInt("SkinUnlocked", data.skinUnlocked);
+        ZPlayerPrefs.SetString("BarrelSkin", data.barrelskin);
 
         ZPlayerPrefs.Save();
-        Debug.Log("Saved data with cash at £" + data.cash + ", skin at " + data.currentSkin + " and skins unlocked at " + data.skinUnlocked);
+        Debug.Log("Saved data with cash at £" + data.cash + ", skin at " + data.currentSkin + ", skins unlocked at " + data.skinUnlocked + " and barrel skin as " + data.barrelskin);
     }
 
     public LevelManager.GameData load()
@@ -31,6 +32,7 @@ public class SaveLoad : MonoBehaviour {
         }*/
 
         string skin = ZPlayerPrefs.GetString("CurrentSkin", "bearskin");
+        
         /*if (skin == null)
         {
             data = new LevelManager.GameData(-1, "bearskin", 1);
@@ -39,7 +41,9 @@ public class SaveLoad : MonoBehaviour {
 
         int skinUnlocked = ZPlayerPrefs.GetInt("SkinUnlocked", 1);
 
-        data = new LevelManager.GameData(cash, skin, skinUnlocked);
+        string barrelskin = ZPlayerPrefs.GetString("BarrelSkin", "basic");
+
+        data = new LevelManager.GameData(cash, skin, skinUnlocked, barrelskin);
         return data;
     }
 
