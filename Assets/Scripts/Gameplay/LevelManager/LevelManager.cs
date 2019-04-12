@@ -12,7 +12,6 @@ public class LevelManager : MonoBehaviour {
 	public PlayerControlla player;
     public SaveLoad saveload;
     public GameData data;
-    public bool hasSaveFile;
 
     public struct GameData
     {
@@ -20,13 +19,15 @@ public class LevelManager : MonoBehaviour {
         public string currentSkin;
         public int skinUnlocked;
         public string barrelskin;
+        public int barrelUnlocked;
 
-        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin)
+        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin, int newbarrelUnlocked)
         {
             cash = newcash;
             currentSkin = newskin;
             skinUnlocked = newSkinUnlocked;
             barrelskin = newbarrelskin;
+            barrelUnlocked = newbarrelUnlocked;
         }
     }
 
@@ -39,9 +40,7 @@ public class LevelManager : MonoBehaviour {
 		player = GameObject.Find ("Player").GetComponent<PlayerControlla>();
 
         data = saveload.load();
-        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked + " and " + data.barrelskin);
-
-        //saveload.deleteSave();
+        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked + " and " + data.barrelskin);       
 
         playerskin.setSkin(data.currentSkin);
         launcherskin.setSkin(data.barrelskin);
@@ -66,7 +65,7 @@ public class LevelManager : MonoBehaviour {
         
         if (data.cash == -1)
         {
-            data = new GameData(0, "bearskin", 1, "basic");
+            data = new GameData(0, "bearskin", 1, "basic", 1);
             return false;
         }
 
@@ -127,6 +126,12 @@ public class LevelManager : MonoBehaviour {
     {
         int newcash = data.cash;
         newcash += Mathf.RoundToInt(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance() * 10);
-        data = new GameData(newcash, data.currentSkin, data.skinUnlocked, data.barrelskin);
+        data = new GameData(newcash, data.currentSkin, data.skinUnlocked, data.barrelskin, data.barrelUnlocked);
+    }
+
+    public void deleteSave()
+    {
+        saveload.deleteSave();
+        relaunch();
     }
 }

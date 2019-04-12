@@ -12,6 +12,7 @@ public class PlayerControlla : MonoBehaviour
     public LevelManager levelmanager;
     private Renderer playerRenderer;
     private CannonControlla cannon;
+    private TargetControlla targetcontrolla;
 
     private bool isTouchingGround, hasFired, increasing, initialFire;
     private float currentVelocity, lastVelocity, power;   
@@ -20,7 +21,7 @@ public class PlayerControlla : MonoBehaviour
 	private const int basicCannonmod = 6;
 	private const int goldCannonmod = 20;
 
-	private int powermod;
+	private int powermod;   
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
@@ -36,8 +37,10 @@ public class PlayerControlla : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponent<Renderer>();
         cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
+        targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
+        targetcontrolla.target(true);
 
-		powermod = basicCannonmod;
+        powermod = basicCannonmod;
         hasFired = false;
         isTouchingGround = false;
         initialFire = true;
@@ -65,7 +68,7 @@ public class PlayerControlla : MonoBehaviour
         }
         else
         {
-            currentVelocity *= 0.999f;
+            //currentVelocity *= 0.999f;
 
             if (!levelmanager.isPaused())
             {
@@ -262,6 +265,7 @@ public class PlayerControlla : MonoBehaviour
         lastVelocity = 0;
         currentVelocity = 0;
         playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        targetcontrolla.target(false);
     }
 
     private void setAnimation()

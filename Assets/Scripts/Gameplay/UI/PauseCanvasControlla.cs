@@ -7,6 +7,7 @@ public class PauseCanvasControlla : MonoBehaviour {
 
     public Button resume, relaunch, exit;
     public LevelManager levelmanager;
+    public TargetControlla targetcontrolla;
 
     // Use this for initialization
     void Start () {
@@ -14,11 +15,13 @@ public class PauseCanvasControlla : MonoBehaviour {
         relaunch.onClick.AddListener(RelaunchOnClick);
         exit.onClick.AddListener(ExitOnClick);
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
     }
 
     private void ResumeOnClick()
     {
         levelmanager.setPaused(false);
+        targetcontrolla.target(true);
     }
 
     private void RelaunchOnClick()

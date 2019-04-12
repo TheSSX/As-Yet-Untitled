@@ -16,6 +16,8 @@ public class ShopMenu : MonoBehaviour {
         launchers.onClick.AddListener(LaunchersOnClick);
         guns.onClick.AddListener(GunsOnClick);
         exit.onClick.AddListener(ExitOnClick);
+
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
     }
 
     private void SkinsOnClick()

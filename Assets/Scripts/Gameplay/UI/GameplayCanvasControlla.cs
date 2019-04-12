@@ -8,20 +8,24 @@ public class GameplayCanvasControlla : MonoBehaviour {
     public GameObject player;
     public PlayerControlla playercontroller;
     public LevelManager levelmanager;
+    public TargetControlla target;
+    public GunControlla gun;
 
     public Button pause, settings;
 
     public Image aboveScreen;
-    public Text heightAboveScreenText, heightText, distanceText, powerText;
+    public Text heightAboveScreenText, heightText, distanceText, powerText, ammoText;
 
     public float height;
-    public float distance; 
+    public float distance;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
         playercontroller = player.GetComponent<PlayerControlla>();
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        target = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
+        gun = GameObject.Find("GunCollisionDetector").GetComponent<GunControlla>();
 
         aboveScreen.enabled = false;
         heightAboveScreenText.enabled = false;
@@ -39,6 +43,11 @@ public class GameplayCanvasControlla : MonoBehaviour {
             renderAboveScreen();
             updateDistance();
         }     		
+    }
+
+    public void newAmmoText(int x)
+    {
+        ammoText.text = "Ammo: " + x.ToString();
     }
 
     public void displayPower(float power)
@@ -104,6 +113,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
     private void PauseOnClick()
     {
         levelmanager.setPaused(true);
+        target.target(false);
     }
 
     public float getDistance()
