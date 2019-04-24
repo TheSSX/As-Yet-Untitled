@@ -37,7 +37,7 @@ public class HazardCollisionDetector : MonoBehaviour {
             }
             else if (other.tag == "Pufferfish")
             {
-                rgd.AddForce(new Vector2(4, 0.5f) * 160, ForceMode2D.Impulse);
+                rgd.AddForce(new Vector2(4, 0.5f) * 130, ForceMode2D.Impulse);
                 playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 1.8f);
                 levelmanager.addEnemy();
             }
@@ -51,6 +51,12 @@ public class HazardCollisionDetector : MonoBehaviour {
             {
                 rgd.AddForce(new Vector2(4, 0.5f) * 90, ForceMode2D.Impulse);
                 playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 1.1f);
+                levelmanager.addEnemy();
+            }
+            else if (other.tag == "Bomb")
+            {
+                rgd.AddForce(new Vector2(4, 0.5f) * 160, ForceMode2D.Impulse);
+                playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 2.5f);
                 levelmanager.addEnemy();
             }
 

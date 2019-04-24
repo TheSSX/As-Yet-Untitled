@@ -35,5 +35,10 @@ public class JetpackMan : MonoBehaviour {
             jetanimator.SetBool("launch", true);
             transform.position = new Vector2(transform.position.x, transform.position.y + 1);
         }
+
+        if (transform.position.y > 120)
+        {
+            Destroy(this.gameObject);
+        }
 	}
 }

@@ -251,6 +251,7 @@
     <Compile Include="Assets\Scripts\Gameplay\Enemies\Astronaut.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\JetpackMan.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\Pufferfish.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\SpinningObject.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Hazards\Hazard.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Launcher\BarrelSkinSelector.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Launcher\CannonControlla.cs" />

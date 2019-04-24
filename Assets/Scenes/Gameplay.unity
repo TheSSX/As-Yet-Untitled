@@ -4551,9 +4551,10 @@ MonoBehaviour:
   jet: {fileID: 1812076140806458, guid: 4d10a795ab596624eb6ec6b1605cd2a0, type: 2}
   pufferfish: {fileID: 1178490850361184, guid: 278caeabc97152a41af9a2e1e157e9da, type: 2}
   jetpackman: {fileID: 1450559435703962, guid: 49783da63b9b26a44aae20afcb4660e9, type: 2}
-  astronaut: {fileID: 1199555596068744, guid: 87131c2f464d0ae4cbb8ba8ec4098ccf, type: 2}
+  astronaut: {fileID: 1820489931915418, guid: 87131c2f464d0ae4cbb8ba8ec4098ccf, type: 2}
   money: {fileID: 1309616498339846, guid: 530cfc409ce3ae14bbfe1d4184f10213, type: 2}
   moneybag: {fileID: 1811896870745794, guid: 19471961c4b816a4eb933cb4d625d099, type: 2}
+  bomb: {fileID: 1105016098922830, guid: 4ddb1ff8b3154a44d950ab41a52bc1b1, type: 2}
   levelmanager: {fileID: 0}
 --- !u!4 &1553240676
 Transform:

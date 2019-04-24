@@ -6,7 +6,7 @@ public class ObjectSpawner : MonoBehaviour {
 
     private PlayerControlla playerScript;
 
-    public GameObject floatingspike, groundspike, chomper, jet, pufferfish, jetpackman, astronaut, money, moneybag;
+    public GameObject floatingspike, groundspike, chomper, jet, pufferfish, jetpackman, astronaut, money, moneybag, bomb;
     public LevelManager levelmanager;
     private int counter = 0;
 
@@ -63,6 +63,10 @@ public class ObjectSpawner : MonoBehaviour {
             else if (counter == 420)
             {
                 Instantiate(astronaut, new Vector3(25, Random.Range(78.2f, 106), 1), Quaternion.identity);
+            }
+            else if (counter == 480)
+            {
+                Instantiate(bomb, new Vector3(25, Random.Range(10, 106), 1), Quaternion.identity);
                 counter = 0;
             }
         }

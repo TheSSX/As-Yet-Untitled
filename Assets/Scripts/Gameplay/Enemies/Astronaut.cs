@@ -13,7 +13,6 @@ public class Astronaut : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        //transform.Rotate(0, 0, -10);
-        transform.position = new Vector2(transform.position.x, ypos);
+        transform.Rotate(0, 0, 10);
     }
 }
