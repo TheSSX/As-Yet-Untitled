@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 10
+  controlID: 48
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 24
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 25
+  controlID: 12
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -370,23 +370,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 92f9f6ff6eb3fbff32b4fbff72b6fbff76b6fbff7494fcff0e96fcffcc1afeff525bfeffe0b0feff62e2feff30ecfeff1000ffff6841ffffda5effff6ef3ffff98fbffff00000000502e0000622e0000ba2e0000362f0000502f00006c2f0000ac540000045500003455000080550000c8740000d89f00006eca00008aca000068e00000
+    m_SelectedIDs: 70300000
+    m_LastClickedID: 12400
+    m_ExpandedIDs: 4e15fcff823ffcffa085fdffc6f5ffff98fbffff0000000070300000d230000016310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GunCollisionDetector
-      m_OriginalName: GunCollisionDetector
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -567240
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -423,14 +423,14 @@ MonoBehaviour:
     height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 8957.715002699999
+  lastFramingTime: 7968.748733644877
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.47478443, y: 1.0170228, z: 21.752302}
+    m_Target: {x: 373.8908, y: 721.3896, z: 0}
     speed: 2
-    m_Value: {x: -0.47478443, y: 1.0170228, z: 21.752302}
+    m_Value: {x: 373.8908, y: 721.3896, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -458,9 +458,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.10504
+    m_Target: 567.6541
     speed: 2
-    m_Value: 12.10504
+    m_Value: 567.6541
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -615,19 +615,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Gameplay/Player
+    - Assets/Prefabs/Cash
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/Gameplay/Player
+  - Assets/Prefabs/Cash
   m_LastFoldersGridSize: 96
   m_LastProjectPath: U:\Unity\As Yet Untitled
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 289}
-    m_SelectedIDs: ea290000
-    m_LastClickedID: 10730
-    m_ExpandedIDs: 0000000062290000b6290000342a0000422a0000822a0000862a0000942a0000b62a0000e62a0000162b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: 72610000
+    m_LastClickedID: 24946
+    m_ExpandedIDs: 0000000068290000be2900003c2a00004a2a00008a2a00008e2a00009c2a0000be2a0000ee2a00001e2b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -655,7 +655,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000062290000b6290000422a0000822a0000942a0000b62a0000e62a0000162b0000
+    m_ExpandedIDs: 0000000068290000be2900003c2a00004a2a00008a2a00008e2a00009c2a0000be2a0000ee2a00001e2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,10 +680,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 76080000
-    m_LastClickedInstanceID: 2166
+    m_SelectedInstanceIDs: 16310000
+    m_LastClickedInstanceID: 12566
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000842f00008e550000383d0000ea2e0000f62a0000a0290000ec370000042b0000dc2a0000
+    m_ExpandedInstanceIDs: c6230000842f00008e550000383d0000ea2e0000f62a0000a0290000ec370000042b0000dc2a00002438000054610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
