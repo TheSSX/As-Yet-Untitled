@@ -13,8 +13,11 @@ public class GameplayCanvasControlla : MonoBehaviour {
 
     public Button pause, settings;
 
-    public Image aboveScreen;
+    public Image aboveScreen, selectedGun;
     public Text heightAboveScreenText, heightText, distanceText, powerText, ammoText;
+
+    [SerializeField]
+    private Sprite[] gunsprites;
 
     public float height;
     public float distance;
@@ -25,7 +28,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         playercontroller = player.GetComponent<PlayerControlla>();
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         target = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
-        gun = GameObject.Find("GunCollisionDetector").GetComponent<GunControlla>();
+        gun = GameObject.Find("Gun").GetComponent<GunControlla>();        
 
         aboveScreen.enabled = false;
         heightAboveScreenText.enabled = false;
@@ -45,9 +48,39 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }     		
     }
 
-    public void newAmmoText(int x)
+    public void setAmmo(int x)
     {
         ammoText.text = "Ammo: " + x.ToString();
+    }
+
+    public void setGun(string x, int y)
+    {
+        ammoText.text = "Ammo: " + y.ToString();
+
+        if (x == "Pistol")
+        {
+            selectedGun.sprite = gunsprites[0];
+        } 
+        else if (x == "Shotgun")
+        {
+            selectedGun.sprite = gunsprites[1];
+        }
+        else if (x == "Rifle")
+        {
+            selectedGun.sprite = gunsprites[2];
+        }
+        else if (x == "Sniper Rifle")
+        {
+            selectedGun.sprite = gunsprites[3];
+        }
+        else if (x == "Rocket Launcher")
+        {
+            selectedGun.sprite = gunsprites[4];
+        }
+        else
+        {
+            selectedGun.sprite = gunsprites[5];
+        }
     }
 
     public void displayPower(float power)

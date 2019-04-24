@@ -25,7 +25,6 @@ public class PlayerControlla : MonoBehaviour
 
     [SerializeField]
     private PolygonCollider2D[] colliders;
-    
 
     // Use this for initialization
     void Start()
@@ -38,6 +37,7 @@ public class PlayerControlla : MonoBehaviour
         playerRenderer = GetComponent<Renderer>();
         cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
         targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
+
         targetcontrolla.target(true);
 
         powermod = basicCannonmod;
@@ -62,9 +62,7 @@ public class PlayerControlla : MonoBehaviour
 
         if (!hasFired && getReadyToFire())
         {
-            hasFired = true;
-            playerRenderer.enabled = true;
-            playerAnimation.SetBool("hasFired", true);
+            hasFired = true;           
         }
         else
         {
@@ -199,17 +197,24 @@ public class PlayerControlla : MonoBehaviour
             //When cannon upgrades, the first number will be the only change
 			currentVelocity = (25 + angle / 20) * power * (powermod/6);
 
-            power = 0;
             playerRenderer.enabled = true;
+            playerAnimation.SetBool("hasFired", true);
+            power = 0;
+
             return true;
         }
 
         return false;
     }
 
+    public void setCurrentVelocity(float x)
+    {
+        currentVelocity = x;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        lastVelocity = currentVelocity;
+        //lastVelocity = currentVelocity;
 
         if (other.tag == "Ground" && currentVelocity >= 0.5f && !isTouchingGround)
         {
@@ -253,16 +258,11 @@ public class PlayerControlla : MonoBehaviour
             freeze();
             levelmanager.showResults();
         }
-
-        if (currentVelocity == lastVelocity && isTouchingGround)
-        {
-            standUp();
-        }
     }
 
     private void freeze()
     {
-        lastVelocity = 0;
+        //lastVelocity = 0;
         currentVelocity = 0;
         playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         targetcontrolla.target(false);

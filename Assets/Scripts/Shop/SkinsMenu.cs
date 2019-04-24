@@ -6,22 +6,23 @@ using UnityEngine.UI;
 public class SkinsMenu : MonoBehaviour {
 
     public Button bearskin, athlete, back;
-	public Text athletelocked, athleteprice;
+    public Image athleteimage;
+    public Text athletelocked, athleteprice;
+
     public GameObject mainmenu;
     public DataHolder dataholder;
-    public LevelManager.GameData data;
-    public Image athleteimage;
-	private Color green;
+
+    public LevelManager.GameData data;       
+
+    public ShopMenu.Purchase[] purchases;
 
     // Use this for initialization
     void Start () {
 
         dataholder = GameObject.Find("DataHolder").GetComponent<DataHolder>();
         athleteimage = GameObject.Find("AthleteImage").GetComponent<Image>();
-		athletelocked = GameObject.Find ("AthleteLocked").GetComponent<Text>();
-		athleteprice = GameObject.Find ("AthletePrice").GetComponent<Text>();
-
-		green = new Color (0, 1, 0, 1);
+        athletelocked = GameObject.Find("AthleteLocked").GetComponent<Text>();
+        athleteprice = GameObject.Find("AthletePrice").GetComponent<Text>();
 
         bearskin.onClick.AddListener(BearskinOnClick);
         athlete.onClick.AddListener(AthleteOnClick);
@@ -33,41 +34,23 @@ public class SkinsMenu : MonoBehaviour {
     public void setValues(LevelManager.GameData x)
     {
         data = x;
-        transparentImages();
-    }
 
-    //Need to change this to apply to all applicable images
-    private void transparentImages()
-    {     
-        if (data.skinUnlocked == 1)
+        if (data.skinUnlocked > 1)
         {
-            Color originalcolour = athleteimage.color;
-            originalcolour.a = 0.5f;
-            athleteimage.color = originalcolour; ;
-        }   
-    }
+            purchases = new ShopMenu.Purchase[data.skinUnlocked - 1];
+            
+            purchases[0] = new ShopMenu.Purchase(athleteimage, athletelocked, athleteprice);
 
-	private void solidImage(Image x)
-	{
-		Color originalcolour = x.color;
-		originalcolour.a = 1;
-		x.color = originalcolour; ;
-	}
+            for (int i = data.skinUnlocked - 2; i >= 0; i--)
+            {
+                purchases[i].unlock();
+            }
+        }
+    }
 	
 	private void BearskinOnClick()
     {
-        int x;
-
-        if (1 < data.skinUnlocked)
-        {
-            x = data.skinUnlocked;
-        }
-        else
-        {
-            x = 1;
-        }
-
-        data = new LevelManager.GameData(data.cash, "bearskin", x, data.barrelskin, data.barrelUnlocked);
+        data = new LevelManager.GameData(data.cash, "bearskin", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
         dataholder.setData(data);
     }
 
@@ -75,19 +58,13 @@ public class SkinsMenu : MonoBehaviour {
     {
 		if (data.cash >= 50000 && data.skinUnlocked < 2)
         {
-            int cash = data.cash - 50000;
-
-            data = new LevelManager.GameData(cash, "athlete", 2, data.barrelskin, data.barrelUnlocked);
+            data = new LevelManager.GameData(data.cash - 50000, "athlete", 2, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
             dataholder.setData(data);
-
-            athletelocked.text = "[Unlocked]";
-            athletelocked.color = green;
-            solidImage(athleteimage);
-            athleteprice.text = "";
+            purchases[0].unlock();
         }
         else if (data.skinUnlocked >= 2)
         {
-            data = new LevelManager.GameData(data.cash, "athlete", data.skinUnlocked, data.barrelskin, data.barrelUnlocked);
+            data = new LevelManager.GameData(data.cash, "athlete", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
             dataholder.setData(data);
         }
     }

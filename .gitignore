@@ -3,3 +3,8 @@
 *.ide
 *.ide-shm
 *.ide-wal
+.vs/As Yet Untitled/v15/Server/sqlite3/storage.ide
+.vs/As Yet Untitled/v15/Server/sqlite3/storage.ide-shm
+.vs/As Yet Untitled/v15/Server/sqlite3/storage.ide-wal
+Temp
+/

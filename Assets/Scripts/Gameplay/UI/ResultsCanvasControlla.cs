@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ResultsCanvasControlla : MonoBehaviour {
 
     public Button relaunch, shop, exit, deletesave;
-    public Text cash;
+    public Text enemieshit, cashthisround, totalcashamount;
     public LevelManager levelmanager;
     public GameObject deletepanel;
 
@@ -47,8 +47,10 @@ public class ResultsCanvasControlla : MonoBehaviour {
         deletepanel.SetActive(false);
     }
 
-    public void displayCash(int x)
+    public void displayStats(int enemies, int thisround, int total)
     {
-        cash.text = "Cash: £" + x.ToString();
+        enemieshit.text = "Enemies hit: " + enemies.ToString();
+        cashthisround.text = "Cash this round: £" + thisround.ToString();
+        totalcashamount.text = "£" + total.ToString();
     }
 }

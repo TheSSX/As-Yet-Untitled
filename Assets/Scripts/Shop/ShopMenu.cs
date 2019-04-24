@@ -10,7 +10,34 @@ public class ShopMenu : MonoBehaviour {
     public Button skins, launchers, guns, exit;
     public GameObject skinsPanel, launchersPanel, gunsPanel;
 
-    public void Start()
+    public struct Purchase
+    {
+        private Image image;
+        private Text locked, price;
+
+        public Purchase(Image x, Text y, Text z)
+        {
+            image = x;
+            locked = y;
+            price = z;
+
+            Color originalcolour = image.color;
+            originalcolour.a = 0.5f;
+            image.color = originalcolour;
+        }
+
+        public void unlock()
+        {
+            Color originalcolour = image.color;
+            originalcolour.a = 1;
+            image.color = originalcolour; ;
+            locked.text = "[Unlocked]";
+            locked.color = new Color(0, 1, 0, 1);
+            price.text = "";
+        }
+    }
+
+    void Start()
     {
         skins.onClick.AddListener(SkinsOnClick);
         launchers.onClick.AddListener(LaunchersOnClick);

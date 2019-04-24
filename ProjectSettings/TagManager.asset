@@ -4,13 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Checkpoint
-  - Layer
   - Ground
   - Launcher
   - FloatingSpikes
   - GroundSpikes
   - Chomper
+  - Jet
+  - Pufferfish
+  - Jetpack Man
+  - Astronaut
   layers:
   - Default
   - TransparentFX

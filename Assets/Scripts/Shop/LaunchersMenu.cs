@@ -6,12 +6,15 @@ using UnityEngine.UI;
 public class LaunchersMenu : MonoBehaviour {
 
 	public Button basic, gold, back;
+    public Image goldimage;
     public Text goldlocked, goldprice;
+
     public GameObject mainmenu;
 	public DataHolder dataholder;
-	public LevelManager.GameData data;
-	public Image goldimage;
-    private Color green;
+
+	public LevelManager.GameData data;	
+
+    private ShopMenu.Purchase[] purchases;
 
     // Use this for initialization
     void Start () {
@@ -21,8 +24,6 @@ public class LaunchersMenu : MonoBehaviour {
         goldlocked = GameObject.Find("GoldLocked").GetComponent<Text>();
         goldprice = GameObject.Find("GoldPrice").GetComponent<Text>();
 
-        green = new Color(0, 1, 0, 1);
-
         basic.onClick.AddListener(BasicOnClick);
 	    gold.onClick.AddListener(GoldOnClick);
 	    back.onClick.AddListener(BackOnClick);
@@ -30,33 +31,25 @@ public class LaunchersMenu : MonoBehaviour {
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
     }
 
-	public void setValues(LevelManager.GameData x)
-	{
-	    data = x;
-	    transparentImages();
-	}
-
-	//Need to change this to apply to all applicable images
-	private void transparentImages()
-	{     
-	    if (data.skinUnlocked == 1)
-	    {
-	        Color originalcolour = goldimage.color;
-	        originalcolour.a = 0.5f;
-	        goldimage.color = originalcolour; ;
-	    }   
-	}
-
-    private void solidImage(Image x)
+    public void setValues(LevelManager.GameData x)
     {
-        Color originalcolour = x.color;
-        originalcolour.a = 1;
-        x.color = originalcolour; ;
+        data = x;
+
+        if (data.barrelUnlocked > 1)
+        {
+            purchases = new ShopMenu.Purchase[data.barrelUnlocked - 1];
+            purchases[0] = new ShopMenu.Purchase(goldimage, goldlocked, goldprice);
+
+            for (int i = data.barrelUnlocked - 2; i >= 0; i--)
+            {
+                purchases[i].unlock();
+            }
+        }
     }
 
     private void BasicOnClick()
 	{
-	    data = new LevelManager.GameData (data.cash, data.currentSkin, data.skinUnlocked, "basic", data.barrelUnlocked);
+	    data = new LevelManager.GameData (data.cash, data.currentSkin, data.skinUnlocked, "basic", data.barrelUnlocked, data.gunname, data.gunsUnlocked);
 	    dataholder.setData(data);
 	}
 
@@ -64,19 +57,13 @@ public class LaunchersMenu : MonoBehaviour {
 	{
 	    if (data.cash >= 50000 && data.barrelUnlocked < 2)
 	    {
-	        int cash = data.cash - 50000;
-
-	        data = new LevelManager.GameData(cash, data.currentSkin, data.skinUnlocked, "gold", 2);
+	        data = new LevelManager.GameData(data.cash - 50000, data.currentSkin, data.skinUnlocked, "gold", 2, data.gunname, data.gunsUnlocked);
 	        dataholder.setData(data);
-
-            goldlocked.text = "[Unlocked]";
-            goldlocked.color = green;
-            solidImage(goldimage);
-            goldprice.text = "";
+            purchases[0].unlock();
         }
         else if (data.barrelUnlocked >= 2)
         {
-            data = new LevelManager.GameData(data.cash, data.currentSkin, data.skinUnlocked, "gold", data.barrelUnlocked);
+            data = new LevelManager.GameData(data.cash, data.currentSkin, data.skinUnlocked, "gold", data.barrelUnlocked, data.gunname, data.gunsUnlocked);
             dataholder.setData(data);
         }
     }

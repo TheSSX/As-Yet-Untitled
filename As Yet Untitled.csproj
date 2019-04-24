@@ -247,6 +247,10 @@
     <Compile Include="Assets\Scripts\Gameplay\Background\scroll.cs" />
     <Compile Include="Assets\Scripts\Gameplay\BelowGroundChecker\BelowGroundChecker.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Camera\CameraControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Cash\CashControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\Astronaut.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\JetpackMan.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\Pufferfish.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Hazards\Hazard.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Launcher\BarrelSkinSelector.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Launcher\CannonControlla.cs" />
@@ -257,6 +261,7 @@
     <Compile Include="Assets\Scripts\Gameplay\Object Destroyer\ObjectDestroyer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Object Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\GunControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player\HazardCollisionDetector.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\PlayerControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\SkinSelector.cs" />
     <Compile Include="Assets\Scripts\Gameplay\UI\DeleteSaveConfirm.cs" />
@@ -265,6 +270,7 @@
     <Compile Include="Assets\Scripts\Gameplay\UI\ResultsCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\SaveLoadSystem\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Shop\DataHolder.cs" />
+    <Compile Include="Assets\Scripts\Shop\GunsMenu.cs" />
     <Compile Include="Assets\Scripts\Shop\LaunchersMenu.cs" />
     <Compile Include="Assets\Scripts\Shop\ShopMenu.cs" />
     <Compile Include="Assets\Scripts\Shop\ShopScript.cs" />

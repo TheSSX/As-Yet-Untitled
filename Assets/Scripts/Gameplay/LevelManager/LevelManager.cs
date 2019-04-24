@@ -10,24 +10,26 @@ public class LevelManager : MonoBehaviour {
     public SkinSelector playerskin;
     public BarrelSkinSelector launcherskin;
 	public PlayerControlla player;
+    public GunControlla guncontrolla;
     public SaveLoad saveload;
     public GameData data;
 
+    private int currentcash, enemieshit;
+
     public struct GameData
     {
-        public int cash;
-        public string currentSkin;
-        public int skinUnlocked;
-        public string barrelskin;
-        public int barrelUnlocked;
+        public int cash, skinUnlocked, barrelUnlocked, gunsUnlocked;
+        public string currentSkin, barrelskin, gunname;
 
-        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin, int newbarrelUnlocked)
+        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin, int newbarrelUnlocked, string newgunname, int newgunsunlocked)
         {
             cash = newcash;
             currentSkin = newskin;
             skinUnlocked = newSkinUnlocked;
             barrelskin = newbarrelskin;
             barrelUnlocked = newbarrelUnlocked;
+            gunname = newgunname;
+            gunsUnlocked = newgunsunlocked;
         }
     }
 
@@ -38,14 +40,18 @@ public class LevelManager : MonoBehaviour {
         playerskin = GameObject.Find("Player").GetComponent<SkinSelector>();
         launcherskin = GameObject.Find("Barrel").GetComponent<BarrelSkinSelector>();
 		player = GameObject.Find ("Player").GetComponent<PlayerControlla>();
+        guncontrolla = GameObject.Find("Gun").GetComponent<GunControlla>();
+        currentcash = 0;
+        enemieshit = 0;
 
         data = saveload.load();
-        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked + " and " + data.barrelskin);       
+        Debug.Log("Read in " + data.cash + " and " + data.currentSkin + " and " + data.skinUnlocked + " and " + data.barrelskin + " and " + data.barrelUnlocked + " and " + data.gunname);       
 
         playerskin.setSkin(data.currentSkin);
         launcherskin.setSkin(data.barrelskin);
-		player.modPower (data.barrelskin);
-
+		player.modPower(data.barrelskin);
+        guncontrolla.setGun(data.gunname);
+       
         paused = false;
         showingResults = false;
         gameplaycanvas = GameObject.Find("GameplayCanvas");
@@ -65,7 +71,7 @@ public class LevelManager : MonoBehaviour {
         
         if (data.cash == -1)
         {
-            data = new GameData(0, "bearskin", 1, "basic", 1);
+            data = new GameData(0, "bearskin", 1, "basic", 1, "Pistol", 1);
             return false;
         }
 
@@ -75,6 +81,16 @@ public class LevelManager : MonoBehaviour {
     public bool isPaused()
     {
         return paused;
+    }
+
+    public void addCash(int x)
+    {
+        currentcash += x;
+    }
+
+    public void addEnemy()
+    {
+        enemieshit += 1;
     }
 
     public bool isShowingResults()
@@ -113,20 +129,16 @@ public class LevelManager : MonoBehaviour {
 
     public void showResults()
     {
-        updateCash();
-        saveGame();
+        currentcash += Mathf.RoundToInt(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance() * 10);
+
         showingResults = true;
         gameplaycanvas.SetActive(false);
         pausecanvas.SetActive(false);
         resultscanvas.SetActive(true);
-        resultscanvas.GetComponent<ResultsCanvasControlla>().displayCash(data.cash);
-    }
+        resultscanvas.GetComponent<ResultsCanvasControlla>().displayStats(enemieshit, currentcash, currentcash += data.cash);
 
-    public void updateCash()
-    {
-        int newcash = data.cash;
-        newcash += Mathf.RoundToInt(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance() * 10);
-        data = new GameData(newcash, data.currentSkin, data.skinUnlocked, data.barrelskin, data.barrelUnlocked);
+        data = new GameData(currentcash, data.currentSkin, data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+        saveGame();       
     }
 
     public void deleteSave()
