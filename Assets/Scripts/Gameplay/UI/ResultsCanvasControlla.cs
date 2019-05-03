@@ -34,7 +34,7 @@ public class ResultsCanvasControlla : MonoBehaviour {
 
     private void ExitOnClick()
     {
-        Application.Quit();
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 
     private void DeleteSaveOnClick()

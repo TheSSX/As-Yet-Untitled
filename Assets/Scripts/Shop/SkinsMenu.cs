@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class SkinsMenu : MonoBehaviour {
 
-    public Button bearskin, athlete, back;
-    public Image athleteimage;
-    public Text athletelocked, athleteprice;
+    public Button bearskin, athlete, racecardriver, ninja, back;
+    public Image athleteimage, racecardriverimage, ninjaimage;
+    public Text athletelocked, racecardriverlocked, ninjalocked, athleteprice, racecardriverprice, ninjaprice;
 
     public GameObject mainmenu;
     public DataHolder dataholder;
@@ -21,11 +21,19 @@ public class SkinsMenu : MonoBehaviour {
 
         dataholder = GameObject.Find("DataHolder").GetComponent<DataHolder>();
         athleteimage = GameObject.Find("AthleteImage").GetComponent<Image>();
+        racecardriverimage = GameObject.Find("RacecarDriverImage").GetComponent<Image>();
+        ninjaimage = GameObject.Find("NinjaImage").GetComponent<Image>();
         athletelocked = GameObject.Find("AthleteLocked").GetComponent<Text>();
+        racecardriverlocked = GameObject.Find("RacecarDriverLocked").GetComponent<Text>();
+        ninjalocked = GameObject.Find("NinjaLocked").GetComponent<Text>();
         athleteprice = GameObject.Find("AthletePrice").GetComponent<Text>();
+        racecardriverprice = GameObject.Find("RacecarDriverPrice").GetComponent<Text>();
+        ninjaprice = GameObject.Find("NinjaPrice").GetComponent<Text>();
 
         bearskin.onClick.AddListener(BearskinOnClick);
         athlete.onClick.AddListener(AthleteOnClick);
+        racecardriver.onClick.AddListener(RacecarDriverOnClick);
+        ninja.onClick.AddListener(NinjaOnClick);
         back.onClick.AddListener(BackOnClick);
 
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
@@ -40,6 +48,16 @@ public class SkinsMenu : MonoBehaviour {
             purchases = new ShopMenu.Purchase[data.skinUnlocked - 1];
             
             purchases[0] = new ShopMenu.Purchase(athleteimage, athletelocked, athleteprice);
+
+            if (data.skinUnlocked > 2)
+            {
+                purchases[1] = new ShopMenu.Purchase(racecardriverimage, racecardriverlocked, racecardriverprice);
+            }
+
+            if (data.skinUnlocked > 2)
+            {
+                purchases[2] = new ShopMenu.Purchase(ninjaimage, ninjalocked, ninjaprice);
+            }
 
             for (int i = data.skinUnlocked - 2; i >= 0; i--)
             {
@@ -65,6 +83,36 @@ public class SkinsMenu : MonoBehaviour {
         else if (data.skinUnlocked >= 2)
         {
             data = new LevelManager.GameData(data.cash, "athlete", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            dataholder.setData(data);
+        }
+    }
+
+    private void RacecarDriverOnClick()
+    {
+        if (data.cash >= 500000 && data.skinUnlocked < 3)
+        {
+            data = new LevelManager.GameData(data.cash - 500000, "racecar driver", 3, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            dataholder.setData(data);
+            purchases[1].unlock();
+        }
+        else if (data.skinUnlocked >= 3)
+        {
+            data = new LevelManager.GameData(data.cash, "racecar driver", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            dataholder.setData(data);
+        }
+    }
+
+    private void NinjaOnClick()
+    {
+        if (data.cash >= 25000000 && data.skinUnlocked < 4)
+        {
+            data = new LevelManager.GameData(data.cash - 25000000, "ninja", 4, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            dataholder.setData(data);
+            purchases[2].unlock();
+        }
+        else if (data.skinUnlocked >= 4)
+        {
+            data = new LevelManager.GameData(data.cash, "ninja", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
             dataholder.setData(data);
         }
     }

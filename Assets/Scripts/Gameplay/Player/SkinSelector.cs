@@ -6,7 +6,7 @@ public class SkinSelector : MonoBehaviour {
 
     public Transform playersize;
     public Animator playerAnimator;
-    public AnimatorOverrideController athlete;
+    public AnimatorOverrideController athlete, racecardriver, ninja;
     public RuntimeAnimatorController bearskin;
 
     // Use this for initialization
@@ -26,6 +26,16 @@ public class SkinSelector : MonoBehaviour {
         {
             playerAnimator.runtimeAnimatorController = athlete;
             playersize.localScale = new Vector3(1, 1, 1);
+        }
+        else if (x == "racecar driver")
+        {
+            playerAnimator.runtimeAnimatorController = racecardriver;
+            playersize.localScale = new Vector3(1, 1, 1);
+        }
+        else if (x == "ninja")
+        {
+            playerAnimator.runtimeAnimatorController = ninja;
+            playersize.localScale = new Vector3(1.2f, 1.2f, 1.2f);
         }
     }
 }

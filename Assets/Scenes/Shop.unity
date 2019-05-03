@@ -1607,8 +1607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000033379, y: 12}
-  m_SizeDelta: {x: 43.609, y: 123.4}
+  m_AnchoredPosition: {x: -0.000012159, y: 17.575}
+  m_SizeDelta: {x: 50.1, y: 141.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325083604
 MonoBehaviour:
@@ -1629,7 +1629,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300012, guid: 62d81b17a2ef27b488f648ca3e571db4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2512,10 +2512,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bearskin: {fileID: 860382194}
   athlete: {fileID: 1178400266}
+  racecardriver: {fileID: 792035224}
+  ninja: {fileID: 224210042}
   back: {fileID: 1490428544}
   athleteimage: {fileID: 0}
+  racecardriverimage: {fileID: 0}
+  ninjaimage: {fileID: 0}
   athletelocked: {fileID: 0}
+  racecardriverlocked: {fileID: 0}
+  ninjalocked: {fileID: 0}
   athleteprice: {fileID: 0}
+  racecardriverprice: {fileID: 0}
+  ninjaprice: {fileID: 0}
   mainmenu: {fileID: 814064885}
   dataholder: {fileID: 0}
 --- !u!114 &607131667
@@ -5043,8 +5051,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000033379, y: 12}
-  m_SizeDelta: {x: 43.609, y: 123.4}
+  m_AnchoredPosition: {x: -0.0000076294, y: 15.4}
+  m_SizeDelta: {x: 64.74, y: 138.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087166190
 MonoBehaviour:
@@ -5065,7 +5073,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300014, guid: 50ff55647d4a9894f84c9e131a5b45dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

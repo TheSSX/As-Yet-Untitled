@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseCanvasControlla : MonoBehaviour {
 
     public Button resume, relaunch, exit;
+    private SoundSystem soundsystem;
     public LevelManager levelmanager;
     public TargetControlla targetcontrolla;
 
@@ -16,6 +18,7 @@ public class PauseCanvasControlla : MonoBehaviour {
         exit.onClick.AddListener(ExitOnClick);
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
+        soundsystem = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
     }
 
     private void ResumeOnClick()
@@ -31,7 +34,17 @@ public class PauseCanvasControlla : MonoBehaviour {
 
     private void ExitOnClick()
     {
-        levelmanager.saveGame();
-        Application.Quit();
+        Time.timeScale = 1;
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    public void switchMusic()
+    {
+        soundsystem.toggleMusic();
+    }
+
+    public void switchSoundEffects()
+    {
+        soundsystem.toggleSoundEffects();
     }
 }

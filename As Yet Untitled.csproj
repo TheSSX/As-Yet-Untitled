@@ -269,6 +269,10 @@
     <Compile Include="Assets\Scripts\Gameplay\UI\GameplayCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\UI\PauseCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\UI\ResultsCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\Background\MenuScroll.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MainMenuControlla.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SoundSystem.cs" />
     <Compile Include="Assets\Scripts\SaveLoadSystem\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Shop\DataHolder.cs" />
     <Compile Include="Assets\Scripts\Shop\GunsMenu.cs" />

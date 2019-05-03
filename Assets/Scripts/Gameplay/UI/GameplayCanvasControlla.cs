@@ -11,7 +11,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
     public TargetControlla target;
     public GunControlla gun;
 
-    public Button pause, settings;
+    public Button pause;
 
     public Image aboveScreen, selectedGun;
     public Text heightAboveScreenText, heightText, distanceText, powerText, ammoText;

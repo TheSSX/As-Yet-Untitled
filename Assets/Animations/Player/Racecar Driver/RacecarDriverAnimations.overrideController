@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: RacecarDriverAnimations
+  m_Controller: {fileID: 9100000, guid: 7b859a967d8125d439beefac9b25db57, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6c9d4b8a1904c5f41a6af08d5eccfc4f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bd2ee3f77ecab1549aac8cb591ba671c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c4ac13e3e5b0e654389dece237a4ff9b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3279cb272e83b9c4d9cdd74ed990392d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e1c0f6cc0882bb4faa445204c7c70d0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1c77a6d21239d9e41913167c9a7c11e0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 590431616a6c61b459a516264bac73fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ff3a508dc6a35b140bd4788d91c437cb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a4cdffd3f97916d4496b61be4cdb271f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f48fdd5906fac2e4a85deffee6b384c8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2e52d3414e92b694d941057b0b560399, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2af46ba6710c7764dadb745826ecf100, type: 2}
