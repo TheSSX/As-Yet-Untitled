@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: f1d15c8723826af49bba8dd1eeed32ae
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mr. President_0
+    21300002: Mr. President_1
+    21300004: Mr. President_2
+    21300006: Mr. President_3
+    21300008: Mr. President_4
+    21300010: Mr. President_5
+    21300012: Mr. President_6
+    21300014: Mr. President_7
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mr. President_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.318988, y: 0.43032822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 765
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.51362234, y: 0.5193049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 784
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.64153934, y: 0.4966407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_3
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 784
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.491699, y: 0.5062061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 273
+        height: 416
+      alignment: 9
+      pivot: {x: 0.2616877, y: 0.18814574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 13
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.43458816, y: 0.38791287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 3
+        width: 311
+        height: 416
+      alignment: 9
+      pivot: {x: 0.50200844, y: 0.41574356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mr. President_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3
+        width: 300
+        height: 416
+      alignment: 9
+      pivot: {x: 0.52811766, y: 0.48406804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

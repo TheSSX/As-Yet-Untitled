@@ -238,24 +238,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Background\scroll.cs" />
-    <Compile Include="Assets\Scripts\BelowGroundChecker\BelowGroundChecker.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraControlla.cs" />
-    <Compile Include="Assets\Scripts\CoinScript.cs" />
-    <Compile Include="Assets\Scripts\Hazards\Hazard.cs" />
-    <Compile Include="Assets\Scripts\Launcher\CannonControlla.cs" />
-    <Compile Include="Assets\Scripts\Launcher\MoveAway.cs" />
-    <Compile Include="Assets\Scripts\LevelManager\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Object Destroyer\ObjectDestroyer.cs" />
-    <Compile Include="Assets\Scripts\Object Spawner\ObjectSpawner.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerControlla.cs" />
-    <Compile Include="Assets\Scripts\Player\SkinSelector.cs" />
-    <Compile Include="Assets\Scripts\UI\GameplayCanvasControlla.cs" />
-    <Compile Include="Assets\Scripts\UI\PauseCanvasControlla.cs" />
-    <Compile Include="Assets\Scripts\UI\ResultsCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Background\scroll.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\BelowGroundChecker\BelowGroundChecker.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Camera\CameraControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Cash\CashControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\Astronaut.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\JetpackMan.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\Pufferfish.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\SpinningObject.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Hazards\Hazard.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Launcher\BarrelSkinSelector.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Launcher\CannonControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Launcher\MoveAway.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Launcher\StandChanger.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\LevelManager\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\LevelManager\TargetControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Object Destroyer\ObjectDestroyer.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Object Spawner\ObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player\GunControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player\HazardCollisionDetector.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player\PlayerControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player\SkinSelector.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\UI\DeleteSaveConfirm.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\UI\GameplayCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\UI\PauseCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\UI\ResultsCanvasControlla.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\Background\MenuScroll.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MainMenuControlla.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SoundSystem.cs" />
+    <Compile Include="Assets\Scripts\SaveLoadSystem\SaveLoad.cs" />
+    <Compile Include="Assets\Scripts\Shop\DataHolder.cs" />
+    <Compile Include="Assets\Scripts\Shop\GunsMenu.cs" />
+    <Compile Include="Assets\Scripts\Shop\LaunchersMenu.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopMenu.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopScript.cs" />
+    <Compile Include="Assets\Scripts\Shop\SkinsMenu.cs" />
+    <Compile Include="Assets\ZFrame\Example\Example_ZPlayerPrefs.cs" />
+    <Compile Include="Assets\ZFrame\ZPlayerPrefs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
+    <None Include="Assets\ZFrame\Readme\readme_ZPlayerPrefs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
