@@ -326,6 +326,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
+    <None Include="Assets\ZFrame\Readme\readme_ZPlayerPrefs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
