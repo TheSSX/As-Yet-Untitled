@@ -15,7 +15,8 @@ public class DeleteSaveConfirm : MonoBehaviour {
         no.onClick.AddListener(NoOnClick);
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         results = GameObject.Find("ResultsCanvas").GetComponent<ResultsCanvasControlla>();
-	}
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+    }
 	
 	private void YesOnClick()
     {

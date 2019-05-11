@@ -132,3 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69710660ca72c84b83913637f6f5b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameplay: {fileID: 0}
+  mainmenu: {fileID: 0}
+  shop: {fileID: 0}
+  sounds: []

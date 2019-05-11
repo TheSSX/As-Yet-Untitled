@@ -77,7 +77,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         {
             selectedGun.sprite = gunsprites[4];
         }
-        else
+        else if (x == "Golden Deagle")
         {
             selectedGun.sprite = gunsprites[5];
         }

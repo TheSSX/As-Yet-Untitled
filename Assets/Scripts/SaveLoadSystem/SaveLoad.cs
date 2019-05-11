@@ -20,9 +20,10 @@ public class SaveLoad : MonoBehaviour {
         ZPlayerPrefs.SetInt("BarrelUnlocked", data.barrelUnlocked);
         ZPlayerPrefs.SetString("GunName", data.gunname);
         ZPlayerPrefs.SetInt("GunsUnlocked", data.gunsUnlocked);
+        ZPlayerPrefs.SetFloat("FurthestDistance", data.furthestDistance);
 
         ZPlayerPrefs.Save();
-        Debug.Log("Saved data with cash at £" + data.cash + ", skin at " + data.currentSkin + ", skins unlocked at " + data.skinUnlocked + ", barrel skin as " + data.barrelskin + ", barrels unlocked at " + data.barrelUnlocked + ", gun as " + data.gunname + " and guns unlocked at " + data.gunsUnlocked);
+        Debug.Log("Saved data with cash at £" + data.cash + ", skin at " + data.currentSkin + ", skins unlocked at " + data.skinUnlocked + ", barrel skin as " + data.barrelskin + ", barrels unlocked at " + data.barrelUnlocked + ", gun as " + data.gunname + ", guns unlocked at " + data.gunsUnlocked + " and furthest distance at " + data.furthestDistance);
     }
 
     public LevelManager.GameData load()
@@ -34,8 +35,9 @@ public class SaveLoad : MonoBehaviour {
         int barrelUnlocked = ZPlayerPrefs.GetInt("BarrelUnlocked", 1);
         string gunname = ZPlayerPrefs.GetString("GunName", "Pistol");
         int gunsUnlocked = ZPlayerPrefs.GetInt("GunsUnlocked", 1);
+        float furthestDistance = ZPlayerPrefs.GetFloat("FurthestDistance", 0);
 
-        data = new LevelManager.GameData(cash, skin, skinUnlocked, barrelskin, barrelUnlocked, gunname, gunsUnlocked);
+        data = new LevelManager.GameData(cash, skin, skinUnlocked, barrelskin, barrelUnlocked, gunname, gunsUnlocked, furthestDistance);
         return data;
     }
 

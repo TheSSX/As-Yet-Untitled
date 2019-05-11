@@ -243,6 +243,7 @@
     <Compile Include="Assets\Scripts\Gameplay\Camera\CameraControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Cash\CashControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\Astronaut.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Enemies\Jet.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\JetpackMan.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\Pufferfish.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemies\SpinningObject.cs" />
@@ -264,8 +265,10 @@
     <Compile Include="Assets\Scripts\Gameplay\UI\PauseCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\Gameplay\UI\ResultsCanvasControlla.cs" />
     <Compile Include="Assets\Scripts\MainMenu\Background\MenuScroll.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\InstructionsMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuControlla.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\Sound.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SoundSystem.cs" />
     <Compile Include="Assets\Scripts\SaveLoadSystem\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Shop\DataHolder.cs" />

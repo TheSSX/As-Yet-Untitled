@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 7ca4d36af320cef49aab0daafc26b8e8
+guid: d7c2582d73faffc4c8f7a640c4ba3330
 TextureImporter:
   fileIDToRecycleName:
     21300000: Launcher sprites_0
     21300002: Launcher sprites_1
     21300004: Launcher sprites_2
-    21300006: Launcher sprites_4
+    21300006: Launcher sprites_3
+    21300008: Launcher sprites_4
+    21300010: Launcher sprites_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,7 +110,7 @@ TextureImporter:
         serializedVersion: 2
         x: 6
         y: 418
-        width: 284
+        width: 283
         height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,8 +126,8 @@ TextureImporter:
         y: 412
         width: 226
         height: 213
-      alignment: 9
-      pivot: {x: 0.5290252, y: 0.501621}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,6 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+      name: Launcher sprites_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 208
+        width: 259
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: Launcher sprites_4
       rect:
         serializedVersion: 2
@@ -152,6 +168,20 @@ TextureImporter:
         y: 3
         width: 315
         height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Launcher sprites_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 5
+        width: 298
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

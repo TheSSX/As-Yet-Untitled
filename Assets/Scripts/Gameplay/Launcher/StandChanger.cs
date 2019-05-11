@@ -41,5 +41,18 @@ public class StandChanger : MonoBehaviour {
             launchersize.localScale = new Vector3(1.2f, 1.2f, 1.2f);
             transform.position = new Vector2(transform.position.x, transform.position.y + 1);
         }
+        else if (x == "missile launcher")
+        {
+            standRenderer.sprite = sprites[4];
+            launchersize.localScale = new Vector3(2, 2, 2);
+            transform.position = new Vector2(transform.position.x, transform.position.y + 1);
+        }
+
+        else if (x == "diamond")
+        {
+            standRenderer.sprite = sprites[5];
+            launchersize.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            transform.position = new Vector2(transform.position.x, transform.position.y + 1);
+        }
     }
 }

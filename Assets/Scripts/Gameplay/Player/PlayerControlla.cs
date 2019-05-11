@@ -22,6 +22,8 @@ public class PlayerControlla : MonoBehaviour
 	private const int goldCannonmod = 10;
 	private const int tankmod = 14;
 	private const int samturretmod = 22;
+	private const int missilelaunchermod = 26;
+	private const int diamondmod = 30;
 
 	private int powermod;   
 
@@ -56,6 +58,11 @@ public class PlayerControlla : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < -6)
+        {
+            standUp();
+        }
+
         //Stops player from getting stuck in the ground
         if (isTouchingGround)
         {
@@ -127,6 +134,14 @@ public class PlayerControlla : MonoBehaviour
         else if (x == "SAM turret")
         {
             powermod = samturretmod;
+        }
+        else if (x == "missile launcher")
+        {
+            powermod = missilelaunchermod;
+        }
+        else if (x == "diamond")
+        {
+            powermod = diamondmod;
         }
     }
 
@@ -302,7 +317,7 @@ public class PlayerControlla : MonoBehaviour
     {
         freeze();
         transform.eulerAngles = new Vector3(0, 0, 0);
-        transform.position = new Vector3(transform.position.x, -1.63f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, -1.3f, transform.position.z);
         levelmanager.showResults();
     }
 

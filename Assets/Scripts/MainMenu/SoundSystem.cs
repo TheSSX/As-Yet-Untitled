@@ -1,40 +1,126 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using System;
 
 public class SoundSystem : MonoBehaviour {
 
-    private bool soundeffects;
-    private AudioSource music;
+    public static SoundSystem ss;
+
+    public static bool soundeffectsmute, musicmute;
+    public static string scene = "empty";
+    public AudioSource musicclip;
+
+    public AudioClip gameplay, mainmenu;
+
+    public AudioClip[] shopmusic;
+
+    public Sound[] sounds;
 
 	// Use this for initialization
 	void Start () {
-        soundeffects = true;
-        music = GetComponent<AudioSource>();
-	}
-	
-	public bool getSoundEffects()
-    {
-        return soundeffects;
+
+        if (ss != null)
+        {
+            DestroyObject(gameObject);
+        }
+        else
+        {
+            ss = this;
+        }
+
+        DontDestroyOnLoad(this);
+
+        scene = SceneManager.GetActiveScene().name;
+        soundeffectsmute = false;
+        musicmute = false;
+        musicclip = GetComponent<AudioSource>();
+
+        playMusic(scene);
+
+        foreach (Sound s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+        }
     }
 
-    public void toggleSoundEffects()
+    public SoundSystem getInstance()
     {
-        soundeffects = !soundeffects;
+        return ss;
+    }
 
-        //Object searching code courtesy of user jonc113 in Unity Forums (modified). Link: https://answers.unity.com/questions/329395/how-to-get-all-gameobjects-in-scene.html
-        GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
-        foreach (GameObject obj in allObjects)
+    public void toggleSoundEffects(bool x)
+    {
+        soundeffectsmute = x;
+    }
+
+    public void toggleMusic(bool x)
+    {
+        musicmute = x;
+
+        musicclip.mute = musicmute;
+    }
+
+    public void playSound(string name)
+    {
+        if (!soundeffectsmute)
         {
-            if (obj.activeInHierarchy && obj.GetComponent<AudioSource>() != null && obj.name != "SoundSystem")
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+            if (s == null)
             {
-                obj.GetComponent<AudioSource>().mute = soundeffects;
+                Debug.Log("Couldn't find " + name);
+            }
+            else
+            {
+                s.source.Play();
             }
         }
     }
 
-    public void toggleMusic()
+    public void playMusic(string name)
     {
-        music.mute = !music.mute;
+        if (!musicmute)
+        {
+            scene = name;
+
+            if (scene == "MainMenu")
+            {
+                musicclip.clip = mainmenu;
+            }
+            else if (scene == "Gameplay")
+            {
+                musicclip.clip = gameplay;
+            }
+            else if (scene == "Shop")
+            {
+                musicclip.clip = gameplay;
+            }
+
+            musicclip.Play();
+        }
+    }
+
+    public bool isMusicMuted()
+    {
+        return musicmute;
+    }
+
+    public bool isSoundEffectsMuted()
+    {
+        return soundeffectsmute;
+    }
+
+    public void playShopMusic()
+    {
+        if (!musicmute)
+        {
+            int random = UnityEngine.Random.Range(0, 5);
+            musicclip.clip = shopmusic[random];
+            musicclip.Play();
+        }
     }
 }

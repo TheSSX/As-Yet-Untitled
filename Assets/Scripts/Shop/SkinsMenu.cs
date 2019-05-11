@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SkinsMenu : MonoBehaviour {
 
-    public Button bearskin, athlete, racecardriver, ninja, boxer, mrpresident, back;
+    public Button bearskin, athlete, racecardriver, ninja, boxer, mrpresident, back, current;
     public Image athleteimage, racecardriverimage, ninjaimage, boxerimage, mrpresidentimage;
     public Text athletelocked, racecardriverlocked, ninjalocked, boxerlocked, mrpresidentlocked, athleteprice, racecardriverprice, ninjaprice, boxerprice, mrpresidentprice;
 
@@ -15,6 +15,7 @@ public class SkinsMenu : MonoBehaviour {
     public LevelManager.GameData data;       
 
     public ShopMenu.Purchase[] purchases;
+    public SoundSystem ss;
 
     // Use this for initialization
     void Start () {
@@ -45,6 +46,7 @@ public class SkinsMenu : MonoBehaviour {
         back.onClick.AddListener(BackOnClick);
 
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
     }
 
     public void setValues(LevelManager.GameData x)
@@ -82,11 +84,47 @@ public class SkinsMenu : MonoBehaviour {
                 purchases[i].unlock();
             }
         }
+
+        if (data.currentSkin == "bearskin")
+        {
+            current = bearskin;
+        }
+        else if (data.currentSkin == "athlete")
+        {
+            current = athlete;
+        }
+        else if (data.currentSkin == "racecar driver")
+        {
+            current = racecardriver;
+        }
+        else if (data.currentSkin == "ninja")
+        {
+            current = ninja;
+        }
+        else if (data.currentSkin == "boxer")
+        {
+            current = boxer;
+        }
+        else if (data.currentSkin == "mr president")
+        {
+            current = mrpresident;
+        }
+
+        current.GetComponent<Image>().color = Color.cyan;
     }
-	
-	private void BearskinOnClick()
+
+    private void replaceCurrentButton(Button x)
     {
-        data = new LevelManager.GameData(data.cash, "bearskin", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+        current.GetComponent<Image>().color = Color.white;
+        current = x;
+        current.GetComponent<Image>().color = Color.cyan;
+    }
+
+    private void BearskinOnClick()
+    {
+        ss.playSound("menubutton");
+        data = new LevelManager.GameData(data.cash, "bearskin", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+        replaceCurrentButton(bearskin);
         dataholder.setData(data);
     }
 
@@ -94,13 +132,16 @@ public class SkinsMenu : MonoBehaviour {
     {
 		if (data.cash >= 50000 && data.skinUnlocked < 2)
         {
-            data = new LevelManager.GameData(data.cash - 50000, "athlete", 2, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            data = new LevelManager.GameData(data.cash - 50000, "athlete", 2, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(athlete);
             dataholder.setData(data);
             purchases[0].unlock();
         }
         else if (data.skinUnlocked >= 2)
         {
-            data = new LevelManager.GameData(data.cash, "athlete", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            ss.playSound("menubutton");
+            data = new LevelManager.GameData(data.cash, "athlete", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(athlete);
             dataholder.setData(data);
         }
     }
@@ -109,13 +150,16 @@ public class SkinsMenu : MonoBehaviour {
     {
         if (data.cash >= 1000000 && data.skinUnlocked < 3)
         {
-            data = new LevelManager.GameData(data.cash - 1000000, "racecar driver", 3, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            data = new LevelManager.GameData(data.cash - 1000000, "racecar driver", 3, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(racecardriver);
             dataholder.setData(data);
             purchases[1].unlock();
         }
         else if (data.skinUnlocked >= 3)
         {
-            data = new LevelManager.GameData(data.cash, "racecar driver", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            ss.playSound("menubutton");
+            data = new LevelManager.GameData(data.cash, "racecar driver", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(racecardriver);
             dataholder.setData(data);
         }
     }
@@ -124,13 +168,16 @@ public class SkinsMenu : MonoBehaviour {
     {
         if (data.cash >= 25000000 && data.skinUnlocked < 4)
         {
-            data = new LevelManager.GameData(data.cash - 25000000, "ninja", 4, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            data = new LevelManager.GameData(data.cash - 25000000, "ninja", 4, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(ninja);
             dataholder.setData(data);
             purchases[2].unlock();
         }
         else if (data.skinUnlocked >= 4)
         {
-            data = new LevelManager.GameData(data.cash, "ninja", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            ss.playSound("menubutton");
+            data = new LevelManager.GameData(data.cash, "ninja", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(ninja);
             dataholder.setData(data);
         }
     }
@@ -139,13 +186,16 @@ public class SkinsMenu : MonoBehaviour {
     {
         if (data.cash >= 300000000 && data.skinUnlocked < 5)
         {
-            data = new LevelManager.GameData(data.cash - 300000000, "boxer", 5, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            data = new LevelManager.GameData(data.cash - 300000000, "boxer", 5, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(boxer);
             dataholder.setData(data);
             purchases[3].unlock();
         }
         else if (data.skinUnlocked >= 5)
         {
-            data = new LevelManager.GameData(data.cash, "boxer", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            ss.playSound("menubutton");
+            data = new LevelManager.GameData(data.cash, "boxer", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(boxer);
             dataholder.setData(data);
         }
     }
@@ -154,19 +204,23 @@ public class SkinsMenu : MonoBehaviour {
     {
         if (data.cash >= 1500000000 && data.skinUnlocked < 6)
         {
-            data = new LevelManager.GameData(data.cash - 1500000000, "mr president", 6, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            data = new LevelManager.GameData(data.cash - 1500000000, "mr president", 6, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(mrpresident);
             dataholder.setData(data);
             purchases[4].unlock();
         }
         else if (data.skinUnlocked >= 6)
         {
-            data = new LevelManager.GameData(data.cash, "mr president", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+            ss.playSound("menubutton");
+            data = new LevelManager.GameData(data.cash, "mr president", data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            replaceCurrentButton(mrpresident);
             dataholder.setData(data);
         }
     }
 
     private void BackOnClick()
     {
+        ss.playSound("menubutton");
         gameObject.SetActive(false);
         mainmenu.SetActive(true);
     }

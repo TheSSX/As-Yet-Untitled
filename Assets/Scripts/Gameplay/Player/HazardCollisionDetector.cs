@@ -8,6 +8,7 @@ public class HazardCollisionDetector : MonoBehaviour {
     private PlayerControlla playercontrolla;
     private LevelManager levelmanager;
     private int counter;
+    private SoundSystem ss;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,7 @@ public class HazardCollisionDetector : MonoBehaviour {
         playercontrolla = GetComponent<PlayerControlla>();
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         counter = 0;
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
 	}
 
     void Update()
@@ -27,6 +29,19 @@ public class HazardCollisionDetector : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "Ground")
+        {
+            ss.playSound("playerland");
+        }
+        else if (other.tag == "FloatingSpikes" || other.tag == "GroundSpikes")
+        {
+            ss.playSound("spikes");
+        }
+        else if (other.tag == "Chomper")
+        {
+            ss.playSound("swallow");
+        }
+
         if (counter == 60)
         {
             if (other.tag == "Jet")
@@ -37,6 +52,7 @@ public class HazardCollisionDetector : MonoBehaviour {
             }
             else if (other.tag == "Pufferfish")
             {
+                ss.playSound("balloonpop");
                 rgd.AddForce(new Vector2(4, 0.5f) * 130, ForceMode2D.Impulse);
                 playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 1.8f);
                 levelmanager.addEnemy();
@@ -49,12 +65,13 @@ public class HazardCollisionDetector : MonoBehaviour {
             }
             else if (other.tag == "Astronaut")
             {
-                rgd.AddForce(new Vector2(4, 0.5f) * 90, ForceMode2D.Impulse);
+                rgd.AddForce(new Vector2(4, -0.5f) * 90, ForceMode2D.Impulse);
                 playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 1.1f);
                 levelmanager.addEnemy();
             }
             else if (other.tag == "Bomb")
             {
+                ss.playSound("explosion");
                 rgd.AddForce(new Vector2(4, 0.5f) * 160, ForceMode2D.Impulse);
                 playercontrolla.setCurrentVelocity(playercontrolla.getCurrentVelocity() * 2.5f);
                 levelmanager.addEnemy();

@@ -10,6 +10,8 @@ public class MainMenuControlla : MonoBehaviour {
     public Button play, instructions, settings, exit;
     private int counter;
 
+    public SoundSystem ss;
+
 	// Use this for initialization
 	void Start () {
         counter = 0;
@@ -21,6 +23,8 @@ public class MainMenuControlla : MonoBehaviour {
         instructions.onClick.AddListener(InstructionsOnClick);
         settings.onClick.AddListener(SettingsOnClick);
         exit.onClick.AddListener(ExitOnClick);
+
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
     }
 
     // Update is called once per frame
@@ -39,28 +43,34 @@ public class MainMenuControlla : MonoBehaviour {
 
     private void PlayOnClick()
     {
+        ss.playSound("menubutton");
+        ss.playMusic("Gameplay");
         SceneManager.LoadSceneAsync("Gameplay");
     }
 
     private void InstructionsOnClick()
     {
+        ss.playSound("menubutton");
         mainpanel.SetActive(false);
         instructionspanel.SetActive(true);
     }
 
     private void SettingsOnClick()
     {
+        ss.playSound("menubutton");
         mainpanel.SetActive(false);
         settingspanel.SetActive(true);
     }
 
     private void ExitOnClick()
     {
+        ss.playSound("menubutton");
         Application.Quit();
     }
 
     public void back()
     {
+        ss.playSound("menubutton");
         mainpanel.SetActive(true);
         settingspanel.SetActive(false);
         instructionspanel.SetActive(false);

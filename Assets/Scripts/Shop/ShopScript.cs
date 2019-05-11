@@ -8,15 +8,16 @@ public class ShopScript : MonoBehaviour {
     public DataHolder dataholder;
     public Text cash;
     public GameObject shopmenu, skinsmenu, launchersmenu, gunsmenu;
+    private SoundSystem ss;
 
 	// Use this for initialization
 	void Start () {
 
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
         dataholder = GameObject.Find("DataHolder").GetComponent<DataHolder>();
         shopmenu = GameObject.Find("ShopMenu");
         skinsmenu = GameObject.Find("SkinsMenu");
 		launchersmenu = GameObject.Find("LaunchersMenu");
-		gunsmenu = GameObject.Find("GunsMenu");
 		gunsmenu = GameObject.Find("GunsMenu");
 
         skinsmenu.SetActive(false);
@@ -29,6 +30,8 @@ public class ShopScript : MonoBehaviour {
         skinsmenu.transform.SetSiblingIndex(2);
         shopmenu.transform.SetSiblingIndex(3);
         cash.transform.SetAsLastSibling();
+
+        ss.playShopMusic();
     }
 
     public void setValues(LevelManager.GameData data)

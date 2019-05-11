@@ -7,12 +7,18 @@ public class CannonControlla : MonoBehaviour {
     public float angle;
     private Animator cannonAnimation;
     private LevelManager levelmanager;
+    private SoundSystem ss;
+    private BarrelSkinSelector skins;
+    private bool soundplayed;
 
     // Use this for initialization
     void Start () {
         cannonAnimation = GetComponent<Animator>();
         cannonAnimation.SetBool("fired", false);
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
+        skins = GetComponent<BarrelSkinSelector>();
+        soundplayed = false;
     }
 
     // Update is called once per frame
@@ -47,14 +53,22 @@ public class CannonControlla : MonoBehaviour {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !soundplayed)
         {
-            cannonAnimation.SetBool("fired", true);           
+            cannonAnimation.SetBool("fired", true);
+            playSound();
+            soundplayed = true;
         }
     }
 
     public float getAngle()
     {
         return angle;
+    }
+
+    private void playSound()
+    {
+        string sound = skins.sound;
+        ss.playSound(sound);
     }
 }

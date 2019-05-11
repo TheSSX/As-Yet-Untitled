@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour {
     public GunControlla guncontrolla;
     public SaveLoad saveload;
     public GameData data;
+    public SoundSystem ss;
 
     private int currentcash, enemieshit;
 
@@ -20,8 +21,9 @@ public class LevelManager : MonoBehaviour {
     {
         public int cash, skinUnlocked, barrelUnlocked, gunsUnlocked;
         public string currentSkin, barrelskin, gunname;
+        public float furthestDistance;
 
-        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin, int newbarrelUnlocked, string newgunname, int newgunsunlocked)
+        public GameData(int newcash, string newskin, int newSkinUnlocked, string newbarrelskin, int newbarrelUnlocked, string newgunname, int newgunsunlocked, float newFurthestDistance)
         {
             cash = newcash;
             currentSkin = newskin;
@@ -30,12 +32,14 @@ public class LevelManager : MonoBehaviour {
             barrelUnlocked = newbarrelUnlocked;
             gunname = newgunname;
             gunsUnlocked = newgunsunlocked;
+            furthestDistance = newFurthestDistance;
         }
     }
 
     // Use this for initialization
     void Start () {
 
+        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
         saveload = GameObject.Find("SaveLoadSystem").GetComponent<SaveLoad>();
         playerskin = GameObject.Find("Player").GetComponent<SkinSelector>();
         launcherskin = GameObject.Find("Barrel").GetComponent<BarrelSkinSelector>();
@@ -71,7 +75,7 @@ public class LevelManager : MonoBehaviour {
         
         if (data.cash == -1)
         {
-            data = new GameData(0, "bearskin", 1, "basic", 1, "Pistol", 1);
+            data = new GameData(0, "bearskin", 1, "basic", 1, "Pistol", 1, 0);
             return false;
         }
 
@@ -123,21 +127,31 @@ public class LevelManager : MonoBehaviour {
 
     //Autosaves after every launch
     public void relaunch()
-    {    
+    {
         SceneManager.LoadSceneAsync("Gameplay");
     }
 
     public void showResults()
     {
-        currentcash += Mathf.RoundToInt(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance() * 10);
+        float distancethisround = (float)System.Math.Round(gameplaycanvas.GetComponent<GameplayCanvasControlla>().getDistance(), 2);
+        currentcash += Mathf.RoundToInt(distancethisround * 10);
 
         showingResults = true;
         gameplaycanvas.SetActive(false);
         pausecanvas.SetActive(false);
         resultscanvas.SetActive(true);
-        resultscanvas.GetComponent<ResultsCanvasControlla>().displayStats(enemieshit, currentcash, currentcash += data.cash);
 
-        data = new GameData(currentcash, data.currentSkin, data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked);
+        if (distancethisround > data.furthestDistance)
+        {
+            data.furthestDistance = distancethisround;
+            resultscanvas.GetComponent<ResultsCanvasControlla>().displayStats(enemieshit, currentcash, currentcash += data.cash, distancethisround, true);
+        }
+        else
+        {
+            resultscanvas.GetComponent<ResultsCanvasControlla>().displayStats(enemieshit, currentcash, currentcash += data.cash, distancethisround, false);
+        }
+
+        data = new GameData(currentcash, data.currentSkin, data.skinUnlocked, data.barrelskin, data.barrelUnlocked, data.gunname, data.gunsUnlocked, data.furthestDistance);
         saveGame();       
     }
 
