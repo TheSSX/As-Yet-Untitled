@@ -1,5 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 namespace EckTechGames
 {
@@ -18,7 +19,7 @@ namespace EckTechGames
 			if (EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isPlaying)
 			{
 				// Save the scene and the assets.
-				EditorApplication.SaveScene();
+				EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
 				AssetDatabase.SaveAssets();
 			}
 		}

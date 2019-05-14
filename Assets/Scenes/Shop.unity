@@ -333,8 +333,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 198, y: 26.6}
-  m_SizeDelta: {x: 134.61, y: 42.33}
+  m_AnchoredPosition: {x: 235, y: 26.6}
+  m_SizeDelta: {x: 208.61, y: 42.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70194657
 MonoBehaviour:
@@ -481,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201.7, y: 26.965}
-  m_SizeDelta: {x: 139.68, y: 45.48}
+  m_AnchoredPosition: {x: 226.86003, y: 26.965}
+  m_SizeDelta: {x: 190, y: 45.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &104875553
 MonoBehaviour:
@@ -959,8 +959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196.2, y: 24.8}
-  m_SizeDelta: {x: 135.7, y: 40.12}
+  m_AnchoredPosition: {x: 235.68, y: 24.8}
+  m_SizeDelta: {x: 214.66, y: 40.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228599475
 MonoBehaviour:
@@ -2095,8 +2095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 202.5, y: 22.92}
-  m_SizeDelta: {x: 138.62, y: 45.84}
+  m_AnchoredPosition: {x: 236, y: 22.92}
+  m_SizeDelta: {x: 205.7, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545496415
 MonoBehaviour:
@@ -2274,24 +2274,22 @@ MonoBehaviour:
   diamond: {fileID: 285639687}
   back: {fileID: 1382541758}
   current: {fileID: 0}
-  goldimage: {fileID: 0}
-  tankimage: {fileID: 0}
-  samturretimage: {fileID: 0}
-  missilelauncherimage: {fileID: 0}
-  diamondimage: {fileID: 0}
-  goldlocked: {fileID: 0}
-  goldprice: {fileID: 0}
-  tanklocked: {fileID: 0}
-  tankprice: {fileID: 0}
-  samturretlocked: {fileID: 0}
-  samturretprice: {fileID: 0}
-  missilelauncherlocked: {fileID: 0}
-  missilelauncherprice: {fileID: 0}
-  diamondlocked: {fileID: 0}
-  diamondprice: {fileID: 0}
+  goldimage: {fileID: 1333294912}
+  tankimage: {fileID: 262925222}
+  samturretimage: {fileID: 248919080}
+  missilelauncherimage: {fileID: 314529061}
+  diamondimage: {fileID: 876609159}
+  goldlocked: {fileID: 1198128064}
+  goldprice: {fileID: 597753916}
+  tanklocked: {fileID: 1838659077}
+  tankprice: {fileID: 1352205961}
+  samturretlocked: {fileID: 849271104}
+  samturretprice: {fileID: 1673038259}
+  missilelauncherlocked: {fileID: 1667969383}
+  missilelauncherprice: {fileID: 2092747691}
+  diamondlocked: {fileID: 1533003897}
+  diamondprice: {fileID: 836270330}
   mainmenu: {fileID: 814064885}
-  dataholder: {fileID: 0}
-  ss: {fileID: 0}
 --- !u!114 &575736398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,8 +2429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.4, y: 26.5}
-  m_SizeDelta: {x: 137.12, y: 44.135}
+  m_AnchoredPosition: {x: 218.46, y: 26.5}
+  m_SizeDelta: {x: 175.24, y: 44.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603169283
 MonoBehaviour:
@@ -2536,24 +2534,22 @@ MonoBehaviour:
   mrpresident: {fileID: 2071623139}
   back: {fileID: 1490428544}
   current: {fileID: 0}
-  athleteimage: {fileID: 0}
-  racecardriverimage: {fileID: 0}
-  ninjaimage: {fileID: 0}
-  boxerimage: {fileID: 0}
-  mrpresidentimage: {fileID: 0}
-  athletelocked: {fileID: 0}
-  racecardriverlocked: {fileID: 0}
-  ninjalocked: {fileID: 0}
-  boxerlocked: {fileID: 0}
-  mrpresidentlocked: {fileID: 0}
-  athleteprice: {fileID: 0}
-  racecardriverprice: {fileID: 0}
-  ninjaprice: {fileID: 0}
-  boxerprice: {fileID: 0}
-  mrpresidentprice: {fileID: 0}
+  athleteimage: {fileID: 1940420779}
+  racecardriverimage: {fileID: 325083604}
+  ninjaimage: {fileID: 1087166190}
+  boxerimage: {fileID: 462935997}
+  mrpresidentimage: {fileID: 2105682238}
+  athletelocked: {fileID: 1164843495}
+  racecardriverlocked: {fileID: 545496415}
+  ninjalocked: {fileID: 611132981}
+  boxerlocked: {fileID: 979778957}
+  mrpresidentlocked: {fileID: 655633730}
+  athleteprice: {fileID: 1738269662}
+  racecardriverprice: {fileID: 1365732041}
+  ninjaprice: {fileID: 1152199631}
+  boxerprice: {fileID: 1607299144}
+  mrpresidentprice: {fileID: 718107153}
   mainmenu: {fileID: 814064885}
-  dataholder: {fileID: 0}
-  ss: {fileID: 0}
 --- !u!114 &607131667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2619,8 +2615,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.6, y: 46.9}
-  m_SizeDelta: {x: 139.88, y: 44}
+  m_AnchoredPosition: {x: 235.22, y: 46.9}
+  m_SizeDelta: {x: 201.12, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611132981
 MonoBehaviour:
@@ -2767,8 +2763,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201, y: 28}
-  m_SizeDelta: {x: 136.15, y: 43.63}
+  m_AnchoredPosition: {x: 242.31006, y: 28}
+  m_SizeDelta: {x: 218.77, y: 43.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655633730
 MonoBehaviour:
@@ -3701,12 +3697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15859ef659e8bd54b85775f5bfa227b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataholder: {fileID: 0}
   cash: {fileID: 1262508011}
-  shopmenu: {fileID: 0}
-  skinsmenu: {fileID: 0}
-  launchersmenu: {fileID: 0}
-  gunsmenu: {fileID: 0}
 --- !u!1 &792035222
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,7 +3904,6 @@ MonoBehaviour:
   skinsPanel: {fileID: 607131664}
   launchersPanel: {fileID: 575736395}
   gunsPanel: {fileID: 1199082625}
-  ss: {fileID: 0}
 --- !u!1 &836270328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,8 +4124,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: 38}
-  m_SizeDelta: {x: 137.75, y: 44.51}
+  m_AnchoredPosition: {x: 243.98, y: 38}
+  m_SizeDelta: {x: 211.71, y: 44.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849271104
 MonoBehaviour:
@@ -4796,8 +4786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.5, y: 30.8}
-  m_SizeDelta: {x: 139.14, y: 46.82}
+  m_AnchoredPosition: {x: 243.19006, y: 30.8}
+  m_SizeDelta: {x: 216.52, y: 46.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979778957
 MonoBehaviour:
@@ -5338,8 +5328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.4, y: 29}
-  m_SizeDelta: {x: 144.49, y: 44.7}
+  m_AnchoredPosition: {x: 228.63, y: 29}
+  m_SizeDelta: {x: 186.95, y: 44.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1164843495
 MonoBehaviour:
@@ -5795,8 +5785,6 @@ MonoBehaviour:
   goldendeaglelocked: {fileID: 228599475}
   goldendeagleprice: {fileID: 1770754046}
   mainmenu: {fileID: 814064885}
-  dataholder: {fileID: 0}
-  ss: {fileID: 0}
 --- !u!114 &1199082628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5862,8 +5850,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 195.2, y: 27.205}
-  m_SizeDelta: {x: 134.18, y: 40.87}
+  m_AnchoredPosition: {x: 222.38005, y: 27.205}
+  m_SizeDelta: {x: 188.54, y: 40.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199503919
 MonoBehaviour:
@@ -7221,8 +7209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205.2, y: 36.3}
-  m_SizeDelta: {x: 139.2, y: 47.34}
+  m_AnchoredPosition: {x: 246.39, y: 36.3}
+  m_SizeDelta: {x: 221.59, y: 47.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533003897
 MonoBehaviour:
@@ -7602,8 +7590,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91330750b937cee4bab9a862198e75ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveload: {fileID: 0}
-  shop: {fileID: 0}
+  skins: {fileID: 607131664}
+  launchers: {fileID: 575736395}
+  guns: {fileID: 1199082625}
 --- !u!1 &1607299142
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,8 +7998,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205.2, y: 44.92}
-  m_SizeDelta: {x: 141.41, y: 40.63}
+  m_AnchoredPosition: {x: 241.0601, y: 44.92}
+  m_SizeDelta: {x: 213.13, y: 40.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667969383
 MonoBehaviour:
@@ -8790,8 +8779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.9, y: 5.2}
-  m_SizeDelta: {x: 171.67, y: 47.51}
+  m_AnchoredPosition: {x: 245.3, y: 5.2}
+  m_SizeDelta: {x: 216.4, y: 47.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838659077
 MonoBehaviour:

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//Controls the results screen that shows post-launch
 public class ResultsCanvasControlla : MonoBehaviour {
 
     public Button relaunch, shop, exit, deletesave;
@@ -22,15 +23,17 @@ public class ResultsCanvasControlla : MonoBehaviour {
 
         deletepanel.SetActive(false);
 
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
+        ss = SoundSystem.getInstance();
     }
 	
+    //Launches the player again
 	private void RelaunchOnClick()
     {
         ss.playSound("menubutton");
         levelmanager.relaunch();
     }
 
+    //Takes the player to the shop
     private void ShopOnClick()
     {
         ss.playSound("menubutton");
@@ -38,6 +41,7 @@ public class ResultsCanvasControlla : MonoBehaviour {
         SceneManager.LoadSceneAsync("Shop");
     }
 
+    //Exits to main menu
     private void ExitOnClick()
     {
         ss.playSound("menubutton");
@@ -45,18 +49,21 @@ public class ResultsCanvasControlla : MonoBehaviour {
         SceneManager.LoadSceneAsync("MainMenu");
     }
 
+    //Shows the confirmation to delete save panel
     private void DeleteSaveOnClick()
     {
         ss.playSound("menubutton");
         deletepanel.SetActive(true);
     }
 
+    //Hides the confirmation to delete save panel if the user pressed no
     public void noDelete()
     {
         ss.playSound("menubutton");
         deletepanel.SetActive(false);
     }
 
+    //Receives the stats of the round and displays them
     public void displayStats(int enemies, int thisround, int total, float distance, bool newrecord)
     {
         if (newrecord)

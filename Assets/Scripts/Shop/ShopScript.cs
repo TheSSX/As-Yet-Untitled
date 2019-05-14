@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Coordinates the passing of data and the order of menus. Displays the user's cash up the top right of the screen at all times
 public class ShopScript : MonoBehaviour {
 
-    public DataHolder dataholder;
-    public Text cash;
-    public GameObject shopmenu, skinsmenu, launchersmenu, gunsmenu;
+    private DataHolder dataholder;
+    [SerializeField]
+    private Text cash;
+    private GameObject shopmenu, skinsmenu, launchersmenu, gunsmenu;
     private SoundSystem ss;
 
 	// Use this for initialization
 	void Start () {
 
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
+        ss = SoundSystem.getInstance();
         dataholder = GameObject.Find("DataHolder").GetComponent<DataHolder>();
         shopmenu = GameObject.Find("ShopMenu");
         skinsmenu = GameObject.Find("SkinsMenu");
@@ -34,11 +36,8 @@ public class ShopScript : MonoBehaviour {
         ss.playShopMusic();
     }
 
-    public void setValues(LevelManager.GameData data)
+    public void setCash(LevelManager.GameData data)
     { 
         cash.text = "Cash: £" + data.cash.ToString();
-        skinsmenu.GetComponent<SkinsMenu>().setValues(data);
-		launchersmenu.GetComponent<LaunchersMenu>().setValues(data);
-        gunsmenu.GetComponent<GunsMenu>().setValues(data);
     }
 }

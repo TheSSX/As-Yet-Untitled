@@ -2,23 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unique behavioural code for the jet enemy
 public class Jet : MonoBehaviour {
 
     private SoundSystem ss;
-    private bool soundplayed;
 
 	// Use this for initialization
 	void Start () {
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
-        soundplayed = false;
+        ss = SoundSystem.getInstance();
 	}
 
     private void OnBecameVisible()
     {
-        if (!soundplayed)
-        {
-            ss.playSound("plane");
-            soundplayed = true;
-        }        
+        ss.playSound("plane");    //plays the jet sound effect when the jet appears on screen
     }
 }

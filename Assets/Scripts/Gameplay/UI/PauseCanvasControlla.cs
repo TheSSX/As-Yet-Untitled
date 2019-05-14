@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//Controls the pause menu
 public class PauseCanvasControlla : MonoBehaviour {
 
     public Button resume, relaunch, exit;
-    private SoundSystem soundsystem;
+    private SoundSystem ss;
     public LevelManager levelmanager;
     public TargetControlla targetcontrolla;
     public Toggle music, soundeffects;
@@ -22,48 +23,51 @@ public class PauseCanvasControlla : MonoBehaviour {
         exit.onClick.AddListener(ExitOnClick);
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
-        soundsystem = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
+        ss = SoundSystem.getInstance();
 
         music = GameObject.Find("Music").GetComponent<Toggle>();
         soundeffects = GameObject.Find("SoundEffects").GetComponent<Toggle>();
 
-        music.isOn = !soundsystem.isMusicMuted();
-        soundeffects.isOn = !soundsystem.isSoundEffectsMuted();
-        initialToggle = false;
+        music.isOn = !ss.isMusicMuted();
+        soundeffects.isOn = !ss.isSoundEffectsMuted();
     }
 
+    //Resumes the game
     private void ResumeOnClick()
     {
         levelmanager.setPaused(false);
         targetcontrolla.target(true);
     }
 
+    //Restarts the launch
     private void RelaunchOnClick()
     {
         levelmanager.relaunch();
     }
 
+    //Exits to menu
     private void ExitOnClick()
     {
         Time.timeScale = 1;
-        soundsystem.playMusic("MainMenu");
+        ss.playMusic("MainMenu");
         SceneManager.LoadSceneAsync("MainMenu");
     }
 
+    //Toggles the music on and off if pressed. initialToggle is used to synchronise the music being muted in the main menu and in gameplay
     public void switchMusic()
     {
-        if (!initialToggle)
-        {
             if (music.isOn)
             {
-                soundsystem.toggleMusic(false);
+                ss.toggleMusic(false);
             }
             else
             {
-                soundsystem.toggleMusic(true);
+                ss.toggleMusic(true);
             }
-        }       
+              
     }
+
+    //Toggles the sound effects on and off if pressed. initialToggle is used to synchronise the sound being muted in the main menu and in gameplay
 
     public void switchSoundEffects()
     {
@@ -71,11 +75,11 @@ public class PauseCanvasControlla : MonoBehaviour {
         {
             if (soundeffects.isOn)
             {
-                soundsystem.toggleSoundEffects(false);
+                ss.toggleSoundEffects(false);
             }
             else
             {
-                soundsystem.toggleSoundEffects(true);
+                ss.toggleSoundEffects(true);
             }
         }        
     }

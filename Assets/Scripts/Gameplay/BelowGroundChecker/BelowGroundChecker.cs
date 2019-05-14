@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Handles any objects, including the player, potentially falling below the ground and not hitting the object destroyer.
 public class BelowGroundChecker : MonoBehaviour {
 
     private PlayerControlla playerScript;
@@ -15,12 +16,11 @@ public class BelowGroundChecker : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            Debug.Log("player below ground!");
-            playerScript.standUp();
+            playerScript.standUp();     //ends the launch if player goes below ground
         }
         else
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject);      //destroys any other game objects
         }
     }
 }

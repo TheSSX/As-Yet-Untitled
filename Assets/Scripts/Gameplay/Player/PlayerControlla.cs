@@ -3,316 +3,84 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Controls the base functionality of the player
 public class PlayerControlla : MonoBehaviour
 {
     private Rigidbody2D playerRigidbody;
-    private Animator playerAnimation;
-    private GameObject barrel;
-    public GameplayCanvasControlla canvas;
-    public LevelManager levelmanager;
-    private Renderer playerRenderer;
-    private CannonControlla cannon;
+    private Animator playerAnimator;
+    private LevelManager levelmanager;
     private TargetControlla targetcontrolla;
 
-    private bool isTouchingGround, hasFired, increasing, initialFire;
-    private float currentVelocity, lastVelocity, power;   
-    private int currentColliderIndex, counter;
-
-	private const int basicCannonmod = 6;
-	private const int goldCannonmod = 10;
-	private const int tankmod = 14;
-	private const int samturretmod = 22;
-	private const int missilelaunchermod = 26;
-	private const int diamondmod = 30;
-
-	private int powermod;   
-
-    [SerializeField]
-    private PolygonCollider2D[] colliders;
+    private bool hasFired, initialFire;
+    private float currentVelocity;   
 
     // Use this for initialization
     void Start()
     {
-        canvas = FindObjectOfType<GameplayCanvasControlla>();
-        barrel = GameObject.Find("Barrel");
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-        playerAnimation = GetComponent<Animator>();
+        playerAnimator = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody2D>();
-        playerRenderer = GetComponent<Renderer>();
-        cannon = GameObject.Find("Barrel").GetComponent<CannonControlla>();
         targetcontrolla = GameObject.Find("LevelManager").GetComponent<TargetControlla>();
 
-        targetcontrolla.target(true);
-
-        powermod = basicCannonmod;
         hasFired = false;
-        isTouchingGround = false;
         initialFire = true;
-        increasing = true;
-        playerRenderer.enabled = false;
-
-        playerAnimation.SetBool("hasFired", false);
-        playerAnimation.SetBool("hitBySpikes", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -6)
+        if (transform.position.y < -6)      //if player ever goes below ground
         {
-            standUp();
+            standUp();      //end the launch
         }
 
-        //Stops player from getting stuck in the ground
-        if (isTouchingGround)
+        if (hasFired)       //if player has been fired
         {
-            groundCount();           
-        }
-
-        if (!hasFired && getReadyToFire())
-        {
-            hasFired = true;           
-        }
-        else
-        {
-            //currentVelocity *= 0.999f;
-
-            if (!levelmanager.isPaused())
+            if (!levelmanager.isPaused() && initialFire)        //if game not paused and the character has just been launched (not yet touched the ground)
             {
-                transform.Rotate(0, 0, -currentVelocity / 50);
+                transform.Rotate(0, 0, -currentVelocity / 50);      //gentle rotation
             }
             
-            if (initialFire)
-            {               
-                colliders[currentColliderIndex].enabled = true;
-            }
-            else if (currentVelocity >= 0.5f && !levelmanager.isPaused() && !initialFire)
+            if (currentVelocity >= 0.5f && !levelmanager.isPaused() && !initialFire)
             {
-                transform.Rotate(0, 0, -currentVelocity);
+                transform.Rotate(0, 0, -currentVelocity);       //rotation relating to speed
                 if ((transform.eulerAngles.z < 360 && transform.eulerAngles.z >= 340) || (transform.eulerAngles.z >= 0 && transform.eulerAngles.z < 20))
                 {
-                    transform.Rotate(0, 0, -3f);
+                    transform.Rotate(0, 0, -3f);        //stop the player from bouncing on their head or feet without landing on their side
                 }
             }
 
-            playerAnimation.SetFloat("currentVelocity", currentVelocity);
-            playerAnimation.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
+            //Pass the player's current velocity to the animator
+            playerAnimator.SetFloat("currentVelocity", currentVelocity);
+            playerAnimator.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
         }     
     }
 
-    private void groundCount()
+    //Lets the script know the player has been fired
+    public void fire()
     {
-        counter++;
+        hasFired = true;
+    }  
 
-        if (counter == 30)
-        {
-            if (!levelmanager.isPaused())
-            {
-                standUp();
-            }
-            else
-            {
-                counter = 0;
-            }
-        }
-    }
-
-	public void modPower(string x)
-	{
-		if (x == "basic")  
-		{
-			powermod = basicCannonmod;
-		} 
-		else if (x == "gold") 
-		{
-			powermod = goldCannonmod;
-		}
-        else if (x == "tank")
-        {
-            powermod = tankmod;
-        }
-        else if (x == "SAM turret")
-        {
-            powermod = samturretmod;
-        }
-        else if (x == "missile launcher")
-        {
-            powermod = missilelaunchermod;
-        }
-        else if (x == "diamond")
-        {
-            powermod = diamondmod;
-        }
-    }
-
-    private bool getReadyToFire()
+    //Called once the player touches the ground
+    public void notInitialFire()
     {
-        Vector2 pos = barrel.transform.position;
-        transform.position = new Vector2(pos.x + 2, pos.y + 2);
-
-        if ((Input.GetMouseButton(0)))
-        {
-            if (power >= 100)
-            {
-                power = 100;
-                increasing = false;
-            }
-            else if (power <= 0)
-            {
-                power = 0;
-                increasing = true;
-            }
-
-            if (power < 20 && increasing)
-            {
-                power += Time.deltaTime * 50;
-            }
-            else if (power >= 20 && power < 60 && increasing)
-            {
-                power += Time.deltaTime * 70;
-            }
-            else if (power >= 60 && power < 80 && increasing)
-            {
-                power += Time.deltaTime * 80;
-            }
-            else if (power >= 80 && power < 100 && increasing)
-            {
-                power += Time.deltaTime * 120;
-            }
-            else if (power >= 80 && power < 100 && !increasing)
-            {
-                power -= Time.deltaTime * 120;
-            }
-            else if (power >= 60 && power < 80 && !increasing)
-            {
-                power -= Time.deltaTime * 80;
-            }
-            else if (power >= 20 && power < 60 && !increasing)
-            {
-                power -= Time.deltaTime * 70;
-            }
-            else 
-            {
-                power -= Time.deltaTime *50;
-            }
-
-            canvas.displayPower(power);
-        }
-        else if (power != 0)
-        {
-            if (power < 10)
-            {
-                power = 10;
-            }
-
-            float angle = cannon.getAngle();
-
-            canvas.displayPower(-1f);
-            FixedJoint2D join = GetComponent<FixedJoint2D>();
-            Destroy(join);
-            
-            power /= 40;
-
-            playerRigidbody.AddForce(new Vector2(angle, angle / 60) * powermod * (power * power), ForceMode2D.Impulse);   //I wouldn't touch this if I were you
-            if (angle > 35)
-            {
-                angle = 35 - (angle - 35);
-            }
-          
-            //When cannon upgrades, the first number will be the only change
-			currentVelocity = (25 + angle / 20) * power * (powermod/6);
-
-            playerRenderer.enabled = true;
-            playerAnimation.SetBool("hasFired", true);
-            power = 0;
-
-            return true;
-        }
-
-        return false;
+        initialFire = false;
     }
 
-    public void setCurrentVelocity(float x)
-    {
-        currentVelocity = x;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        //lastVelocity = currentVelocity;
-
-        if (other.tag == "Ground" && currentVelocity >= 0.5f && !isTouchingGround)
-        {
-            initialFire = false;
-            setAnimation();
-
-            if ((playerRigidbody.velocity.y < currentVelocity * 0.75f) && currentVelocity >= 0.75f)
-            {
-                currentVelocity *= 0.75f;
-            }
-            else
-            {
-                currentVelocity = playerRigidbody.velocity.y;               
-            }
-
-            isTouchingGround = true;
-        }
-        else if (other.tag == "Ground" && !levelmanager.isPaused())
-        {          
-            currentVelocity *= 0.75f;
-        }
-        else if (other.tag == "FloatingSpikes")
-        {
-            freeze();            
-            transform.eulerAngles = new Vector3(0, 0, 180);
-            transform.position = new Vector3(other.transform.position.x - 0.8f, other.transform.position.y - 1.5f, other.transform.position.z);
-            playerAnimation.SetBool("hitBySpikes", true);
-            levelmanager.showResults();
-        }
-        else if (other.tag == "GroundSpikes")
-        {
-            freeze();
-            transform.eulerAngles = new Vector3(0, 0, 270);
-            transform.position = new Vector3(other.transform.position.x, other.transform.position.y + 0.5f, other.transform.position.z);
-            playerAnimation.SetBool("hitBySpikes", true);
-            levelmanager.showResults();
-        }
-        else if (other.tag == "Chomper")
-        {
-            playerRenderer.enabled = false;
-            freeze();
-            levelmanager.showResults();
-        }
-    }
-
-    private void freeze()
-    {
-        //lastVelocity = 0;
-        currentVelocity = 0;
-        playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-        targetcontrolla.target(false);
-    }
-
-    private void setAnimation()
-    {
-        int random = Random.Range(0, 5);
-        playerAnimation.SetInteger("randomInt", random);
-        colliders[currentColliderIndex].enabled = false;
-        currentColliderIndex = random;
-        colliders[currentColliderIndex].enabled = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        isTouchingGround = false;
-        counter = 0;
-    }
-
+    //Fetches the player's current velocity
     public float getCurrentVelocity()
     {
         return currentVelocity;
     }
 
+    //Sets the player's current velocity on launch
+    public void setCurrentVelocity(float x)
+    {
+        currentVelocity = x;
+    }
+
+    //Plays the stand up animation at the end of the launch and shows the results of the launch
     public void standUp()
     {
         freeze();
@@ -321,6 +89,15 @@ public class PlayerControlla : MonoBehaviour
         levelmanager.showResults();
     }
 
+    //Called when the player comes to a stop so that no more forces act on them
+    public void freeze()
+    {
+        currentVelocity = 0;
+        playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        targetcontrolla.target(false);
+    }
+
+    //Lets the caller know if the player has launched
     public bool hasBeenFired()
     {
         return hasFired;

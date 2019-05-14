@@ -2,28 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unique behavioural code for the astronaut enemy
 public class Astronaut : MonoBehaviour {
 
     private SoundSystem ss;
-    private bool soundplayed;
 
     void Start()
     {
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>();
-        soundplayed = false;        
-    }
-
-    // Update is called once per frame
-    void Update () {
-        transform.Rotate(0, 0, 10);
+        ss = SoundSystem.getInstance();       
     }
 
     private void OnBecameVisible()
     {
-        if (!soundplayed)
-        {
-            ss.playSound("astronaut");
-            soundplayed = true;
-        }
+        ss.playSound("astronaut");      //plays the astronaut sound effect when the astronaut appears on screen
     }
 }

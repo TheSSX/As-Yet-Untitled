@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Controls the purchasing and switching of guns
 public class GunsMenu : MonoBehaviour
 {
-    public Button pistol, shotgun, rifle, sniperrifle, rocketlauncher, goldendeagle, back, current;
-    public Image shotgunimage, rifleimage, sniperrifleimage, rocketlauncherimage, goldendeagleimage;
-    public Text shotgunlocked, shotgunprice, riflelocked, rifleprice, sniperriflelocked, sniperrifleprice, rocketlauncherlocked, rocketlauncherprice, goldendeaglelocked, goldendeagleprice;
+    [SerializeField]
+    private Button pistol, shotgun, rifle, sniperrifle, rocketlauncher, goldendeagle, back, current;
+    [SerializeField]
+    private Image shotgunimage, rifleimage, sniperrifleimage, rocketlauncherimage, goldendeagleimage;
+    [SerializeField]
+    private Text shotgunlocked, shotgunprice, riflelocked, rifleprice, sniperriflelocked, sniperrifleprice, rocketlauncherlocked, rocketlauncherprice, goldendeaglelocked, goldendeagleprice;
 
-    public GameObject mainmenu;
-    public DataHolder dataholder;
-
-    public LevelManager.GameData data;       
-
-    public ShopMenu.Purchase[] purchases;
-    public SoundSystem ss;
+    [SerializeField]
+    private GameObject mainmenu;
+    private DataHolder dataholder;
+    private LevelManager.GameData data;       
+    private ShopMenu.Purchase[] purchases;
+    private SoundSystem ss;
 
     // Use this for initialization
     void Start()
@@ -46,9 +49,10 @@ public class GunsMenu : MonoBehaviour
         back.onClick.AddListener(BackOnClick);
 
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
+        ss = SoundSystem.getInstance();
     }
 
+    //Locks and unlocks the purchases based on the user's save data
     public void setValues(LevelManager.GameData x)
     {
         data = x;
@@ -81,7 +85,7 @@ public class GunsMenu : MonoBehaviour
 
             for (int i = data.gunsUnlocked - 2; i >= 0; i--)
             {
-                purchases[i].unlock();
+                purchases[i].unlock();      //unlocks all items before the highest unlock
             }
         }      
 
@@ -113,6 +117,7 @@ public class GunsMenu : MonoBehaviour
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //Current indicates the user's current selection and highlights this in the menu by making it blue
     private void replaceCurrentButton(Button x)
     {
         current.GetComponent<Image>().color = Color.white;
@@ -120,6 +125,7 @@ public class GunsMenu : MonoBehaviour
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //If the pistol is selected
     private void PistolOnClick()
     {
         ss.playSound("menubutton");
@@ -128,6 +134,7 @@ public class GunsMenu : MonoBehaviour
         dataholder.setData(data);
     }
 
+    //If the shotgun is selected
     private void ShotgunOnClick()
     {
         if (data.cash >= 50000 && data.gunsUnlocked < 2)
@@ -146,6 +153,7 @@ public class GunsMenu : MonoBehaviour
         }
     }
 
+    //If the rifle is selected
     private void RifleOnClick()
     {
         if (data.cash >= 1000000 && data.gunsUnlocked < 3)
@@ -164,6 +172,7 @@ public class GunsMenu : MonoBehaviour
         }
     }
 
+    //If the sniper rifle is selected
     private void SniperRifleOnClick()
     {
         if (data.cash >= 25000000 && data.gunsUnlocked < 4)
@@ -182,6 +191,7 @@ public class GunsMenu : MonoBehaviour
         }
     }
 
+    //If the rocket launcher is selected
     private void RocketLauncherOnClick()
     {
         if (data.cash >= 300000000 && data.gunsUnlocked < 5)
@@ -200,6 +210,7 @@ public class GunsMenu : MonoBehaviour
         }
     }
 
+    //If the golden deagle is selected
     private void GoldenDeagleOnClick()
     {
         if (data.cash >= 1500000000 && data.gunsUnlocked < 6)
@@ -218,6 +229,7 @@ public class GunsMenu : MonoBehaviour
         }
     }
 
+    //Returns to the main shop menu
     private void BackOnClick()
     {
         ss.playSound("menubutton");

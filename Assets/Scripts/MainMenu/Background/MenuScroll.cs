@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Scrolls the background image of the main menu
 public class MenuScroll : MonoBehaviour
 {
-    public float speed = 3;
-    float offset;
-    Renderer backgroundRenderer;
+    private float speed = 3;
+    private float offset;
+    private Renderer backgroundRenderer;
 
     // Use this for initialization
     void Start()

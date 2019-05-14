@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Script controlling the UI during regular, running gameplay
 public class GameplayCanvasControlla : MonoBehaviour {
 
     public GameObject player;
@@ -17,8 +18,9 @@ public class GameplayCanvasControlla : MonoBehaviour {
     public Text heightAboveScreenText, heightText, distanceText, powerText, ammoText;
 
     [SerializeField]
-    private Sprite[] gunsprites;
+    private Sprite[] gunsprites;        //all the possible images of the current gun are stored here. They are displayed in the top right of the screen
 
+    //Store the current height above ground of the player and the distance they have travelled. As these are constantly being updated on the canvas, it made sense to store them here
     public float height;
     public float distance;
 
@@ -40,6 +42,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        //While the game is not paused, update the player's height and distance travelled and check if they are above screen
         if (!levelmanager.isPaused())
         { 
             updateHeight();
@@ -48,11 +51,13 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }     		
     }
 
+    //Updates the remaining ammo text displayed in the top right
     public void setAmmo(int x)
     {
         ammoText.text = "Ammo: " + x.ToString();
     }
 
+    //Receives the name of the selected gun and updates to the appropriate gun sprite, as well as its max ammo capacity
     public void setGun(string x, int y)
     {
         ammoText.text = "Ammo: " + y.ToString();
@@ -83,6 +88,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }
     }
 
+    //Displays the power level of the launcher before launch while the player is holding the left mouse button. Hides when not a valid value
     public void displayPower(float power)
     {
         if (power == -1f)
@@ -96,6 +102,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }
     }
 
+    //Displays the height of the player in metres using their y position
     private void updateHeight()
     {
         height = (player.transform.position.y * 2) + 2.9f;
@@ -111,6 +118,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }
     }
 
+    //Updates and displays the distance travelled by the player using their current velocity
     private void updateDistance()
     {
         if (!levelmanager.isPaused())
@@ -128,6 +136,7 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }
     }
 
+    //Displays a notification at the top of the screen of how far above the screen the player is if they happen to go above the map
     private void renderAboveScreen()
     {
         if (player.transform.position.y > 110)
@@ -143,12 +152,14 @@ public class GameplayCanvasControlla : MonoBehaviour {
         }
     }
 
+    //Pauses the game if the pause button clicked
     private void PauseOnClick()
     {
         levelmanager.setPaused(true);
         target.target(false);
     }
 
+    //Fetches the distance travelled by the player
     public float getDistance()
     {
         return distance;

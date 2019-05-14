@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unique behavioural code for hazards
 public class Hazard : MonoBehaviour {
 
-    protected AudioSource audiosource;
-    protected Animator hazardAnimation;
+    private Animator hazardAnimation;
 
     // Use this for initialization
     void Start () {
-        audiosource = GetComponent<AudioSource>();
-        audiosource.loop = false;
         hazardAnimation = GetComponent<Animator>();
 	}
 
@@ -18,8 +16,7 @@ public class Hazard : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            audiosource.Play();
-            hazardAnimation.SetBool("hit", true);
+            hazardAnimation.SetBool("hit", true);       //play animation of when player hits the hazard
         }
     }
 }

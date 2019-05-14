@@ -14,6 +14,11 @@ public class TargetControlla : MonoBehaviour {
     private bool clicked = false;
     private int counter = 0;
 
+    void Start()
+    {
+        target(true);
+    }
+
     void Update()
     {
         if (clicked && counter < 20)
@@ -52,6 +57,7 @@ public class TargetControlla : MonoBehaviour {
         }
     }
 
+    //Makes the target bigger and red when the user successfully fires their weapon
     public void hit()
     {
         Vector2 hotSpot;

@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Controls the purchasing and switching of launchers
 public class LaunchersMenu : MonoBehaviour {
 
-	public Button basic, gold, tank, samturret, missilelauncher, diamond, back, current;
-    public Image goldimage, tankimage, samturretimage, missilelauncherimage, diamondimage;
-    public Text goldlocked, goldprice, tanklocked, tankprice, samturretlocked, samturretprice, missilelauncherlocked, missilelauncherprice, diamondlocked, diamondprice;
+    [SerializeField]
+    private Button basic, gold, tank, samturret, missilelauncher, diamond, back, current;
+    [SerializeField]
+    private Image goldimage, tankimage, samturretimage, missilelauncherimage, diamondimage;
+    [SerializeField]
+    private Text goldlocked, goldprice, tanklocked, tankprice, samturretlocked, samturretprice, missilelauncherlocked, missilelauncherprice, diamondlocked, diamondprice;
 
-    public GameObject mainmenu;
-	public DataHolder dataholder;
-
-	public LevelManager.GameData data;	
-
+    [SerializeField]
+    private GameObject mainmenu;
+    private DataHolder dataholder;
+    private LevelManager.GameData data;	
     private ShopMenu.Purchase[] purchases;
-    public SoundSystem ss;
+    private SoundSystem ss;
 
     // Use this for initialization
     void Start () {
@@ -46,9 +49,10 @@ public class LaunchersMenu : MonoBehaviour {
 	    back.onClick.AddListener(BackOnClick);
 
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
+        ss = SoundSystem.getInstance();
     }
 
+    //Locks and unlocks the purchases based on the user's save data
     public void setValues(LevelManager.GameData x)
     {
         data = x;
@@ -107,11 +111,12 @@ public class LaunchersMenu : MonoBehaviour {
         else if (data.barrelskin == "diamond")
         {
             current = diamond;
-        }
+        }       
 
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //Current indicates the user's current selection and highlights this in the menu by making it blue
     private void replaceCurrentButton(Button x)
     {
         current.GetComponent<Image>().color = Color.white;
@@ -119,6 +124,7 @@ public class LaunchersMenu : MonoBehaviour {
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //If the basic cannon is selected
     private void BasicOnClick()
 	{
         ss.playSound("menubutton");
@@ -127,7 +133,8 @@ public class LaunchersMenu : MonoBehaviour {
         dataholder.setData(data);       
 	}
 
-	private void GoldOnClick()
+    //If the gold cannon is selected
+    private void GoldOnClick()
 	{
 	    if (data.cash >= 50000 && data.barrelUnlocked < 2)
 	    {
@@ -145,6 +152,7 @@ public class LaunchersMenu : MonoBehaviour {
         }
     }
 
+    //If the tank is selected
     private void TankOnClick()
     {
         if (data.cash >= 1000000 && data.barrelUnlocked < 3)
@@ -163,6 +171,7 @@ public class LaunchersMenu : MonoBehaviour {
         }
     }
 
+    //If the SAM turret is selected
     private void SAMTurretOnClick()
     {
         if (data.cash >= 25000000 && data.barrelUnlocked < 4)
@@ -181,6 +190,7 @@ public class LaunchersMenu : MonoBehaviour {
         }
     }
 
+    //If the missile launcher is selected
     private void MissileLauncherOnClick()
     {
         if (data.cash >= 300000000 && data.barrelUnlocked < 5)
@@ -199,11 +209,12 @@ public class LaunchersMenu : MonoBehaviour {
         }
     }
 
+    //If the diamond cannon is selected
     private void DiamondOnClick()
     {
-        if (data.cash >= 1500000000 && data.barrelUnlocked < 6)
+        if (data.cash >= 1 && data.barrelUnlocked < 6)
         {
-            data = new LevelManager.GameData(data.cash - 1500000000, data.currentSkin, data.skinUnlocked, "diamond", 6, data.gunname, data.gunsUnlocked, data.furthestDistance);
+            data = new LevelManager.GameData(data.cash - 1, data.currentSkin, data.skinUnlocked, "diamond", 6, data.gunname, data.gunsUnlocked, data.furthestDistance);
             replaceCurrentButton(diamond);
             dataholder.setData(data);
             purchases[4].unlock();
@@ -217,6 +228,7 @@ public class LaunchersMenu : MonoBehaviour {
         }
     }
 
+    //Returns to the main shop menu
     private void BackOnClick()
 	{
         ss.playSound("menubutton");

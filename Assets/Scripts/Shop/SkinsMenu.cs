@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Controls the purchasing and switching of skins
 public class SkinsMenu : MonoBehaviour {
 
-    public Button bearskin, athlete, racecardriver, ninja, boxer, mrpresident, back, current;
-    public Image athleteimage, racecardriverimage, ninjaimage, boxerimage, mrpresidentimage;
-    public Text athletelocked, racecardriverlocked, ninjalocked, boxerlocked, mrpresidentlocked, athleteprice, racecardriverprice, ninjaprice, boxerprice, mrpresidentprice;
+    [SerializeField]
+    private Button bearskin, athlete, racecardriver, ninja, boxer, mrpresident, back, current;
+    [SerializeField]
+    private Image athleteimage, racecardriverimage, ninjaimage, boxerimage, mrpresidentimage;
+    [SerializeField]
+    private Text athletelocked, racecardriverlocked, ninjalocked, boxerlocked, mrpresidentlocked, athleteprice, racecardriverprice, ninjaprice, boxerprice, mrpresidentprice;
 
-    public GameObject mainmenu;
-    public DataHolder dataholder;
-
-    public LevelManager.GameData data;       
-
-    public ShopMenu.Purchase[] purchases;
-    public SoundSystem ss;
+    [SerializeField]
+    private GameObject mainmenu;
+    private DataHolder dataholder;
+    private LevelManager.GameData data;
+    private ShopMenu.Purchase[] purchases;
+    private SoundSystem ss;
 
     // Use this for initialization
     void Start () {
@@ -46,9 +49,10 @@ public class SkinsMenu : MonoBehaviour {
         back.onClick.AddListener(BackOnClick);
 
         GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-        ss = GameObject.Find("SoundSystem").GetComponent<SoundSystem>().getInstance();
+        ss = SoundSystem.getInstance();
     }
 
+    //Locks and unlocks the purchases based on the user's save data
     public void setValues(LevelManager.GameData x)
     {
         data = x;
@@ -113,6 +117,7 @@ public class SkinsMenu : MonoBehaviour {
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //Current indicates the user's current selection and highlights this in the menu by making it blue
     private void replaceCurrentButton(Button x)
     {
         current.GetComponent<Image>().color = Color.white;
@@ -120,6 +125,7 @@ public class SkinsMenu : MonoBehaviour {
         current.GetComponent<Image>().color = Color.cyan;
     }
 
+    //If the bearskin is selected
     private void BearskinOnClick()
     {
         ss.playSound("menubutton");
@@ -128,6 +134,7 @@ public class SkinsMenu : MonoBehaviour {
         dataholder.setData(data);
     }
 
+    //If the athlete is selected
     private void AthleteOnClick()
     {
 		if (data.cash >= 50000 && data.skinUnlocked < 2)
@@ -146,6 +153,7 @@ public class SkinsMenu : MonoBehaviour {
         }
     }
 
+    //If the racecar driver is selected
     private void RacecarDriverOnClick()
     {
         if (data.cash >= 1000000 && data.skinUnlocked < 3)
@@ -164,6 +172,7 @@ public class SkinsMenu : MonoBehaviour {
         }
     }
 
+    //If the ninja is selected
     private void NinjaOnClick()
     {
         if (data.cash >= 25000000 && data.skinUnlocked < 4)
@@ -182,6 +191,7 @@ public class SkinsMenu : MonoBehaviour {
         }
     }
 
+    //If the boxer is selected
     private void BoxerOnClick()
     {
         if (data.cash >= 300000000 && data.skinUnlocked < 5)
@@ -200,6 +210,7 @@ public class SkinsMenu : MonoBehaviour {
         }
     }
 
+    //If mr president is selected
     private void MrPresidentOnClick()
     {
         if (data.cash >= 1500000000 && data.skinUnlocked < 6)
@@ -218,6 +229,7 @@ public class SkinsMenu : MonoBehaviour {
         }
     }
 
+    //Returns to the main shop menu
     private void BackOnClick()
     {
         ss.playSound("menubutton");
