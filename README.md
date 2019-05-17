@@ -7,6 +7,7 @@ Along the way, you may run into some friendly and not-so-friendly characters who
 at your disposal, including upgradeable launchers and guns, to send your character to infinity and beyond.
 
 BUILD INSTRUCTIONS
+
 This repository only contains the assets required to build the game but this is all you need! Simply extract the Assets folder into a blank
 project folder and open said project folder in Unity. Once Unity has imported the project, choose File >> Build and Run to build and
 run the game. Note that Crazy Cannons was built in Unity version 2017.4.10f1, so may experience compatibility issues with differing
