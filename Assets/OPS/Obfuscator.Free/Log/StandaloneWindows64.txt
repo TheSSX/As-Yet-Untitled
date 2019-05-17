@@ -4,137 +4,131 @@
 [Info][Process] Found Build Platform: DefaultPlatform
 [Info][Process] Loading Dependencies...
 [Info][Process] Found Dependencies: 
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
 C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\15.0\Editor
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Managed
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\OPS\Editor\Plugins\Mono.Cecil
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\OPS\Obfuscator.Free\Editor\Plugins
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\OPS\Editor\Plugins\Mono.Cecil
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\OPS\Editor\Plugins\Mono.Cecil
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\OPS\Editor\Plugins\Mono.Cecil
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\TextMesh Pro\Plugins\Editor DLL
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Assets\TextMesh Pro\Plugins\Editor DLL
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.10
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.purchasing@0.0.19\Editor
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.purchasing@0.0.19
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.analytics@2.0.13\Editor
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.analytics@2.0.13
-C:\Users\samglendenning\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.ads@2.0.8\Editor
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\iOSSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\iOSSupport
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.10
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.purchasing@0.0.19\Editor
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.purchasing@0.0.19
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.analytics@2.0.13\Editor
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.analytics@2.0.13
+C:\Users\Sam\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.ads@2.0.8\Editor
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\TextMesh Pro\Plugins\Editor DLL
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\TextMesh Pro\Plugins\Editor DLL
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\OPS\Obfuscator.Free\Editor\Plugins
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\OPS\Editor\Plugins\Mono.Cecil
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\OPS\Editor\Plugins\Mono.Cecil
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\OPS\Editor\Plugins\Mono.Cecil
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Assets\OPS\Editor\Plugins\Mono.Cecil
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\iOSSupport
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\iOSSupport
 C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\15.0\Editor
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\MacStandaloneSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\windowsstandalonesupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\LinuxStandaloneSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\WebGLSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\MetroSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\AppleTVSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\iOSSupport
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\AndroidPlayer
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnityVR\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnitySpatialTracking\RuntimeEditor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnitySpatialTracking\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnityHoloLens\RuntimeEditor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnityHoloLens\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnityGoogleAudioSpatializer\RuntimeEditor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UnityGoogleAudioSpatializer\Editor
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\VuforiaSupport\Managed\Runtime
-C:\Program Files\Unity2017\Editor\Data\PlaybackEngines\VuforiaSupport\Managed\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\Networking\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\Networking
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UIAutomation\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\UIAutomation
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\TreeEditor\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\Timeline\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\Timeline\RuntimeEditor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\TestRunner\net35\unity-custom
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\TestRunner
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\TestRunner\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\GUISystem\Editor
-C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\GUISystem
-C:\Program Files\Unity2017\Editor\Data\PackageManager\Unity\PackageManager\2017.4.10
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine
-C:\Program Files\Unity2017\Editor\Data\Mono\lib\mono\2.0
-C:/Program Files/Unity2017/Editor\Managed
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\LinuxStandaloneSupport
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\iOSSupport
+C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnityVR\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnitySpatialTracking\RuntimeEditor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnitySpatialTracking\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnityHoloLens\RuntimeEditor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnityHoloLens\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnityGoogleAudioSpatializer\RuntimeEditor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UnityGoogleAudioSpatializer\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Networking\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Networking
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UIAutomation\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\UIAutomation
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\TreeEditor\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Timeline\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Timeline\RuntimeEditor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\TestRunner\net35\unity-custom
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\TestRunner
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\TestRunner\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor
+C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem
+C:\Program Files\Unity\Editor\Data\PackageManager\Unity\PackageManager\2017.4.10
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Library\ScriptAssemblies
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Library\ScriptAssemblies
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Managed\UnityEngine
+C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+C:/Program Files/Unity/Editor\Managed
 [Info][Process] Loading Assembly Location...
 [Info][Process] For Assemblies: 
 Assembly-CSharp.dll
 Assembly-CSharp-firstpass.dll
 [Warning][Process] Could not find Assembly: Assembly-CSharp-firstpass.dll
 [Info][Process] Found Assemblies Location: 
-U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies\Assembly-CSharp.dll
+C:\Users\Sam\Documents\GitHub\Crazy Cannons\Library\ScriptAssemblies\Assembly-CSharp.dll
 [Info][Process] Start obfuscate Assemblies
 [Info][Process] Lock Assemblies
 [Info][Process] Loading Processings Steps...
@@ -148,7 +142,7 @@ U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies\Assembly-CSh
 [Info][Process] Finished Step: Init Methods
 [Info][Process] Processing Step: Analyse Strings
 [Info][Analyse] [Assembly-CSharp] Analyse Strings...
-[Info][Analyse Files] Found Strings: 256
+[Info][Analyse Files] Found Strings: 248
 [Info][Process] Finished Step: Analyse Strings
 [Info][Process] Processing Step: Analyse Files
 [Info][Analyse Files] Searching Gui Methods...
@@ -625,6 +619,8 @@ U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies\Assembly-CSh
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::.ctor()] Because of settings.
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::Start()] Because of some Addon: Unity
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::Update()] Because of some Addon: Unity
+[Info][Skip Method] [[Assembly-CSharp]PlayerControlla::getFinished()] Because of settings.
+[Info][Skip Method] [[Assembly-CSharp]PlayerControlla::setFinished([mscorlib]System.Boolean)] Because of settings.
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::fire()] Because of some Addon: Reflection and Coroutine
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::fire()] Because of settings.
 [Info][Skip Method] [[Assembly-CSharp]PlayerControlla::notInitialFire()] Because of settings.
@@ -1786,231 +1782,232 @@ U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies\Assembly-CSh
 [Info][Found new Field Name] [[Assembly-CSharp]LevelManager PlayerControlla::levelmanager] : i
 [Info][Found new Field Name] [[Assembly-CSharp]TargetControlla PlayerControlla::targetcontrolla] : cj
 [Info][Found new Field Name] [[Assembly-CSharp]System.Boolean PlayerControlla::initialFire] : ck
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean PlayerControlla::finished] : cl
 [Info][Found new Field Name] [[Assembly-CSharp]SoundSystem PauseCanvasControlla::ss] : h
 [Info][Found new Field Name] [[Assembly-CSharp]System.Single MenuScroll::speed] : a
 [Info][Found new Field Name] [[Assembly-CSharp]System.Single MenuScroll::offset] : b
 [Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Renderer MenuScroll::backgroundRenderer] : c
 [Info][Found new Field Name] [[Assembly-CSharp]LevelManager/GameData SaveLoad::data] : bl
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Image ShopMenu/Purchase::image] : cl
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text ShopMenu/Purchase::locked] : cm
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text ShopMenu/Purchase::price] : cn
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.Benchmark01 TMPro.Examples.Benchmark01/<Start>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01/<Start>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.Benchmark01/<Start>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.Benchmark01/<Start>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Image ShopMenu/Purchase::image] : cm
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text ShopMenu/Purchase::locked] : cn
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text ShopMenu/Purchase::price] : co
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.Benchmark01 TMPro.Examples.Benchmark01/<Start>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01/<Start>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.Benchmark01/<Start>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.Benchmark01/<Start>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01/<Start>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01/<Start>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.Benchmark01::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextContainer TMPro.Examples.Benchmark01::m_textContainer] : ct
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.TextMesh TMPro.Examples.Benchmark01::m_textMesh] : cu
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01::label01] : cv
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01::label02] : cw
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01::m_material01] : cx
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01::m_material02] : cy
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.Benchmark01_UGUI TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.Benchmark01::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextContainer TMPro.Examples.Benchmark01::m_textContainer] : cu
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.TextMesh TMPro.Examples.Benchmark01::m_textMesh] : cv
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01::label01] : cw
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01::label02] : cx
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01::m_material01] : cy
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01::m_material02] : cz
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.Benchmark01_UGUI TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.Benchmark01_UGUI::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text TMPro.Examples.Benchmark01_UGUI::m_textMesh] : cu
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01_UGUI::label01] : cv
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01_UGUI::label02] : cw
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01_UGUI::m_material01] : cx
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01_UGUI::m_material02] : cy
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.Benchmark02::floatingText_Script] : cz
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.Benchmark04::m_Transform] : da
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.CameraController::cameraTransform] : db
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.CameraController::dummyTarget] : dc
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.CameraController::previousSmoothing] : dd
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.CameraController::desiredPosition] : de
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseX] : df
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseY] : dg
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.CameraController::moveVector] : dh
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseWheel] : di
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.CameraController::event_SmoothingValue] : dj
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.CameraController::event_FollowDistance] : dk
-[Info][Found new Field Name] [[Assembly-CSharp]EnvMapAnimator EnvMapAnimator/<Start>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object EnvMapAnimator/<Start>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean EnvMapAnimator/<Start>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 EnvMapAnimator/<Start>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.Benchmark01_UGUI::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.UI.Text TMPro.Examples.Benchmark01_UGUI::m_textMesh] : cv
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01_UGUI::label01] : cw
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.Benchmark01_UGUI::label02] : cx
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01_UGUI::m_material01] : cy
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.Benchmark01_UGUI::m_material02] : cz
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.Benchmark02::floatingText_Script] : da
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.Benchmark04::m_Transform] : db
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.CameraController::cameraTransform] : dc
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.CameraController::dummyTarget] : dd
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.CameraController::previousSmoothing] : de
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.CameraController::desiredPosition] : df
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseX] : dg
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseY] : dh
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.CameraController::moveVector] : di
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.CameraController::mouseWheel] : dj
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.CameraController::event_SmoothingValue] : dk
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.CameraController::event_FollowDistance] : dl
+[Info][Found new Field Name] [[Assembly-CSharp]EnvMapAnimator EnvMapAnimator/<Start>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object EnvMapAnimator/<Start>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean EnvMapAnimator/<Start>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 EnvMapAnimator/<Start>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object EnvMapAnimator/<Start>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object EnvMapAnimator/<Start>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text EnvMapAnimator::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material EnvMapAnimator::m_material] : dl
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.ObjectSpin::m_transform] : dm
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.ObjectSpin::m_time] : dn
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_prevPOS] : do
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_initial_Rotation] : dp
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_initial_Position] : dq
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Color32 TMPro.Examples.ObjectSpin::m_lightColor] : dr
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.ObjectSpin::frames] : ds
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.ShaderPropAnimator TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text EnvMapAnimator::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material EnvMapAnimator::m_material] : dm
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.ObjectSpin::m_transform] : dn
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.ObjectSpin::m_time] : do
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_prevPOS] : dp
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_initial_Rotation] : dq
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.ObjectSpin::m_initial_Position] : dr
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Color32 TMPro.Examples.ObjectSpin::m_lightColor] : ds
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.ObjectSpin::frames] : dt
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.ShaderPropAnimator TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Renderer TMPro.Examples.ShaderPropAnimator::m_Renderer] : dt
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.ShaderPropAnimator::m_Material] : du
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.SimpleScript::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.SimpleScript::label] : dv
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.SimpleScript::m_frame] : dw
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.SkewTextExample TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Renderer TMPro.Examples.ShaderPropAnimator::m_Renderer] : du
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Material TMPro.Examples.ShaderPropAnimator::m_Material] : dv
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.SimpleScript::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.SimpleScript::label] : dw
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.SimpleScript::m_frame] : dx
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.SkewTextExample TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.SkewTextExample::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TeleType TMPro.Examples.TeleType/<Start>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TeleType/<Start>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TeleType/<Start>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TeleType/<Start>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.SkewTextExample::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TeleType TMPro.Examples.TeleType/<Start>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TeleType/<Start>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TeleType/<Start>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TeleType/<Start>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TeleType/<Start>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TeleType/<Start>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TeleType::label01] : cv
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TeleType::label02] : cw
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TeleType::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::textComponent] : dy
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextConsoleSimulator TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TeleType::label01] : cw
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TeleType::label02] : cx
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TeleType::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::textComponent] : dz
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextConsoleSimulator TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::textComponent] : dy
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::textComponent] : dz
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator::hasTextChanged] : dz
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TextConsoleSimulator::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextConsoleSimulator::hasTextChanged] : ea
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.GameObject TMPro.Examples.TextMeshProFloatingText::m_floatingText] : ea
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TextMeshProFloatingText::m_textMeshPro] : cs
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.TextMesh TMPro.Examples.TextMeshProFloatingText::m_textMesh] : cu
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_transform] : dm
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_floatingText_Transform] : eb
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_cameraTransform] : ec
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.TextMeshProFloatingText::lastPOS] : ed
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Quaternion TMPro.Examples.TextMeshProFloatingText::lastRotation] : ee
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshSpawner::floatingText_Script] : cz
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TMP_ExampleScript_01::m_text] : ef
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_ExampleScript_01::k_label] : eg
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_ExampleScript_01::count] : eh
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.TMP_FrameRateCounter::m_LastInterval] : ei
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_FrameRateCounter::m_Frames] : ej
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_FrameRateCounter::htmlColorTag] : ek
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_FrameRateCounter::fpsLabel] : el
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMP_FrameRateCounter::m_TextMeshPro] : em
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMP_FrameRateCounter::m_frameCounter_transform] : en
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_FrameRateCounter::m_camera] : eo
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TMP_FrameRateCounter/FpsCounterAnchorPositions TMPro.Examples.TMP_FrameRateCounter::last_AnchorPosition] : ep
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TMP_TextInfoDebugTool::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMP_TextInfoDebugTool::m_Transform] : da
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMP_TextSelector_A::m_TextMeshPro] : em
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_TextSelector_A::m_Camera] : eq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TMP_TextSelector_A::m_isHoveringObject] : er
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_selectedLink] : es
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_lastCharIndex] : et
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_lastWordIndex] : eu
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.RectTransform TMPro.Examples.TMP_TextSelector_B::m_TextPopup_RectTransform] : ev
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_TextSelector_B::m_TextPopup_TMPComponent] : ew
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_TextSelector_B::k_LinkText] : ex
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_TextSelector_B::k_WordText] : ey
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_TextSelector_B::m_TextMeshPro] : em
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Canvas TMPro.Examples.TMP_TextSelector_B::m_Canvas] : ez
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_TextSelector_B::m_Camera] : eq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TMP_TextSelector_B::isHoveringObject] : fa
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_selectedWord] : fb
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_selectedLink] : es
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_lastIndex] : fc
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Matrix4x4 TMPro.Examples.TMP_TextSelector_B::m_matrix] : fd
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_MeshInfo[] TMPro.Examples.TMP_TextSelector_B::m_cachedMeshInfoVertexData] : fe
-[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.TMP_UiFrameRateCounter::m_LastInterval] : ei
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_UiFrameRateCounter::m_Frames] : ej
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_UiFrameRateCounter::htmlColorTag] : ek
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_UiFrameRateCounter::fpsLabel] : el
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_UiFrameRateCounter::m_TextMeshPro] : em
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.RectTransform TMPro.Examples.TMP_UiFrameRateCounter::m_frameCounter_transform] : en
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TMP_UiFrameRateCounter/FpsCounterAnchorPositions TMPro.Examples.TMP_UiFrameRateCounter::last_AnchorPosition] : ep
-[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMPro_InstructionOverlay::instructions] : ff
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMPro_InstructionOverlay::m_TextMeshPro] : em
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextContainer TMPro.Examples.TMPro_InstructionOverlay::m_textContainer] : ct
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMPro_InstructionOverlay::m_frameCounter_transform] : en
-[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMPro_InstructionOverlay::m_camera] : eo
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexColorCycler TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.GameObject TMPro.Examples.TextMeshProFloatingText::m_floatingText] : eb
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TextMeshProFloatingText::m_textMeshPro] : ct
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.TextMesh TMPro.Examples.TextMeshProFloatingText::m_textMesh] : cv
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_transform] : dn
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_floatingText_Transform] : ec
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TextMeshProFloatingText::m_cameraTransform] : ed
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Vector3 TMPro.Examples.TextMeshProFloatingText::lastPOS] : ee
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Quaternion TMPro.Examples.TextMeshProFloatingText::lastRotation] : ef
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TextMeshProFloatingText TMPro.Examples.TextMeshSpawner::floatingText_Script] : da
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TMP_ExampleScript_01::m_text] : eg
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_ExampleScript_01::k_label] : eh
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_ExampleScript_01::count] : ei
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.TMP_FrameRateCounter::m_LastInterval] : ej
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_FrameRateCounter::m_Frames] : ek
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_FrameRateCounter::htmlColorTag] : el
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_FrameRateCounter::fpsLabel] : em
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMP_FrameRateCounter::m_TextMeshPro] : en
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMP_FrameRateCounter::m_frameCounter_transform] : eo
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_FrameRateCounter::m_camera] : ep
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TMP_FrameRateCounter/FpsCounterAnchorPositions TMPro.Examples.TMP_FrameRateCounter::last_AnchorPosition] : eq
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.TMP_TextInfoDebugTool::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMP_TextInfoDebugTool::m_Transform] : db
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMP_TextSelector_A::m_TextMeshPro] : en
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_TextSelector_A::m_Camera] : er
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TMP_TextSelector_A::m_isHoveringObject] : es
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_selectedLink] : et
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_lastCharIndex] : eu
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_A::m_lastWordIndex] : ev
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.RectTransform TMPro.Examples.TMP_TextSelector_B::m_TextPopup_RectTransform] : ew
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_TextSelector_B::m_TextPopup_TMPComponent] : ex
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_TextSelector_B::k_LinkText] : ey
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_TextSelector_B::k_WordText] : ez
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_TextSelector_B::m_TextMeshPro] : en
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Canvas TMPro.Examples.TMP_TextSelector_B::m_Canvas] : fa
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMP_TextSelector_B::m_Camera] : er
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.TMP_TextSelector_B::isHoveringObject] : fb
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_selectedWord] : fc
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_selectedLink] : et
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_TextSelector_B::m_lastIndex] : fd
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Matrix4x4 TMPro.Examples.TMP_TextSelector_B::m_matrix] : fe
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_MeshInfo[] TMPro.Examples.TMP_TextSelector_B::m_cachedMeshInfoVertexData] : ff
+[Info][Found new Field Name] [[Assembly-CSharp]System.Single TMPro.Examples.TMP_UiFrameRateCounter::m_LastInterval] : ej
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.TMP_UiFrameRateCounter::m_Frames] : ek
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_UiFrameRateCounter::htmlColorTag] : el
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMP_UiFrameRateCounter::fpsLabel] : em
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshProUGUI TMPro.Examples.TMP_UiFrameRateCounter::m_TextMeshPro] : en
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.RectTransform TMPro.Examples.TMP_UiFrameRateCounter::m_frameCounter_transform] : eo
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.TMP_UiFrameRateCounter/FpsCounterAnchorPositions TMPro.Examples.TMP_UiFrameRateCounter::last_AnchorPosition] : eq
+[Info][Found new Field Name] [[Assembly-CSharp]System.String TMPro.Examples.TMPro_InstructionOverlay::instructions] : fg
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextMeshPro TMPro.Examples.TMPro_InstructionOverlay::m_TextMeshPro] : en
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TextContainer TMPro.Examples.TMPro_InstructionOverlay::m_textContainer] : cu
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Transform TMPro.Examples.TMPro_InstructionOverlay::m_frameCounter_transform] : eo
+[Info][Found new Field Name] [[Assembly-CSharp]UnityEngine.Camera TMPro.Examples.TMPro_InstructionOverlay::m_camera] : ep
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexColorCycler TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexColorCycler::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexJitter TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexColorCycler::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexJitter TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexJitter::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexJitter::hasTextChanged] : dz
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexShakeA TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexJitter::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexJitter::hasTextChanged] : ea
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexShakeA TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexShakeA::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeA::hasTextChanged] : dz
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexShakeB TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexShakeA::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeA::hasTextChanged] : ea
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexShakeB TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexShakeB::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeB::hasTextChanged] : dz
-[Info][Found new Field Name] [[Assembly-CSharp]System.Collections.Generic.List`1<System.Single> TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1::modifiedCharScale] : fg
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexZoom TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$PC] : cr
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1 TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$locvar0] : fh
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexShakeB::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexShakeB::hasTextChanged] : ea
+[Info][Found new Field Name] [[Assembly-CSharp]System.Collections.Generic.List`1<System.Single> TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1::modifiedCharScale] : fh
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexZoom TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$PC] : cs
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1 TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$locvar0] : fi
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexZoom::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexZoom::hasTextChanged] : dz
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.WarpTextExample TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.VertexZoom::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.VertexZoom::hasTextChanged] : ea
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.Examples.WarpTextExample TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.WarpTextExample::m_TextComponent] : dx
-[Info][Found new Field Name] [[Assembly-CSharp]Example_ZPlayerPrefs Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$this] : co
-[Info][Found new Field Name] [[Assembly-CSharp]System.Object Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$current] : cp
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$disposing] : cq
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$PC] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]TMPro.TMP_Text TMPro.Examples.WarpTextExample::m_TextComponent] : dy
+[Info][Found new Field Name] [[Assembly-CSharp]Example_ZPlayerPrefs Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$this] : cp
+[Info][Found new Field Name] [[Assembly-CSharp]System.Object Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$current] : cq
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$disposing] : cr
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$PC] : cs
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::System.Collections.Generic.IEnumerator<object>.Current] : a
 [Info][Found new Property Name] [[Assembly-CSharp]System.Object Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::System.Collections.IEnumerator.Current] : b
-[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 ZPlayerPrefs::Iterations] : fi
-[Info][Found new Field Name] [[Assembly-CSharp]System.String ZPlayerPrefs::strPassword] : fj
-[Info][Found new Field Name] [[Assembly-CSharp]System.String ZPlayerPrefs::strSalt] : fk
-[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean ZPlayerPrefs::hasSetPassword] : fl
+[Info][Found new Field Name] [[Assembly-CSharp]System.Int32 ZPlayerPrefs::Iterations] : fj
+[Info][Found new Field Name] [[Assembly-CSharp]System.String ZPlayerPrefs::strPassword] : fk
+[Info][Found new Field Name] [[Assembly-CSharp]System.String ZPlayerPrefs::strSalt] : fl
+[Info][Found new Field Name] [[Assembly-CSharp]System.Boolean ZPlayerPrefs::hasSetPassword] : fm
 [Info][Process] Finished Step: Find obfuscated name for Members
 [Info][Process] Processing Step: Find obfuscated name for Methods
 [Info][FindName] [Assembly-CSharp] Find Method Names...
@@ -2217,197 +2214,198 @@ U:\Unity\As Yet Untitled 2\As Yet Untitled\Library\ScriptAssemblies\Assembly-CSh
 [Info][Rename Field] [PlayerControlla::levelmanager] to i
 [Info][Rename Field] [PlayerControlla::targetcontrolla] to cj
 [Info][Rename Field] [PlayerControlla::initialFire] to ck
+[Info][Rename Field] [PlayerControlla::finished] to cl
 [Info][Rename Field] [PauseCanvasControlla::ss] to h
 [Info][Rename Field] [MenuScroll::speed] to a
 [Info][Rename Field] [MenuScroll::offset] to b
 [Info][Rename Field] [MenuScroll::backgroundRenderer] to c
 [Info][Rename Field] [SaveLoad::data] to bl
-[Info][Rename Field] [ShopMenu/Purchase::image] to cl
-[Info][Rename Field] [ShopMenu/Purchase::locked] to cm
-[Info][Rename Field] [ShopMenu/Purchase::price] to cn
-[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textMeshPro] to cs
-[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textContainer] to ct
-[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textMesh] to cu
-[Info][Rename Field] [TMPro.Examples.Benchmark01::label01] to cv
-[Info][Rename Field] [TMPro.Examples.Benchmark01::label02] to cw
-[Info][Rename Field] [TMPro.Examples.Benchmark01::m_material01] to cx
-[Info][Rename Field] [TMPro.Examples.Benchmark01::m_material02] to cy
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_textMeshPro] to cs
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_textMesh] to cu
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::label01] to cv
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::label02] to cw
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_material01] to cx
-[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_material02] to cy
-[Info][Rename Field] [TMPro.Examples.Benchmark02::floatingText_Script] to cz
-[Info][Rename Field] [TMPro.Examples.Benchmark04::m_Transform] to da
-[Info][Rename Field] [TMPro.Examples.CameraController::cameraTransform] to db
-[Info][Rename Field] [TMPro.Examples.CameraController::dummyTarget] to dc
-[Info][Rename Field] [TMPro.Examples.CameraController::previousSmoothing] to dd
-[Info][Rename Field] [TMPro.Examples.CameraController::desiredPosition] to de
-[Info][Rename Field] [TMPro.Examples.CameraController::mouseX] to df
-[Info][Rename Field] [TMPro.Examples.CameraController::mouseY] to dg
-[Info][Rename Field] [TMPro.Examples.CameraController::moveVector] to dh
-[Info][Rename Field] [TMPro.Examples.CameraController::mouseWheel] to di
-[Info][Rename Field] [TMPro.Examples.CameraController::event_SmoothingValue] to dj
-[Info][Rename Field] [TMPro.Examples.CameraController::event_FollowDistance] to dk
-[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$this] to co
-[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$current] to cp
-[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$PC] to cr
-[Info][Rename Field] [EnvMapAnimator::m_textMeshPro] to cs
-[Info][Rename Field] [EnvMapAnimator::m_material] to dl
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_transform] to dm
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_time] to dn
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_prevPOS] to do
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_initial_Rotation] to dp
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_initial_Position] to dq
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_lightColor] to dr
-[Info][Rename Field] [TMPro.Examples.ObjectSpin::frames] to ds
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator::m_Renderer] to dt
-[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator::m_Material] to du
-[Info][Rename Field] [TMPro.Examples.SimpleScript::m_textMeshPro] to cs
-[Info][Rename Field] [TMPro.Examples.SimpleScript::label] to dv
-[Info][Rename Field] [TMPro.Examples.SimpleScript::m_frame] to dw
-[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.SkewTextExample::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.TeleType::label01] to cv
-[Info][Rename Field] [TMPro.Examples.TeleType::label02] to cw
-[Info][Rename Field] [TMPro.Examples.TeleType::m_textMeshPro] to cs
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::textComponent] to dy
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::textComponent] to dy
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$current] to cp
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator::hasTextChanged] to dz
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$this] to co
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$current] to cp
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_floatingText] to ea
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_textMeshPro] to cs
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_textMesh] to cu
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_transform] to dm
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_floatingText_Transform] to eb
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_cameraTransform] to ec
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::lastPOS] to ed
-[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::lastRotation] to ee
-[Info][Rename Field] [TMPro.Examples.TextMeshSpawner::floatingText_Script] to cz
-[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::m_text] to ef
-[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::k_label] to eg
-[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::count] to eh
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_LastInterval] to ei
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_Frames] to ej
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::htmlColorTag] to ek
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::fpsLabel] to el
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_TextMeshPro] to em
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_frameCounter_transform] to en
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_camera] to eo
-[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::last_AnchorPosition] to ep
-[Info][Rename Field] [TMPro.Examples.TMP_TextInfoDebugTool::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.TMP_TextInfoDebugTool::m_Transform] to da
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_TextMeshPro] to em
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_Camera] to eq
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_isHoveringObject] to er
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_selectedLink] to es
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_lastCharIndex] to et
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_lastWordIndex] to eu
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextPopup_RectTransform] to ev
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextPopup_TMPComponent] to ew
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::k_LinkText] to ex
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::k_WordText] to ey
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextMeshPro] to em
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_Canvas] to ez
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_Camera] to eq
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::isHoveringObject] to fa
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_selectedWord] to fb
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_selectedLink] to es
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_lastIndex] to fc
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_matrix] to fd
-[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_cachedMeshInfoVertexData] to fe
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_LastInterval] to ei
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_Frames] to ej
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::htmlColorTag] to ek
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::fpsLabel] to el
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_TextMeshPro] to em
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_frameCounter_transform] to en
-[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::last_AnchorPosition] to ep
-[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::instructions] to ff
-[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_TextMeshPro] to em
-[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_textContainer] to ct
-[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_frameCounter_transform] to en
-[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_camera] to eo
-[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.VertexColorCycler::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.VertexJitter::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.VertexJitter::hasTextChanged] to dz
-[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.VertexShakeA::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.VertexShakeA::hasTextChanged] to dz
-[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.VertexShakeB::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.VertexShakeB::hasTextChanged] to dz
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1::modifiedCharScale] to fg
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$locvar0] to fh
-[Info][Rename Field] [TMPro.Examples.VertexZoom::m_TextComponent] to dx
-[Info][Rename Field] [TMPro.Examples.VertexZoom::hasTextChanged] to dz
-[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$this] to co
-[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$current] to cp
-[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$PC] to cr
-[Info][Rename Field] [TMPro.Examples.WarpTextExample::m_TextComponent] to dx
-[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$this] to co
-[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$current] to cp
-[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$disposing] to cq
-[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$PC] to cr
-[Info][Rename Field] [ZPlayerPrefs::Iterations] to fi
-[Info][Rename Field] [ZPlayerPrefs::strPassword] to fj
-[Info][Rename Field] [ZPlayerPrefs::strSalt] to fk
-[Info][Rename Field] [ZPlayerPrefs::hasSetPassword] to fl
+[Info][Rename Field] [ShopMenu/Purchase::image] to cm
+[Info][Rename Field] [ShopMenu/Purchase::locked] to cn
+[Info][Rename Field] [ShopMenu/Purchase::price] to co
+[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.Benchmark01/<Start>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textMeshPro] to ct
+[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textContainer] to cu
+[Info][Rename Field] [TMPro.Examples.Benchmark01::m_textMesh] to cv
+[Info][Rename Field] [TMPro.Examples.Benchmark01::label01] to cw
+[Info][Rename Field] [TMPro.Examples.Benchmark01::label02] to cx
+[Info][Rename Field] [TMPro.Examples.Benchmark01::m_material01] to cy
+[Info][Rename Field] [TMPro.Examples.Benchmark01::m_material02] to cz
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI/<Start>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_textMeshPro] to ct
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_textMesh] to cv
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::label01] to cw
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::label02] to cx
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_material01] to cy
+[Info][Rename Field] [TMPro.Examples.Benchmark01_UGUI::m_material02] to cz
+[Info][Rename Field] [TMPro.Examples.Benchmark02::floatingText_Script] to da
+[Info][Rename Field] [TMPro.Examples.Benchmark04::m_Transform] to db
+[Info][Rename Field] [TMPro.Examples.CameraController::cameraTransform] to dc
+[Info][Rename Field] [TMPro.Examples.CameraController::dummyTarget] to dd
+[Info][Rename Field] [TMPro.Examples.CameraController::previousSmoothing] to de
+[Info][Rename Field] [TMPro.Examples.CameraController::desiredPosition] to df
+[Info][Rename Field] [TMPro.Examples.CameraController::mouseX] to dg
+[Info][Rename Field] [TMPro.Examples.CameraController::mouseY] to dh
+[Info][Rename Field] [TMPro.Examples.CameraController::moveVector] to di
+[Info][Rename Field] [TMPro.Examples.CameraController::mouseWheel] to dj
+[Info][Rename Field] [TMPro.Examples.CameraController::event_SmoothingValue] to dk
+[Info][Rename Field] [TMPro.Examples.CameraController::event_FollowDistance] to dl
+[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$this] to cp
+[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$current] to cq
+[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [EnvMapAnimator/<Start>c__Iterator0::$PC] to cs
+[Info][Rename Field] [EnvMapAnimator::m_textMeshPro] to ct
+[Info][Rename Field] [EnvMapAnimator::m_material] to dm
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_transform] to dn
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_time] to do
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_prevPOS] to dp
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_initial_Rotation] to dq
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_initial_Position] to dr
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::m_lightColor] to ds
+[Info][Rename Field] [TMPro.Examples.ObjectSpin::frames] to dt
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator/<AnimateProperties>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator::m_Renderer] to du
+[Info][Rename Field] [TMPro.Examples.ShaderPropAnimator::m_Material] to dv
+[Info][Rename Field] [TMPro.Examples.SimpleScript::m_textMeshPro] to ct
+[Info][Rename Field] [TMPro.Examples.SimpleScript::label] to dw
+[Info][Rename Field] [TMPro.Examples.SimpleScript::m_frame] to dx
+[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.SkewTextExample/<WarpText>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.SkewTextExample::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.TeleType/<Start>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.TeleType::label01] to cw
+[Info][Rename Field] [TMPro.Examples.TeleType::label02] to cx
+[Info][Rename Field] [TMPro.Examples.TeleType::m_textMeshPro] to ct
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::textComponent] to dz
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealCharacters>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::textComponent] to dz
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$current] to cq
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator/<RevealWords>c__Iterator1::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.TextConsoleSimulator::hasTextChanged] to ea
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshProFloatingText>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$this] to cp
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$current] to cq
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText/<DisplayTextMeshFloatingText>c__Iterator1::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_floatingText] to eb
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_textMeshPro] to ct
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_textMesh] to cv
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_transform] to dn
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_floatingText_Transform] to ec
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::m_cameraTransform] to ed
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::lastPOS] to ee
+[Info][Rename Field] [TMPro.Examples.TextMeshProFloatingText::lastRotation] to ef
+[Info][Rename Field] [TMPro.Examples.TextMeshSpawner::floatingText_Script] to da
+[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::m_text] to eg
+[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::k_label] to eh
+[Info][Rename Field] [TMPro.Examples.TMP_ExampleScript_01::count] to ei
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_LastInterval] to ej
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_Frames] to ek
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::htmlColorTag] to el
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::fpsLabel] to em
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_TextMeshPro] to en
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_frameCounter_transform] to eo
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::m_camera] to ep
+[Info][Rename Field] [TMPro.Examples.TMP_FrameRateCounter::last_AnchorPosition] to eq
+[Info][Rename Field] [TMPro.Examples.TMP_TextInfoDebugTool::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.TMP_TextInfoDebugTool::m_Transform] to db
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_TextMeshPro] to en
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_Camera] to er
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_isHoveringObject] to es
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_selectedLink] to et
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_lastCharIndex] to eu
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_A::m_lastWordIndex] to ev
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextPopup_RectTransform] to ew
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextPopup_TMPComponent] to ex
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::k_LinkText] to ey
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::k_WordText] to ez
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_TextMeshPro] to en
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_Canvas] to fa
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_Camera] to er
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::isHoveringObject] to fb
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_selectedWord] to fc
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_selectedLink] to et
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_lastIndex] to fd
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_matrix] to fe
+[Info][Rename Field] [TMPro.Examples.TMP_TextSelector_B::m_cachedMeshInfoVertexData] to ff
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_LastInterval] to ej
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_Frames] to ek
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::htmlColorTag] to el
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::fpsLabel] to em
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_TextMeshPro] to en
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::m_frameCounter_transform] to eo
+[Info][Rename Field] [TMPro.Examples.TMP_UiFrameRateCounter::last_AnchorPosition] to eq
+[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::instructions] to fg
+[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_TextMeshPro] to en
+[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_textContainer] to cu
+[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_frameCounter_transform] to eo
+[Info][Rename Field] [TMPro.Examples.TMPro_InstructionOverlay::m_camera] to ep
+[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.VertexColorCycler/<AnimateVertexColors>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.VertexColorCycler::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.VertexJitter/<AnimateVertexColors>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.VertexJitter::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.VertexJitter::hasTextChanged] to ea
+[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.VertexShakeA/<AnimateVertexColors>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.VertexShakeA::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.VertexShakeA::hasTextChanged] to ea
+[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.VertexShakeB/<AnimateVertexColors>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.VertexShakeB::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.VertexShakeB::hasTextChanged] to ea
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0/<AnimateVertexColors>c__AnonStorey1::modifiedCharScale] to fh
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.VertexZoom/<AnimateVertexColors>c__Iterator0::$locvar0] to fi
+[Info][Rename Field] [TMPro.Examples.VertexZoom::m_TextComponent] to dy
+[Info][Rename Field] [TMPro.Examples.VertexZoom::hasTextChanged] to ea
+[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$this] to cp
+[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$current] to cq
+[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [TMPro.Examples.WarpTextExample/<WarpText>c__Iterator0::$PC] to cs
+[Info][Rename Field] [TMPro.Examples.WarpTextExample::m_TextComponent] to dy
+[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$this] to cp
+[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$current] to cq
+[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$disposing] to cr
+[Info][Rename Field] [Example_ZPlayerPrefs/<BlinkStatus>c__Iterator0::$PC] to cs
+[Info][Rename Field] [ZPlayerPrefs::Iterations] to fj
+[Info][Rename Field] [ZPlayerPrefs::strPassword] to fk
+[Info][Rename Field] [ZPlayerPrefs::strSalt] to fl
+[Info][Rename Field] [ZPlayerPrefs::hasSetPassword] to fm
 [Info][Process] Finished Step: Rename Fields
 [Info][Process] Processing Step: Rename Properties and Events
 [Info][Rename] [Assembly-CSharp] Rename Properties and Events...
