@@ -12,12 +12,10 @@ public class PauseCanvasControlla : MonoBehaviour {
     public LevelManager levelmanager;
     public TargetControlla targetcontrolla;
     public Toggle music, soundeffects;
-    private bool initialToggle;
 
     // Use this for initialization
     void Start()
     {
-        initialToggle = true;
         resume.onClick.AddListener(ResumeOnClick);
         relaunch.onClick.AddListener(RelaunchOnClick);
         exit.onClick.AddListener(ExitOnClick);
@@ -53,34 +51,32 @@ public class PauseCanvasControlla : MonoBehaviour {
         SceneManager.LoadSceneAsync("MainMenu");
     }
 
-    //Toggles the music on and off if pressed. initialToggle is used to synchronise the music being muted in the main menu and in gameplay
+    //Toggles the music on and off if pressed. 
     public void switchMusic()
     {
-            if (music.isOn)
-            {
-                ss.toggleMusic(false);
-            }
-            else
-            {
-                ss.toggleMusic(true);
-            }
+        if (music.isOn)
+        {
+            ss.toggleMusic(false);
+        }
+        else
+        {
+            ss.toggleMusic(true);
+            ss.playMusic("Gameplay");
+        }
               
     }
 
-    //Toggles the sound effects on and off if pressed. initialToggle is used to synchronise the sound being muted in the main menu and in gameplay
+    //Toggles the sound effects on and off if pressed. 
 
     public void switchSoundEffects()
     {
-        if (!initialToggle)
+        if (soundeffects.isOn)
         {
-            if (soundeffects.isOn)
-            {
-                ss.toggleSoundEffects(false);
-            }
-            else
-            {
-                ss.toggleSoundEffects(true);
-            }
-        }        
+            ss.toggleSoundEffects(false);
+        }
+        else
+        {
+            ss.toggleSoundEffects(true);
+        }      
     }
 }

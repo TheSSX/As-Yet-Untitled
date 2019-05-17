@@ -3027,7 +3027,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3038,8 +3038,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Welcome to [NAME HERE]! The game all about launching, upgrading and launching
-    some more!\nThere is no end goal in [NAME HERE]. Only your personal, sadistical
+  m_Text: "Welcome to Crazy Cannons! The game all about launching, upgrading and launching
+    some more!\nThere is no end goal in Crazy Cannons. Only your personal, sadistical
     desires to fire a dude out of a cannon as far as you can while subjecting said
     dude to all manner of bumps and bruises. Build your cash resources to spend on
     new upgrades for your player, launcher and weapon. Cash is earned in a couple
@@ -3053,7 +3053,9 @@ MonoBehaviour:
     with limited ammunition that can be replenished by touching floating ammo reserves.
     Aim the weapon with the mouse using the target on-screen. Move the target over
     the player and click to fire, which will apply an additional bit of force to keep
-    the player going. Take note: you can only fire your weapon once every second."
+    the player going. Take note: you have a limited ammo supply and you can only fire
+    your weapon once every second. Don't forget to spend cash on upgrades to improve
+    weapon effectiveness."
 --- !u!222 &1156132190
 CanvasRenderer:
   m_ObjectHideFlags: 0

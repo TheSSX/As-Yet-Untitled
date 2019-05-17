@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Plays a sound and increases the cash collected that round upon being collected by the player
 public class CashControlla : MonoBehaviour {
 
     private LevelManager levelmanager;

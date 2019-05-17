@@ -293,6 +293,21 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Sam/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="OPS.Mono.Cecil.Mdb">
+      <HintPath>Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="OPS.Mono.Cecil.Pdb">
+      <HintPath>Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="OPS.Mono.Cecil.Rocks">
+      <HintPath>Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="OPS.Obfuscator">
+      <HintPath>Assets/OPS/Obfuscator.Free/Editor/Plugins/OPS.Obfuscator.dll</HintPath>
+    </Reference>
+    <Reference Include="OPS.Mono.Cecil">
+      <HintPath>Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -308,9 +323,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AutoSave\Editor\AutoSaveExtension.cs" />
+    <Compile Include="Assets\OPS\Obfuscator.Free\Editor\BuildPostProcessor.cs" />
+    <Compile Include="Assets\OPS\Obfuscator.Free\Editor\Gui\SettingsWindow.cs" />
+    <Compile Include="Assets\OPS\Obfuscator.Free\Editor\Gui\StackTraceWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
+    <None Include="Assets\OPS\Obfuscator.Free\Log\StandaloneWindows64.txt" />
+    <None Include="Assets\OPS\Obfuscator.Free\Obfuscator_Readme.txt" />
+    <None Include="Assets\OPS\Obfuscator.Free\Obfuscator_Settings.txt" />
+    <None Include="Assets\OPS\Obfuscator.Free\Version_History.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
@@ -332,6 +354,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\ZFrame\Readme\readme_ZPlayerPrefs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

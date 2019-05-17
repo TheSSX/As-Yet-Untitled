@@ -39,7 +39,7 @@ public class GroundDetector : MonoBehaviour {
 
         if (counter == 30)
         {
-            if (!levelmanager.isPaused())
+            if (!levelmanager.isPaused() && !player.getFinished())
             {
                 player.standUp();
             }

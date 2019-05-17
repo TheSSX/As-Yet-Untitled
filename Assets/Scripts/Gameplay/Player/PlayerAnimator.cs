@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Handles the animation of the player
-public class PlayerAnimator : MonoBehaviour {
+public class PlayerAnimator : MonoBehaviour
+{
 
     public Transform playersize;
     public Animator theanimation;
@@ -15,7 +16,8 @@ public class PlayerAnimator : MonoBehaviour {
     private int currentColliderIndex;       //the array index of the current collider
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         theanimation = GetComponent<Animator>();
         playersize = GetComponent<Transform>();
         playersize.localScale = new Vector3(1.5f, 1.5f, 1.5f);

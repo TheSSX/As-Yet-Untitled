@@ -126,7 +126,7 @@ public class ObjectSpawner : MonoBehaviour {
     private void setCollectibleTime()
     {
         float speed = playerScript.getCurrentVelocity();
-        collectibletime = Random.Range(4000, 80000) / speed;
+        collectibletime = Random.Range(2000, 20000) / speed;
     }
 
     //Sets a random time until an enemy or hazard can be spawned again. This is based on player speed

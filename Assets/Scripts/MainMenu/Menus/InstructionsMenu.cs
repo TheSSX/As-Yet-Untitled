@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //Controls the instructions menu
-public class InstructionsMenu : MonoBehaviour {
+public class InstructionsMenu : MonoBehaviour
+{
 
     private SoundSystem ss;
     private MainMenuControlla menu;
@@ -14,7 +15,8 @@ public class InstructionsMenu : MonoBehaviour {
     private GameObject panel1, panel2, panel3;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         ss = SoundSystem.getInstance();
         menu = GameObject.Find("Canvas").GetComponent<MainMenuControlla>();
 

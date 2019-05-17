@@ -11,7 +11,7 @@ public class PlayerControlla : MonoBehaviour
     private LevelManager levelmanager;
     private TargetControlla targetcontrolla;
 
-    private bool hasFired, initialFire;
+    private bool hasFired, initialFire, finished;
     private float currentVelocity;   
 
     // Use this for initialization
@@ -24,36 +24,56 @@ public class PlayerControlla : MonoBehaviour
 
         hasFired = false;
         initialFire = true;
+        finished = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -6)      //if player ever goes below ground
+        if (!finished)
         {
-            standUp();      //end the launch
+            if (transform.position.y < -6)      //if player ever goes below ground
+            {
+                standUp();      //end the launch
+                finished = true;
+            }
+
+            if (hasFired)       //if player has been fired
+            {
+                if (!levelmanager.isPaused() && initialFire)        //if game not paused and the character has just been launched (not yet touched the ground)
+                {
+                    transform.Rotate(0, 0, -currentVelocity / 50);      //gentle rotation
+                }
+
+                if (currentVelocity >= 0.5f && !levelmanager.isPaused() && !initialFire)
+                {
+                    transform.Rotate(0, 0, -currentVelocity);       //rotation relating to speed
+                    if ((transform.eulerAngles.z < 360 && transform.eulerAngles.z >= 340) || (transform.eulerAngles.z >= 0 && transform.eulerAngles.z < 20))
+                    {
+                        transform.Rotate(0, 0, -3f);        //stop the player from bouncing on their head or feet without landing on their side
+                    }
+                }
+                else if (currentVelocity < 0.5f && !finished)
+                {
+                    standUp();
+                    finished = true;
+                }               
+            }
         }
 
-        if (hasFired)       //if player has been fired
-        {
-            if (!levelmanager.isPaused() && initialFire)        //if game not paused and the character has just been launched (not yet touched the ground)
-            {
-                transform.Rotate(0, 0, -currentVelocity / 50);      //gentle rotation
-            }
-            
-            if (currentVelocity >= 0.5f && !levelmanager.isPaused() && !initialFire)
-            {
-                transform.Rotate(0, 0, -currentVelocity);       //rotation relating to speed
-                if ((transform.eulerAngles.z < 360 && transform.eulerAngles.z >= 340) || (transform.eulerAngles.z >= 0 && transform.eulerAngles.z < 20))
-                {
-                    transform.Rotate(0, 0, -3f);        //stop the player from bouncing on their head or feet without landing on their side
-                }
-            }
+        //Pass the player's current velocity to the animator
+        playerAnimator.SetFloat("currentVelocity", currentVelocity);
+        playerAnimator.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
+    }
 
-            //Pass the player's current velocity to the animator
-            playerAnimator.SetFloat("currentVelocity", currentVelocity);
-            playerAnimator.SetFloat("rigidbodyVelocityY", playerRigidbody.velocity.y);
-        }     
+    public bool getFinished()
+    {
+        return finished;
+    }
+
+    public void setFinished(bool x)
+    {
+        finished = x;
     }
 
     //Lets the script know the player has been fired
@@ -86,6 +106,7 @@ public class PlayerControlla : MonoBehaviour
         freeze();
         transform.eulerAngles = new Vector3(0, 0, 0);
         transform.position = new Vector3(transform.position.x, -1.3f, transform.position.z);
+        finished = true;
         levelmanager.showResults();
     }
 
